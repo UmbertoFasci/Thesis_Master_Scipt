@@ -1,0 +1,5 @@
+source("~/Thesis_Analysis_Final/Scripts/Average_Raster_Creation.R")
+source("~/Thesis_Analysis_Final/Scripts/Queensland_Plots_Script.R")
+source("~/Thesis_Analysis_Final/Scripts/SouthEast_Plots_Script.R")
+source("~/Thesis_Analysis_Final/Scripts/SouthWest_Plots_Script.R")
+source("~/Thesis_Analysis_Final/Scripts/East_Plots_Script.R")
