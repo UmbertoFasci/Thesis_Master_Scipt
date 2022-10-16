@@ -1,21 +1,21 @@
 
 
 # 2011-2040 ssp126
-MRIESM2_1140_126_10k_var6_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
-MRIESM2_1140_126_1k_var1_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
-MRIESM2_1140_126_1k_var5_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_126_10k_var6_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_126_1k_var1_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_126_1k_var5_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
 
 # 2011-2040 ssp858
-MRIESM2_1140_585_10k_var6_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
-MRIESM2_1140_585_1k_var1_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
-MRIESM2_1140_585_1k_var5_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_585_10k_var6_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_585_1k_var1_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_1140_585_1k_var5_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
 
 # 2041-2070 ssp126
-MRIESM2_4170_126_1k_var1_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_4170/ssp126/MRIESM2_4170_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_4170_126_1k_var1_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp126/MRIESM2_4170_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
 
 # 2041-2070 ssp858
-MRIESM2_4170_585_10k_var6_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_4170/ssp585/MRIESM2_4170_ssp585_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
-MRIESM2_4170_585_1k_var1_ras <- raster("~/B_Dendrobatidis_Models/MRIESM2_4170/ssp585/MRIESM2_4170_ssp585_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_4170_585_10k_var6_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp585/MRIESM2_4170_ssp585_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_4170_585_1k_var1_ras <- raster("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp585/MRIESM2_4170_ssp585_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
 
 # Average raster groups
 
@@ -62,7 +62,6 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/Aus_1140_126.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted Bd Suitability`)) +
@@ -74,7 +73,6 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/Aus_1140_585.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted Bd Suitability`)) +
@@ -86,7 +84,6 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/Aus_4170_126.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted Bd Suitability`)) +
@@ -98,7 +95,6 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/Aus_4170_585.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 
 # Calculate variance (sd ** 2)
@@ -142,7 +138,6 @@ MRIESM2_1140_126_Variance_raster <- ggplot(data = MRIESM2_1140_126_Variance_df, 
   annotation_scale(location = "bl", width_hint = 0.5) +
   scale_fill_gradient(low = "white", high = "dark green") +
   theme_bw()
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/AusVar_1140_126.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 MRIESM2_1140_585_Variance_raster <- ggplot(data = MRIESM2_1140_585_Variance_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Variance`)) +
@@ -151,7 +146,6 @@ MRIESM2_1140_585_Variance_raster <- ggplot(data = MRIESM2_1140_585_Variance_df, 
   annotation_scale(location = "bl", width_hint = 0.5) +
   scale_fill_gradient(low = "white", high = "dark green") +
   theme_bw()
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/AusVar_1140_585.tiff", units = "in", width = 5, height = 5, dpi = "retina")
 
 MRIESM2_4170_585_Variance_raster <- ggplot(data = MRIESM2_4170_585_Variance_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Variance`)) +
@@ -160,4 +154,3 @@ MRIESM2_4170_585_Variance_raster <- ggplot(data = MRIESM2_4170_585_Variance_df, 
   annotation_scale(location = "bl", width_hint = 0.5) +
   scale_fill_gradient(low = "white", high = "dark green") +
   theme_bw()
-ggsave(device = "tiff", filename = "~/Thesis_Analysis_Final/Maps/AusVar_4170_585.tiff", units = "in", width = 5, height = 5, dpi = "retina")
