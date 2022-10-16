@@ -131,15 +131,6 @@ colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
 colnames(Human_Influence_2011_2040_126_df) <- c("Longitude", "Latitude", "Human_Influence_2011_2040_126")
 
-# Value amount fix (Reduce Latitude extent throughout)
-
-Annual_Mean_Temp_2011_2040_126_df <- subset(Annual_Mean_Temp_2011_2040_126_df, Latitude >= -54.77097)
-Mean_Diurnal_Range_2011_2040_126_df <- subset(Mean_Diurnal_Range_2011_2040_126_df, Latitude >= -54.77097)
-Isothermality_2011_2040_126_df <- subset(Isothermality_2011_2040_126_df, Latitude >= -54.77097)
-Mean_Temp_Driest_Qtr_2011_2040_126_df <- subset(Mean_Temp_Driest_Qtr_2011_2040_126_df, Latitude >= -54.77097)
-Prec_of_Wettest_Month_2011_2040_126_df <- subset(Prec_of_Wettest_Month_2011_2040_126_df, Latitude >= -54.77097)
-Human_Influence_2011_2040_126_df <- subset(Human_Influence_2011_2040_126_df, Latitude >= -54.77097)
-
 # 2011-2040 ssp585
 
 colnames(Annual_Mean_Temp_2011_2040_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_585")
@@ -148,15 +139,6 @@ colnames(Isothermality_2011_2040_585_df) <- c("Longitude", "Latitude", "Isotherm
 colnames(Mean_Temp_Driest_Qtr_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_585")
 colnames(Prec_of_Wettest_Month_2011_2040_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_585")
 colnames(Human_Influence_2011_2040_585_df) <- c("Longitude", "Latitude", "Human_Influence_2011_2040_585")
-
-# Value amount fix (Reduce Latitude extent throughout)
-
-Annual_Mean_Temp_2011_2040_585_df <- subset(Annual_Mean_Temp_2011_2040_585_df, Latitude >= -54.77097)
-Mean_Diurnal_Range_2011_2040_585_df <- subset(Mean_Diurnal_Range_2011_2040_585_df, Latitude >= -54.77097)
-Isothermality_2011_2040_585_df <- subset(Isothermality_2011_2040_585_df, Latitude >= -54.77097)
-Mean_Temp_Driest_Qtr_2011_2040_585_df <- subset(Mean_Temp_Driest_Qtr_2011_2040_585_df, Latitude >= -54.77097)
-Prec_of_Wettest_Month_2011_2040_585_df <- subset(Prec_of_Wettest_Month_2011_2040_585_df, Latitude >= -54.77097)
-Human_Influence_2011_2040_585_df <- subset(Human_Influence_2011_2040_585_df, Latitude >= -54.77097)
 
 # 2041-2070 ssp126
 
@@ -167,15 +149,6 @@ colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
 colnames(Human_Influence_2041_2070_126_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_126")
 
-# Value amount fix (Reduce Latitude extent throughout)
-
-Annual_Mean_Temp_2041_2070_126_df <- subset(Annual_Mean_Temp_2041_2070_126_df, Latitude >= -54.77097)
-Mean_Diurnal_Range_2041_2070_126_df <- subset(Mean_Diurnal_Range_2041_2070_126_df, Latitude >= -54.77097)
-Isothermality_2041_2070_126_df <- subset(Isothermality_2041_2070_126_df, Latitude >= -54.77097)
-Mean_Temp_Driest_Qtr_2041_2070_126_df <- subset(Mean_Temp_Driest_Qtr_2041_2070_126_df, Latitude >= -54.77097)
-Prec_of_Wettest_Month_2041_2070_126_df <- subset(Prec_of_Wettest_Month_2041_2070_126_df, Latitude >= -54.77097)
-Human_Influence_2041_2070_126_df <- subset(Human_Influence_2041_2070_126_df, Latitude >= -54.77097)
-
 # 2041-2070 ssp585
 
 colnames(Annual_Mean_Temp_2041_2070_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_585")
@@ -185,20 +158,10 @@ colnames(Mean_Temp_Driest_Qtr_2041_2070_585_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_585")
 colnames(Human_Influence_2041_2070_585_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_585")
 
-# Value amount fix (Reduce Latitude extent throughout)
-
-Annual_Mean_Temp_2041_2070_585_df <- subset(Annual_Mean_Temp_2041_2070_585_df, Latitude >= -54.77097)
-Mean_Diurnal_Range_2041_2070_585_df <- subset(Mean_Diurnal_Range_2041_2070_585_df, Latitude >= -54.77097)
-Isothermality_2041_2070_585_df <- subset(Isothermality_2041_2070_585_df, Latitude >= -54.77097)
-Mean_Temp_Driest_Qtr_2041_2070_585_df <- subset(Mean_Temp_Driest_Qtr_2041_2070_585_df, Latitude >= -54.77097)
-Prec_of_Wettest_Month_2041_2070_585_df <- subset(Prec_of_Wettest_Month_2041_2070_585_df, Latitude >= -54.77097)
-Human_Influence_2041_2070_585_df <- subset(Human_Influence_2041_2070_585_df, Latitude >= -54.77097)
-
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
-MRIESM2_1140_126_Stats <- subset(MRIESM2_1140_126_Stats, Latitude >= -54.77097)
 MRIESM2_1140_126_Stats$`Annual_Mean_Temp_2011_2040_126` <- Annual_Mean_Temp_2011_2040_126_df$`Annual_Mean_Temp_2011_2040_126`
 MRIESM2_1140_126_Stats$`Mean_Diurnal_Range_2011_2040_126` <- Mean_Diurnal_Range_2011_2040_126_df$`Mean_Diurnal_Range_2011_2040_126`
 MRIESM2_1140_126_Stats$`Isothermality_2011_2040_126` <- Isothermality_2011_2040_126_df$`Isothermality_2011_2040_126`
@@ -211,7 +174,6 @@ rename(MRIESM2_1140_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitab
 
 # 2011-2040 ssp585
 MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Avg_df
-MRIESM2_1140_585_Stats <- subset(MRIESM2_1140_585_Stats, Latitude >= -54.77097)
 MRIESM2_1140_585_Stats$`Annual_Mean_Temp_2011_2040_585` <- Annual_Mean_Temp_2011_2040_585_df$`Annual_Mean_Temp_2011_2040_585`
 MRIESM2_1140_585_Stats$`Mean_Diurnal_Range_2011_2040_585` <- Mean_Diurnal_Range_2011_2040_585_df$`Mean_Diurnal_Range_2011_2040_585`
 MRIESM2_1140_585_Stats$`Isothermality_2011_2040_585` <- Isothermality_2011_2040_585_df$`Isothermality_2011_2040_585`
@@ -224,7 +186,6 @@ rename(MRIESM2_1140_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitab
 
 # 2041-2070 ssp126
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Avg_df
-MRIESM2_4170_126_Stats <- subset(MRIESM2_4170_126_Stats, Latitude >= -54.77097)
 MRIESM2_4170_126_Stats$`Annual_Mean_Temp_2041_2070_126` <- Annual_Mean_Temp_2041_2070_126_df$`Annual_Mean_Temp_2041_2070_126`
 MRIESM2_4170_126_Stats$`Mean_Diurnal_Range_2041_2070_126` <- Mean_Diurnal_Range_2041_2070_126_df$`Mean_Diurnal_Range_2041_2070_126`
 MRIESM2_4170_126_Stats$`Isothermality_2041_2070_126` <- Isothermality_2041_2070_126_df$`Isothermality_2041_2070_126`
@@ -237,7 +198,6 @@ rename(MRIESM2_4170_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitab
 
 # 2041-2070 ssp585
 MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Avg_df
-MRIESM2_4170_585_Stats <- subset(MRIESM2_4170_585_Stats, Latitude >= -54.77097)
 MRIESM2_4170_585_Stats$`Annual_Mean_Temp_2041_2070_585` <- Annual_Mean_Temp_2041_2070_585_df$`Annual_Mean_Temp_2041_2070_585`
 MRIESM2_4170_585_Stats$`Mean_Diurnal_Range_2041_2070_585` <- Mean_Diurnal_Range_2041_2070_585_df$`Mean_Diurnal_Range_2041_2070_585`
 MRIESM2_4170_585_Stats$`Isothermality_2041_2070_585` <- Isothermality_2041_2070_585_df$`Isothermality_2041_2070_585`
