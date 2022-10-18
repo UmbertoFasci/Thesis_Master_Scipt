@@ -620,12 +620,11 @@ Prec_of_Wettest_Month_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghi
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
-
 # Mapped Data (Environmental Variables)
 
 # Annual Mean Temp
 
-Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_126_df, aes(x=Longitude, y=Latitude)) + # nolint
+Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
