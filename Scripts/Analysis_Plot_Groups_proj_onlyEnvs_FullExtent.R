@@ -6,6 +6,7 @@ library(tidyverse)
 library(ggspatial)
 library(patchwork)
 library(raster)
+library(ggpubr)
 
 # Prepare Variables for stat plots
 
