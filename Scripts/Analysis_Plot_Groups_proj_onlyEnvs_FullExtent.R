@@ -437,7 +437,8 @@ Annual_Mean_Temp_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogr
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
                                                                                    fill = "Suitability_Levels",
-                                                                                   xlab = "Count",
+                                                                                   xlab = "Predicted Bd Suitability",
+                                                                                   ylab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
@@ -446,7 +447,8 @@ Annual_Mean_Temp_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogr
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
                                                                                    fill = "Suitability_Levels",
-                                                                                   xlab = "Count",
+                                                                                   xlab = "Predicted Bd Suitability",
+                                                                                   ylab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
@@ -455,7 +457,8 @@ Annual_Mean_Temp_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogr
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
                                                                                    fill = "Suitability_Levels",
-                                                                                   xlab = "Count",
+                                                                                   xlab = "Predicted Bd Suitability",
+                                                                                   ylab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
@@ -464,7 +467,8 @@ Annual_Mean_Temp_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogr
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
                                                                                    fill = "Suitability_Levels",
-                                                                                   xlab = "Count",
+                                                                                   xlab = "Predicted Bd Suitability",
+                                                                                   ylab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
@@ -475,7 +479,8 @@ Mean_Diurnal_Range_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghisto
                                                                                      rug = TRUE,
                                                                                      color = "Suitability_Levels",
                                                                                      fill = "Suitability_Levels",
-                                                                                     xlab = "Count",
+                                                                                     xlab = "Predicted Bd Suitability",
+                                                                                     ylab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
@@ -484,7 +489,8 @@ Mean_Diurnal_Range_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghisto
                                                                                      rug = TRUE,
                                                                                      color = "Suitability_Levels",
                                                                                      fill = "Suitability_Levels",
-                                                                                     xlab = "Count",
+                                                                                     xlab = "Predicted Bd Suitability",
+                                                                                     ylab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
@@ -493,7 +499,8 @@ Mean_Diurnal_Range_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghisto
                                                                                      rug = TRUE,
                                                                                      color = "Suitability_Levels",
                                                                                      fill = "Suitability_Levels",
-                                                                                     xlab = "Count",
+                                                                                     xlab = "Predicted Bd Suitability",
+                                                                                     ylab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
@@ -502,7 +509,8 @@ Mean_Diurnal_Range_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghisto
                                                                                      rug = TRUE,
                                                                                      color = "Suitability_Levels",
                                                                                      fill = "Suitability_Levels",
-                                                                                     xlab = "Count",
+                                                                                     xlab = "Predicted Bd Suitability",
+                                                                                     ylab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
@@ -513,7 +521,8 @@ Isothermality_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(
                                                                                 rug = TRUE,
                                                                                 color = "Suitability_Levels",
                                                                                 fill = "Suitability_Levels",
-                                                                                xlab = "Count",
+                                                                                xlab = "Predicted Bd Suitability",
+                                                                                ylab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
@@ -522,7 +531,8 @@ Isothermality_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(
                                                                                 rug = TRUE,
                                                                                 color = "Suitability_Levels",
                                                                                 fill = "Suitability_Levels",
-                                                                                xlab = "Count",
+                                                                                xlab = "Predicted Bd Suitability",
+                                                                                ylab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
@@ -531,7 +541,8 @@ Isothermality_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(
                                                                                 rug = TRUE,
                                                                                 color = "Suitability_Levels",
                                                                                 fill = "Suitability_Levels",
-                                                                                xlab = "Count",
+                                                                                xlab = "Predicted Bd Suitability",
+                                                                                ylab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
@@ -540,7 +551,8 @@ Isothermality_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(
                                                                                 rug = TRUE,
                                                                                 color = "Suitability_Levels",
                                                                                 fill = "Suitability_Levels",
-                                                                                xlab = "Count",
+                                                                                xlab = "Predicted Bd Suitability",
+                                                                                ylab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
@@ -551,7 +563,8 @@ Mean_Temp_Driest_Qtr_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghis
                                                                                        rug = TRUE,
                                                                                        color = "Suitability_Levels",
                                                                                        fill = "Suitability_Levels",
-                                                                                       xlab = "Count",
+                                                                                       xlab = "Predicted Bd Suitability",
+                                                                                       ylab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
@@ -560,7 +573,8 @@ Mean_Temp_Driest_Qtr_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghis
                                                                                        rug = TRUE,
                                                                                        color = "Suitability_Levels",
                                                                                        fill = "Suitability_Levels",
-                                                                                       xlab = "Count",
+                                                                                       xlab = "Predicted Bd Suitability",
+                                                                                       ylab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
@@ -569,7 +583,8 @@ Mean_Temp_Driest_Qtr_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghis
                                                                                        rug = TRUE,
                                                                                        color = "Suitability_Levels",
                                                                                        fill = "Suitability_Levels",
-                                                                                       xlab = "Count",
+                                                                                       xlab = "Predicted Bd Suitability",
+                                                                                       ylab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
@@ -578,7 +593,8 @@ Mean_Temp_Driest_Qtr_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghis
                                                                                        rug = TRUE,
                                                                                        color = "Suitability_Levels",
                                                                                        fill = "Suitability_Levels",
-                                                                                       xlab = "Count",
+                                                                                       xlab = "Predicted Bd Suitability",
+                                                                                       ylab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
@@ -589,7 +605,8 @@ Prec_of_Wettest_Month_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghi
                                                                                         rug = TRUE,
                                                                                         color = "Suitability_Levels",
                                                                                         fill = "Suitability_Levels",
-                                                                                        xlab = "Count",
+                                                                                        xlab = "Predicted Bd Suitability",
+                                                                                        ylab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
@@ -598,7 +615,8 @@ Prec_of_Wettest_Month_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghi
                                                                                         rug = TRUE,
                                                                                         color = "Suitability_Levels",
                                                                                         fill = "Suitability_Levels",
-                                                                                        xlab = "Count",
+                                                                                        xlab = "Predicted Bd Suitability",
+                                                                                        ylab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
@@ -607,7 +625,8 @@ Prec_of_Wettest_Month_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghi
                                                                                         rug = TRUE,
                                                                                         color = "Suitability_Levels",
                                                                                         fill = "Suitability_Levels",
-                                                                                        xlab = "Count",
+                                                                                        xlab = "Predicted Bd Suitability",
+                                                                                        ylab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
@@ -616,7 +635,8 @@ Prec_of_Wettest_Month_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghi
                                                                                         rug = TRUE,
                                                                                         color = "Suitability_Levels",
                                                                                         fill = "Suitability_Levels",
-                                                                                        xlab = "Count",
+                                                                                        xlab = "Predicted Bd Suitability",
+                                                                                        ylab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
