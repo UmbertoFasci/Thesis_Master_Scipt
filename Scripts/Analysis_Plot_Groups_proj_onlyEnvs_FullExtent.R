@@ -240,190 +240,190 @@ bin_comparisons <- list( c("1", "2"),
 
 # Annual Mean Temp Full Extent
 
-Annual_Mean_Temp_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                               y = Annual_Mean_Temp_2011_2040_126,
+Annual_Mean_Temp_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                               y = "Annual_Mean_Temp_2011_2040_126",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2011-2040) ssp126",
-                                                                               fill = Suitability_Levels,
+                                                                               fill = "Suitability_Levels",
                                                                                palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                               y = Annual_Mean_Temp_2011_2040_585,
+Annual_Mean_Temp_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                               y = "Annual_Mean_Temp_2011_2040_585",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2011-2040) ssp585",
-                                                                               fill = Suitability_Levels,
+                                                                               fill = "Suitability_Levels",
                                                                                palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                               y = Annual_Mean_Temp_2041_2070_126,
+Annual_Mean_Temp_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                               y = "Annual_Mean_Temp_2041_2070_126",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2041-2070) ssp126",
-                                                                               fill = Suitability_Levels,
+                                                                               fill = "Suitability_Levels",
                                                                                palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                               y = Annual_Mean_Temp_2041_2070_585,
+Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                               y = "Annual_Mean_Temp_2041_2070_585",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2041-2070) ssp585",
-                                                                               fill = Suitability_Levels,
+                                                                               fill = "Suitability_Levels",
                                                                                palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
 # Mean Diurnal Range
 
-Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                 y = Mean_Diurnal_Range_2011_2040_126,
+Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                 y = "Mean_Diurnal_Range_2011_2040_126",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2011-2040) ssp126",
-                                                                                 fill = Suitability_Levels,
+                                                                                 fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                 y = Mean_Diurnal_Range_2011_2040_585,
+Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                 y = "Mean_Diurnal_Range_2011_2040_585",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2011-2040) ssp585",
-                                                                                 fill = Suitability_Levels,
+                                                                                 fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                 y = Mean_Diurnal_Range_2041_2070_126,
+Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                 y = "Mean_Diurnal_Range_2041_2070_126",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2041-2070) ssp126",
-                                                                                 fill = Suitability_Levels,
+                                                                                 fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                 y = Mean_Diurnal_Range_2041_2070_585,
+Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                 y = "Mean_Diurnal_Range_2041_2070_585",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2041-2070) ssp585",
-                                                                                 fill = Suitability_Levels,
+                                                                                 fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
 # Isothermality
 
-Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                            y = Isothermality_2011_2040_126,
+Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2011_2040_126",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2011-2040) ssp126",
-                                                                            fill = Suitability_Levels,
+                                                                            fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                            y = Isothermality_2011_2040_585,
+Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2011_2040_585",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2011-2040) ssp585",
-                                                                            fill = Suitability_Levels,
+                                                                            fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                            y = Isothermality_2041_2070_126,
+Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2041_2070_126",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2041-2070) ssp126",
-                                                                            fill = Suitability_Levels,
+                                                                            fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                            y = Isothermality_2041_2070_585,
+Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2041_2070_585",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2041-2070) ssp585",
-                                                                            fill = Suitability_Levels,
+                                                                            fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
 # Mean Temperature of The Driest Quarter
 
-Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                   y = Mean_Temp_Driest_Qtr_2011_2040_126,
+Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                   y = "Mean_Temp_Driest_Qtr_2011_2040_126",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2011-2040) ssp126",
-                                                                                   fill = Suitability_Levels,
+                                                                                   fill = "Suitability_Levels",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                   y = Mean_Temp_Driest_Qtr_2011_2040_585,
+Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                   y = "Mean_Temp_Driest_Qtr_2011_2040_585",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2011-2040) ssp585",
-                                                                                   fill = Suitability_Levels,
+                                                                                   fill = "Suitability_Levels",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                   y = Mean_Temp_Driest_Qtr_2041_2070_126,
+Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                   y = "Mean_Temp_Driest_Qtr_2041_2070_126",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2041-2070) ssp126",
-                                                                                   fill = Suitability_Levels,
+                                                                                   fill = "Suitability_Levels",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                   y = Mean_Temp_Driest_Qtr_2041_2070_585,
+Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                   y = "Mean_Temp_Driest_Qtr_2041_2070_585",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2041-2070) ssp585",
-                                                                                   fill = Suitability_Levels,
+                                                                                   fill = "Suitability_Levels",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
 # Precipitation of The Wettest Month
 
-Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                    y = Prec_of_Wettest_Month_2011_2040_126,
+Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                    y = "Prec_of_Wettest_Month_2011_2040_126",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2011-2040) ssp126",
-                                                                                    fill = Suitability_Levels,
+                                                                                    fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                    y = Prec_of_Wettest_Month_2011_2040_585,
+Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                    y = "Prec_of_Wettest_Month_2011_2040_585",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2011-2040) ssp585",
-                                                                                    fill = Suitability_Levels,
+                                                                                    fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                    y = Prec_of_Wettest_Month_2041_2070_126,
+Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                    y = "Prec_of_Wettest_Month_2041_2070_126",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2041-2070) ssp126",
-                                                                                    fill = Suitability_Levels,
+                                                                                    fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = Suitability_Levels,
-                                                                                    y = Prec_of_Wettest_Month_2041_2070_585,
+Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                    y = "Prec_of_Wettest_Month_2041_2070_585",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2041-2070) ssp585",
-                                                                                    fill = Suitability_Levels,
+                                                                                    fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
@@ -432,190 +432,190 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
 
 # Annual Mean Temp Full Extent
 
-Annual_Mean_Temp_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Annual_Mean_Temp_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
-                                                                                   color = Suitability_Levels,
-                                                                                   fill = Suitability_Levels,
+                                                                                   color = "Suitability_Levels",
+                                                                                   fill = "Suitability_Levels",
                                                                                    xlab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Annual_Mean_Temp_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
-                                                                                   color = Suitability_Levels,
-                                                                                   fill = Suitability_Levels,
+                                                                                   color = "Suitability_Levels",
+                                                                                   fill = "Suitability_Levels",
                                                                                    xlab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Annual_Mean_Temp_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
-                                                                                   color = Suitability_Levels,
-                                                                                   fill = Suitability_Levels,
+                                                                                   color = "Suitability_Levels",
+                                                                                   fill = "Suitability_Levels",
                                                                                    xlab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Annual_Mean_Temp_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
-                                                                                   color = Suitability_Levels,
-                                                                                   fill = Suitability_Levels,
+                                                                                   color = "Suitability_Levels",
+                                                                                   fill = "Suitability_Levels",
                                                                                    xlab = "Count",
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
 # Mean Diurnal Range
 
-Mean_Diurnal_Range_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Diurnal_Range_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                      add = "mean",
                                                                                      rug = TRUE,
-                                                                                     color = Suitability_Levels,
-                                                                                     fill = Suitability_Levels,
+                                                                                     color = "Suitability_Levels",
+                                                                                     fill = "Suitability_Levels",
                                                                                      xlab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
-Mean_Diurnal_Range_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Diurnal_Range_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                      add = "mean",
                                                                                      rug = TRUE,
-                                                                                     color = Suitability_Levels,
-                                                                                     fill = Suitability_Levels,
+                                                                                     color = "Suitability_Levels",
+                                                                                     fill = "Suitability_Levels",
                                                                                      xlab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
-Mean_Diurnal_Range_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Diurnal_Range_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                      add = "mean",
                                                                                      rug = TRUE,
-                                                                                     color = Suitability_Levels,
-                                                                                     fill = Suitability_Levels,
+                                                                                     color = "Suitability_Levels",
+                                                                                     fill = "Suitability_Levels",
                                                                                      xlab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
-Mean_Diurnal_Range_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Diurnal_Range_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                      add = "mean",
                                                                                      rug = TRUE,
-                                                                                     color = Suitability_Levels,
-                                                                                     fill = Suitability_Levels,
+                                                                                     color = "Suitability_Levels",
+                                                                                     fill = "Suitability_Levels",
                                                                                      xlab = "Count",
                                                                                      palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                      bins = 20)
 
 # Isothermality
 
-Isothermality_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Isothermality_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                 add = "mean",
                                                                                 rug = TRUE,
-                                                                                color = Suitability_Levels,
-                                                                                fill = Suitability_Levels,
+                                                                                color = "Suitability_Levels",
+                                                                                fill = "Suitability_Levels",
                                                                                 xlab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
-Isothermality_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Isothermality_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                 add = "mean",
                                                                                 rug = TRUE,
-                                                                                color = Suitability_Levels,
-                                                                                fill = Suitability_Levels,
+                                                                                color = "Suitability_Levels",
+                                                                                fill = "Suitability_Levels",
                                                                                 xlab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
-Isothermality_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Isothermality_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                 add = "mean",
                                                                                 rug = TRUE,
-                                                                                color = Suitability_Levels,
-                                                                                fill = Suitability_Levels,
+                                                                                color = "Suitability_Levels",
+                                                                                fill = "Suitability_Levels",
                                                                                 xlab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
-Isothermality_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Isothermality_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                 add = "mean",
                                                                                 rug = TRUE,
-                                                                                color = Suitability_Levels,
-                                                                                fill = Suitability_Levels,
+                                                                                color = "Suitability_Levels",
+                                                                                fill = "Suitability_Levels",
                                                                                 xlab = "Count",
                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                 bins = 20)
 
 # Mean Temperature of The Driest Quarter
 
-Mean_Temp_Driest_Qtr_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Temp_Driest_Qtr_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                        add = "mean",
                                                                                        rug = TRUE,
-                                                                                       color = Suitability_Levels,
-                                                                                       fill = Suitability_Levels,
+                                                                                       color = "Suitability_Levels",
+                                                                                       fill = "Suitability_Levels",
                                                                                        xlab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
-Mean_Temp_Driest_Qtr_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Temp_Driest_Qtr_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                        add = "mean",
                                                                                        rug = TRUE,
-                                                                                       color = Suitability_Levels,
-                                                                                       fill = Suitability_Levels,
+                                                                                       color = "Suitability_Levels",
+                                                                                       fill = "Suitability_Levels",
                                                                                        xlab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
-Mean_Temp_Driest_Qtr_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Temp_Driest_Qtr_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                        add = "mean",
                                                                                        rug = TRUE,
-                                                                                       color = Suitability_Levels,
-                                                                                       fill = Suitability_Levels,
+                                                                                       color = "Suitability_Levels",
+                                                                                       fill = "Suitability_Levels",
                                                                                        xlab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
-Mean_Temp_Driest_Qtr_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Mean_Temp_Driest_Qtr_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                        add = "mean",
                                                                                        rug = TRUE,
-                                                                                       color = Suitability_Levels,
-                                                                                       fill = Suitability_Levels,
+                                                                                       color = "Suitability_Levels",
+                                                                                       fill = "Suitability_Levels",
                                                                                        xlab = "Count",
                                                                                        palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                        bins = 20)
 
 # Precipitation of The Wettest Month
 
-Prec_of_Wettest_Month_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Prec_of_Wettest_Month_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                         add = "mean",
                                                                                         rug = TRUE,
-                                                                                        color = Suitability_Levels,
-                                                                                        fill = Suitability_Levels,
+                                                                                        color = "Suitability_Levels",
+                                                                                        fill = "Suitability_Levels",
                                                                                         xlab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
-Prec_of_Wettest_Month_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Prec_of_Wettest_Month_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                         add = "mean",
                                                                                         rug = TRUE,
-                                                                                        color = Suitability_Levels,
-                                                                                        fill = Suitability_Levels,
+                                                                                        color = "Suitability_Levels",
+                                                                                        fill = "Suitability_Levels",
                                                                                         xlab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
-Prec_of_Wettest_Month_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Prec_of_Wettest_Month_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                         add = "mean",
                                                                                         rug = TRUE,
-                                                                                        color = Suitability_Levels,
-                                                                                        fill = Suitability_Levels,
+                                                                                        color = "Suitability_Levels",
+                                                                                        fill = "Suitability_Levels",
                                                                                         xlab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
 
-Prec_of_Wettest_Month_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = Predicted_Bd_Suitability,
+Prec_of_Wettest_Month_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                         add = "mean",
                                                                                         rug = TRUE,
-                                                                                        color = Suitability_Levels,
-                                                                                        fill = Suitability_Levels,
+                                                                                        color = "Suitability_Levels",
+                                                                                        fill = "Suitability_Levels",
                                                                                         xlab = "Count",
                                                                                         palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                         bins = 20)
