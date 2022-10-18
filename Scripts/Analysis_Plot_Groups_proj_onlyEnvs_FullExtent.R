@@ -285,7 +285,7 @@ Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot
                                                                                  fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 35)
 
 Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2011_2040_585",
@@ -294,7 +294,7 @@ Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot
                                                                                  fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 35)
 
 Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2041_2070_126",
@@ -303,7 +303,7 @@ Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot
                                                                                  fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 35)
 
 Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2041_2070_585",
@@ -312,7 +312,7 @@ Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot
                                                                                  fill = "Suitability_Levels",
                                                                                  palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 35)
 
 # Isothermality
 
@@ -323,7 +323,7 @@ Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 3)
 
 Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2011_2040_585",
@@ -332,7 +332,7 @@ Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 3)
 
 Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2041_2070_126",
@@ -341,7 +341,7 @@ Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 3)
 
 Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2041_2070_585",
@@ -350,7 +350,7 @@ Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 3)
 
 # Mean Temperature of The Driest Quarter
 
@@ -399,7 +399,7 @@ Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxp
                                                                                     fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 855)
 
 Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2011_2040_585",
@@ -408,7 +408,7 @@ Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxp
                                                                                     fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 855)
 
 Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2041_2070_126",
@@ -417,7 +417,7 @@ Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxp
                                                                                     fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 855)
 
 Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2041_2070_585",
@@ -426,7 +426,7 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
                                                                                     fill = "Suitability_Levels",
                                                                                     palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 55)
+  stat_compare_means(label.y = 855)
 
 # Histograms
 
