@@ -46,14 +46,14 @@ MRIESM2_4170_126_Avg_df <- data.frame(MRIESM2_4170_126_Avg.p)
 MRIESM2_4170_585_Avg_df <- data.frame(MRIESM2_4170_585_Avg.p)
 
 # Update column names
-colnames(MRIESM2_1140_126_Avg_df) <- c("Longitude", "Latitude", "Predicted Bd Suitability")
-colnames(MRIESM2_1140_585_Avg_df) <- c("Longitude", "Latitude", "Predicted Bd Suitability")
-colnames(MRIESM2_4170_126_Avg_df) <- c("Longitude", "Latitude", "Predicted Bd Suitability")
-colnames(MRIESM2_4170_585_Avg_df) <- c("Longitude", "Latitude", "Predicted Bd Suitability")
+colnames(MRIESM2_1140_126_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
+colnames(MRIESM2_1140_585_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
+colnames(MRIESM2_4170_126_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
+colnames(MRIESM2_4170_585_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
 
 # Create ggplot maps of the predicted suitability for Bd
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -64,7 +64,7 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -75,7 +75,7 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -86,7 +86,7 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
