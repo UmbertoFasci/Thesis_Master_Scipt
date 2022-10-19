@@ -31,13 +31,13 @@ colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
 
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
+rename(MRIESM2_1140_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
 MRIESM2_1140_126_Stats$Annual_Mean_Temp_2011_2040_126 <- Annual_Mean_Temp_2011_2040_126_df$Annual_Mean_Temp_2011_2040_126
 MRIESM2_1140_126_Stats$Mean_Diurnal_Range_2011_2040_126 <- Mean_Diurnal_Range_2011_2040_126_df$Mean_Diurnal_Range_2011_2040_126
 MRIESM2_1140_126_Stats$Isothermality_2011_2040_126 <- Isothermality_2011_2040_126_df$Isothermality_2011_2040_126
 MRIESM2_1140_126_Stats$Mean_Temp_Driest_Qtr_2011_2040_126 <- Mean_Temp_Driest_Qtr_2011_2040_126_df$Mean_Temp_Driest_Qtr_2011_2040_126
 MRIESM2_1140_126_Stats$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_Wettest_Month_2011_2040_126_df$Prec_of_Wettest_Month_2011_2040_126
 
-rename(MRIESM2_1140_126_Stats ,'Predicted_Bd_Suitability' = `Predicted Bd Suitability`)
 
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
 
