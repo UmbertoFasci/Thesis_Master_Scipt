@@ -39,7 +39,7 @@ MRIESM2_1140_126_Stats$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_Wettest_Mo
 
 MRIESM2_1140_126_Stats %>% rename(Predicted_Bd_Suitability = 'Predicted Bd Suitability')
 
-MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
+MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 
 bin_comparisons <- list( c("1", "2"),
                          c("2", "3"),
