@@ -37,7 +37,7 @@ MRIESM2_1140_126_Stats$Isothermality_2011_2040_126 <- Isothermality_2011_2040_12
 MRIESM2_1140_126_Stats$Mean_Temp_Driest_Qtr_2011_2040_126 <- Mean_Temp_Driest_Qtr_2011_2040_126_df$Mean_Temp_Driest_Qtr_2011_2040_126
 MRIESM2_1140_126_Stats$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_Wettest_Month_2011_2040_126_df$Prec_of_Wettest_Month_2011_2040_126
 
-rename(MRIESM2_1140_126_Stats, Predicted_Bd_Suitability = 'Predicted Bd Suitability')
+MRIESM2_1140_126_Stats %>% rename(Predicted_Bd_Suitability = 'Predicted Bd Suitability')
 
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
 
