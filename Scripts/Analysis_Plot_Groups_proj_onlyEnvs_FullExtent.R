@@ -154,8 +154,6 @@ MRIESM2_1140_126_Stats$Isothermality_2011_2040_126 <- Isothermality_2011_2040_12
 MRIESM2_1140_126_Stats$Mean_Temp_Driest_Qtr_2011_2040_126 <- Mean_Temp_Driest_Qtr_2011_2040_126_df$Mean_Temp_Driest_Qtr_2011_2040_126
 MRIESM2_1140_126_Stats$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_Wettest_Month_2011_2040_126_df$Prec_of_Wettest_Month_2011_2040_126
 
-# Rename
-rename(MRIESM2_1140_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
 
 # 2011-2040 ssp585
 MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Avg_df
@@ -165,8 +163,6 @@ MRIESM2_1140_585_Stats$Isothermality_2011_2040_585 <- Isothermality_2011_2040_58
 MRIESM2_1140_585_Stats$Mean_Temp_Driest_Qtr_2011_2040_585 <- Mean_Temp_Driest_Qtr_2011_2040_585_df$Mean_Temp_Driest_Qtr_2011_2040_585
 MRIESM2_1140_585_Stats$Prec_of_Wettest_Month_2011_2040_585 <- Prec_of_Wettest_Month_2011_2040_585_df$Prec_of_Wettest_Month_2011_2040_585
 
-# Rename
-rename(MRIESM2_1140_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
 
 # 2041-2070 ssp126
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Avg_df
@@ -176,8 +172,6 @@ MRIESM2_4170_126_Stats$Isothermality_2041_2070_126 <- Isothermality_2041_2070_12
 MRIESM2_4170_126_Stats$Mean_Temp_Driest_Qtr_2041_2070_126 <- Mean_Temp_Driest_Qtr_2041_2070_126_df$Mean_Temp_Driest_Qtr_2041_2070_126
 MRIESM2_4170_126_Stats$Prec_of_Wettest_Month_2041_2070_126 <- Prec_of_Wettest_Month_2041_2070_126_df$Prec_of_Wettest_Month_2041_2070_126
 
-# Rename
-rename(MRIESM2_4170_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
 
 # 2041-2070 ssp585
 MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Avg_df
@@ -186,10 +180,6 @@ MRIESM2_4170_585_Stats$Mean_Diurnal_Range_2041_2070_585 <- Mean_Diurnal_Range_20
 MRIESM2_4170_585_Stats$Isothermality_2041_2070_585 <- Isothermality_2041_2070_585_df$Isothermality_2041_2070_585
 MRIESM2_4170_585_Stats$Mean_Temp_Driest_Qtr_2041_2070_585 <- Mean_Temp_Driest_Qtr_2041_2070_585_df$Mean_Temp_Driest_Qtr_2041_2070_585
 MRIESM2_4170_585_Stats$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of_Wettest_Month_2041_2070_585_df$Prec_of_Wettest_Month_2041_2070_585
-
-# Rename
-rename(MRIESM2_4170_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
-
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
