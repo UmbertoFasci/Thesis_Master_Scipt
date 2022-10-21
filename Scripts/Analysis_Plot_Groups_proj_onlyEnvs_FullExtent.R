@@ -812,47 +812,6 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-# Human Influence
-
-Human_Influence_2011_2040_126_map <- ggplot(data = Human_Influence_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Human_Influence_2011_2040_126`)) +
-  labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
-  annotation_scale(location = "bl", width_hint = 0.5) +
-  theme_bw() +
-  theme(legend.title = element_blank(),
-        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
-
-Human_Influence_2011_2040_585_map <- ggplot(data = Human_Influence_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Human_Influence_2011_2040_585`)) +
-  labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
-  annotation_scale(location = "bl", width_hint = 0.5) +
-  theme_bw() +
-  theme(legend.title = element_blank(),
-        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
-
-Human_Influence_2041_2070_126_map <- ggplot(data = Human_Influence_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Human_Influence_2041_2070_126`)) +
-  labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
-  annotation_scale(location = "bl", width_hint = 0.5) +
-  theme_bw() +
-  theme(legend.title = element_blank(),
-        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
-
-Human_Influence_2041_2070_585_map <- ggplot(data = Human_Influence_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Human_Influence_2041_2070_585`)) +
-  labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
-  annotation_scale(location = "bl", width_hint = 0.5) +
-  theme_bw() +
-  theme(legend.title = element_blank(),
-        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
 
 # Average Bd Suitability Prediction
 
@@ -954,10 +913,10 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
 
 # Human Influence
 
-(Human_Influence_2011_2040_126_map + Human_Influence_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Human_Influence_2011_2040_126_Histogram)
+# (Human_Influence_2011_2040_126_map + Human_Influence_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Human_Influence_2011_2040_126_Histogram)
 
-(Human_Influence_2011_2040_585_map + Human_Influence_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Human_Influence_2011_2040_585_Histogram)
+# (Human_Influence_2011_2040_585_map + Human_Influence_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Human_Influence_2011_2040_585_Histogram)
 
-(Human_Influence_2041_2070_126_map + Human_Influence_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Human_Influence_2041_2070_126_Histogram)
+# (Human_Influence_2041_2070_126_map + Human_Influence_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Human_Influence_2041_2070_126_Histogram)
 
-(Human_Influence_2041_2070_585_map + Human_Influence_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Human_Influence_2041_2070_585_Histogram)
+# (Human_Influence_2041_2070_585_map + Human_Influence_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Human_Influence_2041_2070_585_Histogram)
