@@ -193,10 +193,10 @@ rename(MRIESM2_4170_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitab
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
-MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
-MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
-MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
-MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate('Suitability_Levels' = ntile('Predicted_Bd_Suitability', 4))
+MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 
 # Bin Comparisons for Kruskal-Wallis Test
 bin_comparisons <- list( c("1", "2"),
