@@ -816,7 +816,7 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
 # Average Bd Suitability Prediction
 
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -827,7 +827,7 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -838,7 +838,7 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -849,7 +849,7 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted Bd Suitability`)) +
+  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -859,7 +859,7 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-# Layout Groups using pathwork
+# Layout Groups using patchwork
 
 # Annual Mean Temp
 
