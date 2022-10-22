@@ -696,53 +696,62 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
 
 # Annual Mean Temp
 
-(Annual_Mean_Temp_2011_2040_126_map + Annual_Mean_Temp_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Annual_Mean_Temp_2011_2040_126_Histogram)
+(Annual_Mean_Temp_2011_2040_126_map + Annual_Mean_Temp_2011_2040_126_Boxplot)
 
-(Annual_Mean_Temp_2011_2040_585_map + Annual_Mean_Temp_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Annual_Mean_Temp_2011_2040_585_Histogram)
+(Annual_Mean_Temp_2011_2040_585_map + Annual_Mean_Temp_2011_2040_585_Boxplot)
 
-(Annual_Mean_Temp_2041_2070_126_map + Annual_Mean_Temp_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Annual_Mean_Temp_2041_2070_126_Histogram)
+(Annual_Mean_Temp_2041_2070_126_map + Annual_Mean_Temp_2041_2070_126_Boxplot)
 
-(Annual_Mean_Temp_2041_2070_585_map + Annual_Mean_Temp_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Annual_Mean_Temp_2041_2070_585_Histogram)
+(Annual_Mean_Temp_2041_2070_585_map + Annual_Mean_Temp_2041_2070_585_Boxplot)
 
 # Mean Diurnal Range
 
-(Mean_Diurnal_Range_2011_2040_126_map + Mean_Diurnal_Range_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Mean_Diurnal_Range_2011_2040_126_Histogram)
+(Mean_Diurnal_Range_2011_2040_126_map + Mean_Diurnal_Range_2011_2040_126_Boxplot)
 
-(Mean_Diurnal_Range_2011_2040_585_map + Mean_Diurnal_Range_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Mean_Diurnal_Range_2011_2040_585_Histogram)
+(Mean_Diurnal_Range_2011_2040_585_map + Mean_Diurnal_Range_2011_2040_585_Boxplot)
 
-(Mean_Diurnal_Range_2041_2070_126_map + Mean_Diurnal_Range_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Mean_Diurnal_Range_2041_2070_126_Histogram)
+(Mean_Diurnal_Range_2041_2070_126_map + Mean_Diurnal_Range_2041_2070_126_Boxplot)
 
-(Mean_Diurnal_Range_2041_2070_585_map + Mean_Diurnal_Range_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Mean_Diurnal_Range_2041_2070_585_Histogram)
-
+(Mean_Diurnal_Range_2041_2070_585_map + Mean_Diurnal_Range_2041_2070_585_Boxplot)
 # Isothermality
 
-(Isothermality_2011_2040_126_map + Isothermality_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Isothermality_2011_2040_126_Histogram)
+(Isothermality_2011_2040_126_map + Isothermality_2011_2040_126_Boxplot)
 
-(Isothermality_2011_2040_585_map + Isothermality_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Isothermality_2011_2040_585_Histogram)
+(Isothermality_2011_2040_585_map + Isothermality_2011_2040_585_Boxplot)
 
-(Isothermality_2041_2070_126_map + Isothermality_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Isothermality_2041_2070_126_Histogram)
+(Isothermality_2041_2070_126_map + Isothermality_2041_2070_126_Boxplot)
 
-(Isothermality_2041_2070_585_map + Isothermality_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Isothermality_2041_2070_585_Histogram)
+(Isothermality_2041_2070_585_map + Isothermality_2041_2070_585_Boxplot)
 
 # Mean Tempurature of Driest Quarter
 
-(Mean_Temp_Driest_Qtr_2011_2040_126_map + Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Mean_Temp_Driest_Qtr_2011_2040_126_Histogram)
+(Mean_Temp_Driest_Qtr_2011_2040_126_map + Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot)
 
-(Mean_Temp_Driest_Qtr_2011_2040_585_map + Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Mean_Temp_Driest_Qtr_2011_2040_585_Histogram)
+(Mean_Temp_Driest_Qtr_2011_2040_585_map + Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot)
 
-(Mean_Temp_Driest_Qtr_2041_2070_126_map + Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Mean_Temp_Driest_Qtr_2041_2070_126_Histogram)
+(Mean_Temp_Driest_Qtr_2041_2070_126_map + Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot)
 
-(Mean_Temp_Driest_Qtr_2041_2070_585_map + Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Mean_Temp_Driest_Qtr_2041_2070_585_Histogram)
+(Mean_Temp_Driest_Qtr_2041_2070_585_map + Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot)
 
 # Precipitation of The Wettest Month
 
-(Prec_of_Wettest_Month_2011_2040_126_map + Prec_of_Wettest_Month_2011_2040_126_Boxplot) / (MRIESM2_1140_126_Avg_preds + Prec_of_Wettest_Month_2011_2040_126_Histogram)
+(Prec_of_Wettest_Month_2011_2040_126_map + Prec_of_Wettest_Month_2011_2040_126_Boxplot)
 
-(Prec_of_Wettest_Month_2011_2040_585_map + Prec_of_Wettest_Month_2011_2040_585_Boxplot) / (MRIESM2_1140_585_Avg_preds + Prec_of_Wettest_Month_2011_2040_585_Histogram)
+(Prec_of_Wettest_Month_2011_2040_585_map + Prec_of_Wettest_Month_2011_2040_585_Boxplot)
 
-(Prec_of_Wettest_Month_2041_2070_126_map + Prec_of_Wettest_Month_2041_2070_126_Boxplot) / (MRIESM2_4170_126_Avg_preds + Prec_of_Wettest_Month_2041_2070_126_Histogram)
+(Prec_of_Wettest_Month_2041_2070_126_map + Prec_of_Wettest_Month_2041_2070_126_Boxplot)
 
-(Prec_of_Wettest_Month_2041_2070_585_map + Prec_of_Wettest_Month_2041_2070_585_Boxplot) / (MRIESM2_4170_585_Avg_preds + Prec_of_Wettest_Month_2041_2070_585_Histogram)
+(Prec_of_Wettest_Month_2041_2070_585_map + Prec_of_Wettest_Month_2041_2070_585_Boxplot)
+
+# Predictions analysis groups
+
+(MRIESM2_1140_126_Avg_preds + MRIESM2_2011_2040_126_Histogram)
+
+(MRIESM2_1140_585_Avg_preds + MRIESM2_2011_2040_585_Histogram)
+
+(MRIESM2_4170_126_Avg_preds + MRIESM2_2040_2070_126_Histogram)
+
+(MRIESM2_4170_585_Avg_preds + MRIESM2_2040_2070_585_Histogram)
 
 # Human Influence
 
