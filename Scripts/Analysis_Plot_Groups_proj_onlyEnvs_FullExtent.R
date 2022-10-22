@@ -42,7 +42,7 @@ Isothermality_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI
 Mean_Temp_Driest_Qtr_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_09_aus.asc")
 Prec_of_Wettest_Month_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_13_aus.asc")
 
-# Convert variable rasters to points (Over 10 million points each)
+# Convert variable rasters to points (Over 10 million points each
 
 # 2011-2040 ssp126
 
