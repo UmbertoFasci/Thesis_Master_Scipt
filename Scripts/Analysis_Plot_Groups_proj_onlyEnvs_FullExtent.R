@@ -392,7 +392,7 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
 
 # Annual Mean Temp Full Extent
 
-Annual_Mean_Temp_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -402,7 +402,7 @@ Annual_Mean_Temp_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogr
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -412,7 +412,7 @@ Annual_Mean_Temp_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogr
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -422,7 +422,7 @@ Annual_Mean_Temp_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogr
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-Annual_Mean_Temp_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
