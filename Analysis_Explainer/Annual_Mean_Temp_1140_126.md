@@ -9,3 +9,7 @@
 ### What does this suggest?
 
 * This suggests that the higher annual average temperatures of the areas away from the coast is not suitable for *B. dendrobatidis*. The cooler annual temperatures at the coast promote better suitability.
+
+### What does the literature say?
+
+* 
