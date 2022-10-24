@@ -12,4 +12,6 @@
 
 ### What does the literature say?
 
-* 
+* The relationship between *B. dendrobatidis* and temperature is an important one as it is also highly involved in the pathogen-host relationship. On one hand, amphibians invest more energy in immune system processes in warmer temperatures. On the other, *B. dendrobatidis'* abundance increases in cooler temperatures. The relationship between these two systems connected to temperature has not been fully explained.
+
+* Furthermore, the recorded temperature range at which *B. dendrobatidis* is expressing optimal growth is 
