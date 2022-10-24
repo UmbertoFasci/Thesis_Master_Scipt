@@ -1,0 +1,1 @@
+# Mean Temperature of the Driest Quarter (2041-2070) ssp585
