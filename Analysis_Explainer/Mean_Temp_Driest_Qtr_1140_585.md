@@ -1,0 +1,1 @@
+# Mean Temperature of the Driest Quarter (2011-2040) spp585
