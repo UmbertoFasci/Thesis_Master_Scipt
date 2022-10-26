@@ -332,7 +332,7 @@ bin_comparisons <- list( c("1", "2"),
 
 # Annual Mean Temp Full Extent
 
-Annual_Mean_Temp_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Annual_Mean_Temp_2011_2040_126_Qnslnd_Boxplot <- MRIESM2_1140_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                y = "Annual_Mean_Temp_2011_2040_126",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2011-2040) ssp126",
@@ -341,7 +341,7 @@ Annual_Mean_Temp_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Annual_Mean_Temp_2011_2040_585_Qnslnd_Boxplot <- MRIESM2_1140_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                y = "Annual_Mean_Temp_2011_2040_585",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2011-2040) ssp585",
@@ -350,7 +350,7 @@ Annual_Mean_Temp_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Annual_Mean_Temp_2041_2070_126_Qnslnd_Boxplot <- MRIESM2_4170_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                y = "Annual_Mean_Temp_2041_2070_126",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2041-2070) ssp126",
@@ -359,7 +359,7 @@ Annual_Mean_Temp_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Annual_Mean_Temp_2041_2070_585_Qnslnd_Boxplot <- MRIESM2_4170_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                y = "Annual_Mean_Temp_2041_2070_585",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (2041-2070) ssp585",
@@ -370,7 +370,7 @@ Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x
 
 # Mean Diurnal Range
 
-Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Diurnal_Range_2011_2040_126_Qnslnd_Boxplot <- MRIESM2_1140_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2011_2040_126",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2011-2040) ssp126",
@@ -379,7 +379,7 @@ Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 35)
 
-Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Diurnal_Range_2011_2040_585_Qnslnd_Boxplot <- MRIESM2_1140_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2011_2040_585",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2011-2040) ssp585",
@@ -388,7 +388,7 @@ Mean_Diurnal_Range_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 35)
 
-Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Diurnal_Range_2041_2070_126_Qnslnd_Boxplot <- MRIESM2_4170_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2041_2070_126",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2041-2070) ssp126",
@@ -397,7 +397,7 @@ Mean_Diurnal_Range_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 35)
 
-Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Diurnal_Range_2041_2070_585_Qnslnd_Boxplot <- MRIESM2_4170_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2041_2070_585",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (2041-2070) ssp585",
@@ -408,7 +408,7 @@ Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot
 
 # Isothermality
 
-Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Isothermality_2011_2040_126_Qnslnd_Boxplot <- MRIESM2_1140_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2011_2040_126",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2011-2040) ssp126",
@@ -417,7 +417,7 @@ Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = 
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 1.5)
 
-Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Isothermality_2011_2040_585_Qnslnd_Boxplot <- MRIESM2_1140_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2011_2040_585",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2011-2040) ssp585",
@@ -426,7 +426,7 @@ Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = 
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 1.5)
 
-Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Isothermality_2041_2070_126_Qnslnd_Boxplot <- MRIESM2_4170_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2041_2070_126",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2041-2070) ssp126",
@@ -435,7 +435,7 @@ Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = 
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 1.5)
 
-Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Isothermality_2041_2070_585_Qnslnd_Boxplot <- MRIESM2_4170_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2041_2070_585",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (2041-2070) ssp585",
@@ -446,7 +446,7 @@ Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = 
 
 # Mean Temperature of The Driest Quarter
 
-Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Temp_Driest_Qtr_2011_2040_126_Qnslnd_Boxplot <- MRIESM2_1140_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                    y = "Mean_Temp_Driest_Qtr_2011_2040_126",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2011-2040) ssp126",
@@ -455,7 +455,7 @@ Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxpl
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Temp_Driest_Qtr_2011_2040_585_Qnslnd_Boxplot <- MRIESM2_1140_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                    y = "Mean_Temp_Driest_Qtr_2011_2040_585",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2011-2040) ssp585",
@@ -464,7 +464,7 @@ Mean_Temp_Driest_Qtr_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxpl
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Temp_Driest_Qtr_2041_2070_126_Qnslnd_Boxplot <- MRIESM2_4170_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                    y = "Mean_Temp_Driest_Qtr_2041_2070_126",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2041-2070) ssp126",
@@ -473,7 +473,7 @@ Mean_Temp_Driest_Qtr_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxpl
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 55)
 
-Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Mean_Temp_Driest_Qtr_2041_2070_585_Qnslnd_Boxplot <- MRIESM2_4170_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                    y = "Mean_Temp_Driest_Qtr_2041_2070_585",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (2041-2070) ssp585",
@@ -484,7 +484,7 @@ Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxpl
 
 # Precipitation of The Wettest Month
 
-Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Prec_of_Wettest_Month_2011_2040_126_Qnslnd_Boxplot <- MRIESM2_1140_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2011_2040_126",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2011-2040) ssp126",
@@ -493,7 +493,7 @@ Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxp
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 550)
 
-Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Prec_of_Wettest_Month_2011_2040_585_Qnslnd_Boxplot <- MRIESM2_1140_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2011_2040_585",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2011-2040) ssp585",
@@ -502,7 +502,7 @@ Prec_of_Wettest_Month_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxp
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 550)
 
-Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+Prec_of_Wettest_Month_2041_2070_126_Qnslnd_Boxplot <- MRIESM2_4170_126_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2041_2070_126",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2041-2070) ssp126",
@@ -511,7 +511,7 @@ Prec_of_Wettest_Month_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxp
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 550)
 
-Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+Prec_of_Wettest_Month_2041_2070_585_Qnslnd_Boxplot <- MRIESM2_4170_585_Stats_Queensland %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2041_2070_585",
                                                                                     xlab = "Predicted Bd Distribution",
                                                                                     ylab = "Prec. of Wettest Month (2041-2070) ssp585",
@@ -524,7 +524,7 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
 
 # Annual Mean Temp Full Extent
 
-MRIESM2_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2011_2040_126_Qnslnd_Histogram <- MRIESM2_1140_126_Stats_Queensland %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -534,7 +534,7 @@ MRIESM2_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "P
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-MRIESM2_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2011_2040_585_Qnslnd_Histogram <- MRIESM2_1140_585_Stats_Queensland %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -544,7 +544,7 @@ MRIESM2_2011_2040_585_Histogram <- MRIESM2_1140_585_Stats %>% gghistogram(x = "P
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-MRIESM2_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2041_2070_126_Qnslnd_Histogram <- MRIESM2_4170_126_Stats_Queensland %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -554,7 +554,7 @@ MRIESM2_2041_2070_126_Histogram <- MRIESM2_4170_126_Stats %>% gghistogram(x = "P
                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
                                                                                    bins = 20)
 
-MRIESM2_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+MRIESM2_2041_2070_585_Qnslnd_Histogram <- MRIESM2_4170_585_Stats_Queensland %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
                                                                                    rug = TRUE,
                                                                                    color = "Suitability_Levels",
@@ -569,40 +569,40 @@ MRIESM2_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "P
 
 # Annual Mean Temp
 
-Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2011_2040_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2011_2040_585_map <- ggplot(data = Annual_Mean_Temp_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2011_2040_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2041_2070_126_map <- ggplot(data = Annual_Mean_Temp_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2041_2070_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2041_2070_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -611,40 +611,40 @@ Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_5
 
 # Mean Diurnal Range
 
-Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2011_2040_585_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2041_2070_126_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -653,40 +653,40 @@ Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_20
 
 # Isothermality
 
-Isothermality_2011_2040_126_map <- ggplot(data = Isothermality_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2011_2040_126_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2011_2040_585_map <- ggplot(data = Isothermality_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2011_2040_585_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2041_2070_126_map <- ggplot(data = Isothermality_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2041_2070_126_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2041_2070_585_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -695,40 +695,40 @@ Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df,
 
 # Mean Temperature of The Driest Quarter
 
-Mean_Temp_Driest_Qtr_2011_2040_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2011_2040_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2041_2070_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -737,40 +737,40 @@ Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_204
 
 # Precipitation of The Wettest Month
 
-Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2011_2040_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2011_2040_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2041_2070_126_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2041_2070_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2041_2070_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -780,44 +780,44 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
 
 # Average Bd Suitability Prediction
 
-MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_1140_126_Avg_Qnslnd_preds <- ggplot(data = MRIESM2_1140_126_Avg_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_1140_585_Avg_Qnslnd_preds <- ggplot(data = MRIESM2_1140_585_Avg_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_4170_126_Avg_Qnslnd_preds <- ggplot(data = MRIESM2_4170_126_Avg_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_4170_585_Avg_Qnslnd_preds <- ggplot(data = MRIESM2_4170_585_Avg_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
