@@ -315,10 +315,10 @@ MRIESM2_4170_585_Stats_Queensland$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
-MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
-MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
-MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
-MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_1140_126_Stats_Queensland <- MRIESM2_1140_126_Stats_Queensland %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_1140_585_Stats_Queensland <- MRIESM2_1140_585_Stats_Queensland %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_4170_126_Stats_Queensland <- MRIESM2_4170_126_Stats_Queensland %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
+MRIESM2_4170_585_Stats_Queensland <- MRIESM2_4170_585_Stats_Queensland %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 
 # Bin Comparisons for Kruskal-Wallis Test
 bin_comparisons <- list( c("1", "2"),
