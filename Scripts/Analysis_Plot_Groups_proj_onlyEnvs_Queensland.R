@@ -580,7 +580,7 @@ Annual_Mean_Temp_2011_2040_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_1140
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2011_2040_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2011_2040_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_1140_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -590,7 +590,7 @@ Annual_Mean_Temp_2011_2040_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2011
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2041_2070_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2041_2070_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_4170_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -600,7 +600,7 @@ Annual_Mean_Temp_2041_2070_126_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Annual_Mean_Temp_2041_2070_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Annual_Mean_Temp_2041_2070_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_4170_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
