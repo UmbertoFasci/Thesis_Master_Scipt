@@ -12,113 +12,113 @@ library(ggpubr)
 
 # 2011-2040 ssp126
 
-Annual_Mean_Temp_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_01_aus.asc")
-Mean_Diurnal_Range_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_02_aus.asc")
-Isothermality_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_03_aus.asc")
-Mean_Temp_Driest_Qtr_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_09_aus.asc")
-Prec_of_Wettest_Month_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_13_aus.asc")
+#Annual_Mean_Temp_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_01_aus.asc")
+#Mean_Diurnal_Range_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_02_aus.asc")
+#Isothermality_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_03_aus.asc")
+#Mean_Temp_Driest_Qtr_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_09_aus.asc")
+#Prec_of_Wettest_Month_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_13_aus.asc")
 
 # 2011-2040 ssp585
 
-Annual_Mean_Temp_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_01_aus.asc")
-Mean_Diurnal_Range_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_02_aus.asc")
-Isothermality_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_03_aus.asc")
-Mean_Temp_Driest_Qtr_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_09_aus.asc")
-Prec_of_Wettest_Month_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_13_aus.asc")
+#Annual_Mean_Temp_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_01_aus.asc")
+#Mean_Diurnal_Range_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_02_aus.asc")
+#Isothermality_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_03_aus.asc")
+#Mean_Temp_Driest_Qtr_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_09_aus.asc")
+#Prec_of_Wettest_Month_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_13_aus.asc")
 
 # 2041-2070 ssp126
 
-Annual_Mean_Temp_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_01_aus.asc")
-Mean_Diurnal_Range_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_02_aus.asc")
-Isothermality_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_03_aus.asc")
-Mean_Temp_Driest_Qtr_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_09_aus.asc")
-Prec_of_Wettest_Month_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_13_aus.asc")
+#Annual_Mean_Temp_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_01_aus.asc")
+#Mean_Diurnal_Range_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_02_aus.asc")
+#Isothermality_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_03_aus.asc")
+#Mean_Temp_Driest_Qtr_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_09_aus.asc")
+#Prec_of_Wettest_Month_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_13_aus.asc")
 
 # 2041-2070 ssp585
 
-Annual_Mean_Temp_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_01_aus.asc")
-Mean_Diurnal_Range_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_02_aus.asc")
-Isothermality_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_03_aus.asc")
-Mean_Temp_Driest_Qtr_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_09_aus.asc")
-Prec_of_Wettest_Month_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_13_aus.asc")
+#Annual_Mean_Temp_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_01_aus.asc")
+#Mean_Diurnal_Range_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_02_aus.asc")
+#Isothermality_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_03_aus.asc")
+#Mean_Temp_Driest_Qtr_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_09_aus.asc")
+#Prec_of_Wettest_Month_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20412070/chelsa_bio10_13_aus.asc")
 
 # Convert variable rasters to points (Over 10 million points each
 
 # 2011-2040 ssp126
 
-Annual_Mean_Temp_2011_2040_126.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_126)
-Mean_Diurnal_Range_2011_2040_126.p <- rasterToPoints(Mean_Diurnal_Range_2011_2040_126)
-Isothermality_2011_2040_126.p <- rasterToPoints(Isothermality_2011_2040_126)
-Mean_Temp_Driest_Qtr_2011_2040_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_126)
-Prec_of_Wettest_Month_2011_2040_126.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_126)
+#Annual_Mean_Temp_2011_2040_126.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_126)
+#Mean_Diurnal_Range_2011_2040_126.p <- rasterToPoints(Mean_Diurnal_Range_2011_2040_126)
+#Isothermality_2011_2040_126.p <- rasterToPoints(Isothermality_2011_2040_126)
+#Mean_Temp_Driest_Qtr_2011_2040_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_126)
+#Prec_of_Wettest_Month_2011_2040_126.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_126)
 
 # 2011-2040 ssp585
 
-Annual_Mean_Temp_2011_2040_585.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_585)
-Mean_Diurnal_Range_2011_2040_585.p <- rasterToPoints(Mean_Diurnal_Range_2011_2040_585)
-Isothermality_2011_2040_585.p <- rasterToPoints(Isothermality_2011_2040_585)
-Mean_Temp_Driest_Qtr_2011_2040_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_585)
-Prec_of_Wettest_Month_2011_2040_585.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_585)
+#Annual_Mean_Temp_2011_2040_585.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_585)
+#Mean_Diurnal_Range_2011_2040_585.p <- rasterToPoints(Mean_Diurnal_Range_2011_2040_585)
+#Isothermality_2011_2040_585.p <- rasterToPoints(Isothermality_2011_2040_585)
+#Mean_Temp_Driest_Qtr_2011_2040_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_585)
+#Prec_of_Wettest_Month_2011_2040_585.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_585)
 
 # 2041-2070 ssp126
 
-Annual_Mean_Temp_2041_2070_126.p <- rasterToPoints(Annual_Mean_Temp_2041_2070_126)
-Mean_Diurnal_Range_2041_2070_126.p <- rasterToPoints(Mean_Diurnal_Range_2041_2070_126)
-Isothermality_2041_2070_126.p <- rasterToPoints(Isothermality_2041_2070_126)
-Mean_Temp_Driest_Qtr_2041_2070_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_126)
-Prec_of_Wettest_Month_2041_2070_126.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_126)
+#Annual_Mean_Temp_2041_2070_126.p <- rasterToPoints(Annual_Mean_Temp_2041_2070_126)
+#Mean_Diurnal_Range_2041_2070_126.p <- rasterToPoints(Mean_Diurnal_Range_2041_2070_126)
+#Isothermality_2041_2070_126.p <- rasterToPoints(Isothermality_2041_2070_126)
+#Mean_Temp_Driest_Qtr_2041_2070_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_126)
+#Prec_of_Wettest_Month_2041_2070_126.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_126)
 
 # 2041-2070 ssp585
 
-Annual_Mean_Temp_2041_2070_585.p <- rasterToPoints(Annual_Mean_Temp_2041_2070_585)
-Mean_Diurnal_Range_2041_2070_585.p <- rasterToPoints(Mean_Diurnal_Range_2041_2070_585)
-Isothermality_2041_2070_585.p <- rasterToPoints(Isothermality_2041_2070_585)
-Mean_Temp_Driest_Qtr_2041_2070_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_585)
-Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_585)
+#Annual_Mean_Temp_2041_2070_585.p <- rasterToPoints(Annual_Mean_Temp_2041_2070_585)
+#Mean_Diurnal_Range_2041_2070_585.p <- rasterToPoints(Mean_Diurnal_Range_2041_2070_585)
+#Isothermality_2041_2070_585.p <- rasterToPoints(Isothermality_2041_2070_585)
+#Mean_Temp_Driest_Qtr_2041_2070_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_585)
+#Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_585)
 
 # Transform variable raster points into usable dataframes.
 
 # 2011-2040 ssp126
 
-Annual_Mean_Temp_2011_2040_126_df <- data.frame(Annual_Mean_Temp_2011_2040_126.p)
-Mean_Diurnal_Range_2011_2040_126_df <- data.frame(Mean_Diurnal_Range_2011_2040_126.p)
-Isothermality_2011_2040_126_df <- data.frame(Isothermality_2011_2040_126.p)
-Mean_Temp_Driest_Qtr_2011_2040_126_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_126.p)
-Prec_of_Wettest_Month_2011_2040_126_df <- data.frame(Prec_of_Wettest_Month_2011_2040_126.p)
+#Annual_Mean_Temp_2011_2040_126_df <- data.frame(Annual_Mean_Temp_2011_2040_126.p)
+#Mean_Diurnal_Range_2011_2040_126_df <- data.frame(Mean_Diurnal_Range_2011_2040_126.p)
+#Isothermality_2011_2040_126_df <- data.frame(Isothermality_2011_2040_126.p)
+#Mean_Temp_Driest_Qtr_2011_2040_126_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_126.p)
+#Prec_of_Wettest_Month_2011_2040_126_df <- data.frame(Prec_of_Wettest_Month_2011_2040_126.p)
 
 # 2011-2040 ssp585
 
-Annual_Mean_Temp_2011_2040_585_df <- data.frame(Annual_Mean_Temp_2011_2040_585.p)
-Mean_Diurnal_Range_2011_2040_585_df <- data.frame(Mean_Diurnal_Range_2011_2040_585.p)
-Isothermality_2011_2040_585_df <- data.frame(Isothermality_2011_2040_585.p)
-Mean_Temp_Driest_Qtr_2011_2040_585_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_585.p)
-Prec_of_Wettest_Month_2011_2040_585_df <- data.frame(Prec_of_Wettest_Month_2011_2040_585.p)
+#Annual_Mean_Temp_2011_2040_585_df <- data.frame(Annual_Mean_Temp_2011_2040_585.p)
+#Mean_Diurnal_Range_2011_2040_585_df <- data.frame(Mean_Diurnal_Range_2011_2040_585.p)
+#Isothermality_2011_2040_585_df <- data.frame(Isothermality_2011_2040_585.p)
+#Mean_Temp_Driest_Qtr_2011_2040_585_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_585.p)
+#Prec_of_Wettest_Month_2011_2040_585_df <- data.frame(Prec_of_Wettest_Month_2011_2040_585.p)
 
 # 2041-2070 ssp126
 
-Annual_Mean_Temp_2041_2070_126_df <- data.frame(Annual_Mean_Temp_2041_2070_126.p)
-Mean_Diurnal_Range_2041_2070_126_df <- data.frame(Mean_Diurnal_Range_2041_2070_126.p)
-Isothermality_2041_2070_126_df <- data.frame(Isothermality_2041_2070_126.p)
-Mean_Temp_Driest_Qtr_2041_2070_126_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_126.p)
-Prec_of_Wettest_Month_2041_2070_126_df <- data.frame(Prec_of_Wettest_Month_2041_2070_126.p)
+#Annual_Mean_Temp_2041_2070_126_df <- data.frame(Annual_Mean_Temp_2041_2070_126.p)
+#Mean_Diurnal_Range_2041_2070_126_df <- data.frame(Mean_Diurnal_Range_2041_2070_126.p)
+#Isothermality_2041_2070_126_df <- data.frame(Isothermality_2041_2070_126.p)
+#Mean_Temp_Driest_Qtr_2041_2070_126_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_126.p)
+#Prec_of_Wettest_Month_2041_2070_126_df <- data.frame(Prec_of_Wettest_Month_2041_2070_126.p)
 
 # 2041-2070 ssp585
 
-Annual_Mean_Temp_2041_2070_585_df <- data.frame(Annual_Mean_Temp_2041_2070_585.p)
-Mean_Diurnal_Range_2041_2070_585_df <- data.frame(Mean_Diurnal_Range_2041_2070_585.p)
-Isothermality_2041_2070_585_df <- data.frame(Isothermality_2041_2070_585.p)
-Mean_Temp_Driest_Qtr_2041_2070_585_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_585.p)
-Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_2070_585.p)
+#Annual_Mean_Temp_2041_2070_585_df <- data.frame(Annual_Mean_Temp_2041_2070_585.p)
+#Mean_Diurnal_Range_2041_2070_585_df <- data.frame(Mean_Diurnal_Range_2041_2070_585.p)
+#Isothermality_2041_2070_585_df <- data.frame(Isothermality_2041_2070_585.p)
+#Mean_Temp_Driest_Qtr_2041_2070_585_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_585.p)
+#Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_2070_585.p)
 
 # Update Columns names of each
 
 # 2011-2040 ssp126
 
-colnames(Annual_Mean_Temp_2011_2040_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_126")
-colnames(Mean_Diurnal_Range_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2011_2040_126")
-colnames(Isothermality_2011_2040_126_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_126")
-colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_126")
-colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
+#colnames(Annual_Mean_Temp_2011_2040_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_126")
+#colnames(Mean_Diurnal_Range_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2011_2040_126")
+#colnames(Isothermality_2011_2040_126_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_126")
+#colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_126")
+#colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
 
 # Filter Coordinates Queensland
 
