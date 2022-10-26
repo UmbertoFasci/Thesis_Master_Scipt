@@ -120,6 +120,33 @@ colnames(Isothermality_2011_2040_126_df) <- c("Longitude", "Latitude", "Isotherm
 colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_126")
 colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
 
+# Filter Coordinates Queensland
+
+Annual_Mean_Temp_1140_126_Queensland_df <- Annual_Mean_Temp_2011_2040_126_df %>% 
+    filter(between(Longitude, 138.00, 155.00))
+Annual_Mean_Temp_1140_126_Queensland_df <- Annual_Mean_Temp_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
+
+Mean_Diurnal_Range_1140_126_Queensland_df <- Mean_Diurnal_Range_2011_2040_126_df %>% 
+    filter(between(Longitude, 138.00, 155.00))
+Mean_Diurnal_Range_1140_126_Queensland_df <- Mean_Diurnal_Range_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
+
+Isothermality_1140_126_Queensland_df <- Isothermality_2011_2040_126_df %>% 
+    filter(between(Longitude, 138.00, 155.00))
+Isothermality_1140_126_Queensland_df <- Isothermality_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
+
+Mean_Temp_Driest_Qtr_1140_126_Queensland_df <- Mean_Temp_Driest_Qtr_2011_2040_126_df %>% 
+    filter(between(Longitude, 138.00, 155.00))
+Mean_Temp_Driest_Qtr_1140_126_Queensland_df <- Mean_Temp_Driest_Qtr_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
+
+Prec_of_Wettest_Month_1140_126_Queensland_df <- Prec_of_Wettest_Month_2011_2040_126_df %>% 
+    filter(between(Longitude, 138.00, 155.00))
+Prec_of_Wettest_Month_1140_126_Queensland_df <- Prec_of_Wettest_Month_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
+
 # 2011-2040 ssp585
 
 colnames(Annual_Mean_Temp_2011_2040_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_585")
