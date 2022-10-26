@@ -300,12 +300,18 @@ MRIESM2_4170_126_Stats_Queensland$Prec_of_Wettest_Month_2041_2070_126 <- Prec_of
 
 
 # 2041-2070 ssp585
-MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Avg_df
-MRIESM2_4170_585_Stats$Annual_Mean_Temp_2041_2070_585 <- Annual_Mean_Temp_2041_2070_585_df$Annual_Mean_Temp_2041_2070_585
-MRIESM2_4170_585_Stats$Mean_Diurnal_Range_2041_2070_585 <- Mean_Diurnal_Range_2041_2070_585_df$Mean_Diurnal_Range_2041_2070_585
-MRIESM2_4170_585_Stats$Isothermality_2041_2070_585 <- Isothermality_2041_2070_585_df$Isothermality_2041_2070_585
-MRIESM2_4170_585_Stats$Mean_Temp_Driest_Qtr_2041_2070_585 <- Mean_Temp_Driest_Qtr_2041_2070_585_df$Mean_Temp_Driest_Qtr_2041_2070_585
-MRIESM2_4170_585_Stats$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of_Wettest_Month_2041_2070_585_df$Prec_of_Wettest_Month_2041_2070_585
+
+MRIESM2_4170_585_Avg_Queensland_df <- MRIESM2_4170_585_Avg_df %>%
+  filter(between(Longitude, 138.00, 155.00))
+MRIESM2_4170_585_Avg_Queensland_df <- MRIESM2_4170_585_Avg_Queensland_df %>%
+  filter(between(Latitude, -29.00, -9.00))
+
+MRIESM2_4170_585_Stats_Queensland <- MRIESM2_4170_585_Avg_Queensland_df
+MRIESM2_4170_585_Stats_Queensland$Annual_Mean_Temp_2041_2070_585 <- Annual_Mean_Temp_2041_2070_585_df$Annual_Mean_Temp_2041_2070_585
+MRIESM2_4170_585_Stats_Queensland$Mean_Diurnal_Range_2041_2070_585 <- Mean_Diurnal_Range_2041_2070_585_df$Mean_Diurnal_Range_2041_2070_585
+MRIESM2_4170_585_Stats_Queensland$Isothermality_2041_2070_585 <- Isothermality_2041_2070_585_df$Isothermality_2041_2070_585
+MRIESM2_4170_585_Stats_Queensland$Mean_Temp_Driest_Qtr_2041_2070_585 <- Mean_Temp_Driest_Qtr_2041_2070_585_df$Mean_Temp_Driest_Qtr_2041_2070_585
+MRIESM2_4170_585_Stats_Queensland$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of_Wettest_Month_2041_2070_585_df$Prec_of_Wettest_Month_2041_2070_585
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
