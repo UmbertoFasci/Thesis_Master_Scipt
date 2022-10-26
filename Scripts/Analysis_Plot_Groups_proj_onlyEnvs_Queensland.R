@@ -612,7 +612,7 @@ Annual_Mean_Temp_2041_2070_585_Qnslnd_map <- ggplot(data = Annual_Mean_Temp_2041
 
 # Mean Diurnal Range
 
-Mean_Diurnal_Range_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -622,7 +622,7 @@ Mean_Diurnal_Range_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_1140_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -632,7 +632,7 @@ Mean_Diurnal_Range_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_4170_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -642,7 +642,7 @@ Mean_Diurnal_Range_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Diurnal_Range_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Diurnal_Range_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_4170_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -654,7 +654,7 @@ Mean_Diurnal_Range_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Diurnal_Range_
 
 # Isothermality
 
-Isothermality_2011_2040_126_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2011_2040_126_Qnslnd_map <- ggplot(data = Isothermality_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -664,7 +664,7 @@ Isothermality_2011_2040_126_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2011_2040_585_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2011_2040_585_Qnslnd_map <- ggplot(data = Isothermality_1140_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -674,7 +674,7 @@ Isothermality_2011_2040_585_Qnslnd_map <- ggplot(data = Isothermality_2011_2040_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2041_2070_126_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2041_2070_126_Qnslnd_map <- ggplot(data = Isothermality_4170_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -684,7 +684,7 @@ Isothermality_2041_2070_126_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Isothermality_2041_2070_585_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Isothermality_2041_2070_585_Qnslnd_map <- ggplot(data = Isothermality_4170_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -696,7 +696,7 @@ Isothermality_2041_2070_585_Qnslnd_map <- ggplot(data = Isothermality_2041_2070_
 
 # Mean Temperature of The Driest Quarter
 
-Mean_Temp_Driest_Qtr_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -706,7 +706,7 @@ Mean_Temp_Driest_Qtr_2011_2040_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_1140_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -716,7 +716,7 @@ Mean_Temp_Driest_Qtr_2011_2040_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_4170_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -726,7 +726,7 @@ Mean_Temp_Driest_Qtr_2041_2070_126_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Mean_Temp_Driest_Qtr_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Mean_Temp_Driest_Qtr_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_Qtr_4170_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -738,7 +738,7 @@ Mean_Temp_Driest_Qtr_2041_2070_585_Qnslnd_map <- ggplot(data = Mean_Temp_Driest_
 
 # Precipitation of The Wettest Month
 
-Prec_of_Wettest_Month_2011_2040_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2011_2040_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -748,7 +748,7 @@ Prec_of_Wettest_Month_2011_2040_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2011_2040_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2011_2040_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_1140_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -758,7 +758,7 @@ Prec_of_Wettest_Month_2011_2040_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2041_2070_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2041_2070_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_4170_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
@@ -768,7 +768,7 @@ Prec_of_Wettest_Month_2041_2070_126_Qnslnd_map <- ggplot(data = Prec_of_Wettest_
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
-Prec_of_Wettest_Month_2041_2070_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
+Prec_of_Wettest_Month_2041_2070_585_Qnslnd_map <- ggplot(data = Prec_of_Wettest_Month_4170_585_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
