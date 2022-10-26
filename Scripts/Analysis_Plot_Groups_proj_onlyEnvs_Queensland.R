@@ -149,11 +149,11 @@ Prec_of_Wettest_Month_1140_126_Queensland_df <- Prec_of_Wettest_Month_1140_126_Q
 
 # 2011-2040 ssp585
 
-colnames(Annual_Mean_Temp_2011_2040_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_585")
-colnames(Mean_Diurnal_Range_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2011_2040_585")
-colnames(Isothermality_2011_2040_585_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_585")
-colnames(Mean_Temp_Driest_Qtr_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_585")
-colnames(Prec_of_Wettest_Month_2011_2040_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_585")
+#colnames(Annual_Mean_Temp_2011_2040_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_585")
+#colnames(Mean_Diurnal_Range_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2011_2040_585")
+#colnames(Isothermality_2011_2040_585_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_585")
+#colnames(Mean_Temp_Driest_Qtr_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_585")
+#colnames(Prec_of_Wettest_Month_2011_2040_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_585")
 
 # Filter Coordinates Queensland
 
@@ -184,11 +184,11 @@ Prec_of_Wettest_Month_1140_585_Queensland_df <- Prec_of_Wettest_Month_1140_585_Q
 
 # 2041-2070 ssp126
 
-colnames(Annual_Mean_Temp_2041_2070_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_126")
-colnames(Mean_Diurnal_Range_2041_2070_126_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2041_2070_126")
-colnames(Isothermality_2041_2070_126_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_126")
-colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_126")
-colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
+#colnames(Annual_Mean_Temp_2041_2070_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_126")
+#colnames(Mean_Diurnal_Range_2041_2070_126_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2041_2070_126")
+#colnames(Isothermality_2041_2070_126_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_126")
+#colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_126")
+#colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
 
 # Filter Coordinates Queensland
 
@@ -219,11 +219,11 @@ Prec_of_Wettest_Month_4170_126_Queensland_df <- Prec_of_Wettest_Month_4170_126_Q
 
 # 2041-2070 ssp585
 
-colnames(Annual_Mean_Temp_2041_2070_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_585")
-colnames(Mean_Diurnal_Range_2041_2070_585_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2041_2070_585")
-colnames(Isothermality_2041_2070_585_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_585")
-colnames(Mean_Temp_Driest_Qtr_2041_2070_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_585")
-colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_585")
+#colnames(Annual_Mean_Temp_2041_2070_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_585")
+#colnames(Mean_Diurnal_Range_2041_2070_585_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_2041_2070_585")
+#colnames(Isothermality_2041_2070_585_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_585")
+#colnames(Mean_Temp_Driest_Qtr_2041_2070_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_585")
+#colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_585")
 
 # Filter Coordinates Queensland
 
