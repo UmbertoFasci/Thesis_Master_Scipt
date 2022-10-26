@@ -7,7 +7,9 @@ library(ggpubr)
 # Testing the dplyr filter method in order to 
 
 Annual_Mean_Temp_1140_126_Queensland_df <- Annual_Mean_Temp_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00) | between(Latitude, -29.00, -9.00))
+    filter(between(Longitude, 138.00, 155.00))
+Annual_Mean_Temp_1140_126_Queensland_df <- Annual_Mean_Temp_1140_126_Queensland_df %>% 
+    filter(between(Latitude, -29.00, -9.00))
 
 Annual_Mean_Temp_1140_126_Qnslnd_Map <- ggplot(data = Annual_Mean_Temp_1140_126_Queensland_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
