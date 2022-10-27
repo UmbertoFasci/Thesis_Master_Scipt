@@ -123,29 +123,29 @@ library(ggpubr)
 # Filter Coordinates SouthEast
 
 Annual_Mean_Temp_1140_126_SouthEast_df <- Annual_Mean_Temp_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Annual_Mean_Temp_1140_126_SouthEast_df <- Annual_Mean_Temp_1140_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Diurnal_Range_1140_126_SouthEast_df <- Mean_Diurnal_Range_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Diurnal_Range_1140_126_SouthEast_df <- Mean_Diurnal_Range_1140_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Isothermality_1140_126_SouthEast_df <- Isothermality_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Isothermality_1140_126_SouthEast_df <- Isothermality_1140_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Temp_Driest_Qtr_1140_126_SouthEast_df <- Mean_Temp_Driest_Qtr_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Temp_Driest_Qtr_1140_126_SouthEast_df <- Mean_Temp_Driest_Qtr_1140_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Prec_of_Wettest_Month_1140_126_SouthEast_df <- Prec_of_Wettest_Month_2011_2040_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Prec_of_Wettest_Month_1140_126_SouthEast_df <- Prec_of_Wettest_Month_1140_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 # 2011-2040 ssp585
 
@@ -158,29 +158,29 @@ Prec_of_Wettest_Month_1140_126_SouthEast_df <- Prec_of_Wettest_Month_1140_126_So
 # Filter Coordinates SouthEast
 
 Annual_Mean_Temp_1140_585_SouthEast_df <- Annual_Mean_Temp_2011_2040_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Annual_Mean_Temp_1140_585_SouthEast_df <- Annual_Mean_Temp_1140_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Diurnal_Range_1140_585_SouthEast_df <- Mean_Diurnal_Range_2011_2040_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Diurnal_Range_1140_585_SouthEast_df <- Mean_Diurnal_Range_1140_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Isothermality_1140_585_SouthEast_df <- Isothermality_2011_2040_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Isothermality_1140_585_SouthEast_df <- Isothermality_1140_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Temp_Driest_Qtr_1140_585_SouthEast_df <- Mean_Temp_Driest_Qtr_2011_2040_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Temp_Driest_Qtr_1140_585_SouthEast_df <- Mean_Temp_Driest_Qtr_1140_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Prec_of_Wettest_Month_1140_585_SouthEast_df <- Prec_of_Wettest_Month_2011_2040_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Prec_of_Wettest_Month_1140_585_SouthEast_df <- Prec_of_Wettest_Month_1140_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 # 2041-2070 ssp126
 
@@ -193,29 +193,29 @@ Prec_of_Wettest_Month_1140_585_SouthEast_df <- Prec_of_Wettest_Month_1140_585_So
 # Filter Coordinates SouthEast
 
 Annual_Mean_Temp_4170_126_SouthEast_df <- Annual_Mean_Temp_2041_2070_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Annual_Mean_Temp_4170_126_SouthEast_df <- Annual_Mean_Temp_4170_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Diurnal_Range_4170_126_SouthEast_df <- Mean_Diurnal_Range_2041_2070_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Diurnal_Range_4170_126_SouthEast_df <- Mean_Diurnal_Range_4170_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Isothermality_4170_126_SouthEast_df <- Isothermality_2041_2070_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Isothermality_4170_126_SouthEast_df <- Isothermality_4170_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Temp_Driest_Qtr_4170_126_SouthEast_df <- Mean_Temp_Driest_Qtr_2041_2070_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Temp_Driest_Qtr_4170_126_SouthEast_df <- Mean_Temp_Driest_Qtr_4170_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Prec_of_Wettest_Month_4170_126_SouthEast_df <- Prec_of_Wettest_Month_2041_2070_126_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Prec_of_Wettest_Month_4170_126_SouthEast_df <- Prec_of_Wettest_Month_4170_126_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 # 2041-2070 ssp585
 
@@ -228,38 +228,38 @@ Prec_of_Wettest_Month_4170_126_SouthEast_df <- Prec_of_Wettest_Month_4170_126_So
 # Filter Coordinates SouthEast
 
 Annual_Mean_Temp_4170_585_SouthEast_df <- Annual_Mean_Temp_2041_2070_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Annual_Mean_Temp_4170_585_SouthEast_df <- Annual_Mean_Temp_4170_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Diurnal_Range_4170_585_SouthEast_df <- Mean_Diurnal_Range_2041_2070_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Diurnal_Range_4170_585_SouthEast_df <- Mean_Diurnal_Range_4170_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Isothermality_4170_585_SouthEast_df <- Isothermality_2041_2070_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Isothermality_4170_585_SouthEast_df <- Isothermality_4170_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Mean_Temp_Driest_Qtr_4170_585_SouthEast_df <- Mean_Temp_Driest_Qtr_2041_2070_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Mean_Temp_Driest_Qtr_4170_585_SouthEast_df <- Mean_Temp_Driest_Qtr_4170_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 Prec_of_Wettest_Month_4170_585_SouthEast_df <- Prec_of_Wettest_Month_2041_2070_585_df %>% 
-    filter(between(Longitude, 138.00, 155.00))
+    filter(between(Longitude, 133.0, 155.00))
 Prec_of_Wettest_Month_4170_585_SouthEast_df <- Prec_of_Wettest_Month_4170_585_SouthEast_df %>% 
-    filter(between(Latitude, -29.00, -9.00))
+    filter(between(Latitude, -45.00, -30.00))
 
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
 # 2011-2040 ssp126
 
 MRIESM2_1140_126_Avg_SouthEast_df <- MRIESM2_1140_126_Avg_df %>%
-  filter(between(Longitude, 138.00, 155.00))
+  filter(between(Longitude, 133.0, 155.00))
 MRIESM2_1140_126_Avg_SouthEast_df <- MRIESM2_1140_126_Avg_SouthEast_df %>%
-  filter(between(Latitude, -29.00, -9.00))
+  filter(between(Latitude, -45.00, -30.00))
 
 MRIESM2_1140_126_Stats_SouthEast <- MRIESM2_1140_126_Avg_SouthEast_df
 MRIESM2_1140_126_Stats_SouthEast$Annual_Mean_Temp_2011_2040_126 <- Annual_Mean_Temp_1140_126_SouthEast_df$Annual_Mean_Temp_2011_2040_126
@@ -272,9 +272,9 @@ MRIESM2_1140_126_Stats_SouthEast$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_
 # 2011-2040 ssp585
 
 MRIESM2_1140_585_Avg_SouthEast_df <- MRIESM2_1140_585_Avg_df %>%
-  filter(between(Longitude, 138.00, 155.00))
+  filter(between(Longitude, 133.0, 155.00))
 MRIESM2_1140_585_Avg_SouthEast_df <- MRIESM2_1140_585_Avg_SouthEast_df %>%
-  filter(between(Latitude, -29.00, -9.00))
+  filter(between(Latitude, -45.00, -30.00))
 
 MRIESM2_1140_585_Stats_SouthEast <- MRIESM2_1140_585_Avg_SouthEast_df
 MRIESM2_1140_585_Stats_SouthEast$Annual_Mean_Temp_2011_2040_585 <- Annual_Mean_Temp_1140_585_SouthEast_df$Annual_Mean_Temp_2011_2040_585
@@ -287,9 +287,9 @@ MRIESM2_1140_585_Stats_SouthEast$Prec_of_Wettest_Month_2011_2040_585 <- Prec_of_
 # 2041-2070 ssp126
 
 MRIESM2_4170_126_Avg_SouthEast_df <- MRIESM2_4170_126_Avg_df %>%
-  filter(between(Longitude, 138.00, 155.00))
+  filter(between(Longitude, 133.0, 155.00))
 MRIESM2_4170_126_Avg_SouthEast_df <- MRIESM2_4170_126_Avg_SouthEast_df %>%
-  filter(between(Latitude, -29.00, -9.00))
+  filter(between(Latitude, -45.00, -30.00))
 
 MRIESM2_4170_126_Stats_SouthEast <- MRIESM2_4170_126_Avg_SouthEast_df
 MRIESM2_4170_126_Stats_SouthEast$Annual_Mean_Temp_2041_2070_126 <- Annual_Mean_Temp_4170_126_SouthEast_df$Annual_Mean_Temp_2041_2070_126
@@ -302,9 +302,9 @@ MRIESM2_4170_126_Stats_SouthEast$Prec_of_Wettest_Month_2041_2070_126 <- Prec_of_
 # 2041-2070 ssp585
 
 MRIESM2_4170_585_Avg_SouthEast_df <- MRIESM2_4170_585_Avg_df %>%
-  filter(between(Longitude, 138.00, 155.00))
+  filter(between(Longitude, 133.0, 155.00))
 MRIESM2_4170_585_Avg_SouthEast_df <- MRIESM2_4170_585_Avg_SouthEast_df %>%
-  filter(between(Latitude, -29.00, -9.00))
+  filter(between(Latitude, -45.00, -30.00))
 
 MRIESM2_4170_585_Stats_SouthEast <- MRIESM2_4170_585_Avg_SouthEast_df
 MRIESM2_4170_585_Stats_SouthEast$Annual_Mean_Temp_2041_2070_585 <- Annual_Mean_Temp_4170_585_SouthEast_df$Annual_Mean_Temp_2041_2070_585
@@ -573,7 +573,7 @@ MRIESM2_2041_2070_585_SE_Histogram <- MRIESM2_4170_585_Stats_SouthEast %>% gghis
 Annual_Mean_Temp_2011_2040_126_SE_map <- ggplot(data = Annual_Mean_Temp_1140_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -583,7 +583,7 @@ Annual_Mean_Temp_2011_2040_126_SE_map <- ggplot(data = Annual_Mean_Temp_1140_126
 Annual_Mean_Temp_2011_2040_585_SE_map <- ggplot(data = Annual_Mean_Temp_1140_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -593,7 +593,7 @@ Annual_Mean_Temp_2011_2040_585_SE_map <- ggplot(data = Annual_Mean_Temp_1140_585
 Annual_Mean_Temp_2041_2070_126_SE_map <- ggplot(data = Annual_Mean_Temp_4170_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -603,7 +603,7 @@ Annual_Mean_Temp_2041_2070_126_SE_map <- ggplot(data = Annual_Mean_Temp_4170_126
 Annual_Mean_Temp_2041_2070_585_SE_map <- ggplot(data = Annual_Mean_Temp_4170_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -615,7 +615,7 @@ Annual_Mean_Temp_2041_2070_585_SE_map <- ggplot(data = Annual_Mean_Temp_4170_585
 Mean_Diurnal_Range_2011_2040_126_SE_map <- ggplot(data = Mean_Diurnal_Range_1140_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -625,7 +625,7 @@ Mean_Diurnal_Range_2011_2040_126_SE_map <- ggplot(data = Mean_Diurnal_Range_1140
 Mean_Diurnal_Range_2011_2040_585_SE_map <- ggplot(data = Mean_Diurnal_Range_1140_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -635,7 +635,7 @@ Mean_Diurnal_Range_2011_2040_585_SE_map <- ggplot(data = Mean_Diurnal_Range_1140
 Mean_Diurnal_Range_2041_2070_126_SE_map <- ggplot(data = Mean_Diurnal_Range_4170_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -645,7 +645,7 @@ Mean_Diurnal_Range_2041_2070_126_SE_map <- ggplot(data = Mean_Diurnal_Range_4170
 Mean_Diurnal_Range_2041_2070_585_SE_map <- ggplot(data = Mean_Diurnal_Range_4170_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -657,7 +657,7 @@ Mean_Diurnal_Range_2041_2070_585_SE_map <- ggplot(data = Mean_Diurnal_Range_4170
 Isothermality_2011_2040_126_SE_map <- ggplot(data = Isothermality_1140_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -667,7 +667,7 @@ Isothermality_2011_2040_126_SE_map <- ggplot(data = Isothermality_1140_126_South
 Isothermality_2011_2040_585_SE_map <- ggplot(data = Isothermality_1140_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -677,7 +677,7 @@ Isothermality_2011_2040_585_SE_map <- ggplot(data = Isothermality_1140_585_South
 Isothermality_2041_2070_126_SE_map <- ggplot(data = Isothermality_4170_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -687,7 +687,7 @@ Isothermality_2041_2070_126_SE_map <- ggplot(data = Isothermality_4170_126_South
 Isothermality_2041_2070_585_SE_map <- ggplot(data = Isothermality_4170_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Isothermality_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -699,7 +699,7 @@ Isothermality_2041_2070_585_SE_map <- ggplot(data = Isothermality_4170_585_South
 Mean_Temp_Driest_Qtr_2011_2040_126_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_1140_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -709,7 +709,7 @@ Mean_Temp_Driest_Qtr_2011_2040_126_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_
 Mean_Temp_Driest_Qtr_2011_2040_585_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_1140_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -719,7 +719,7 @@ Mean_Temp_Driest_Qtr_2011_2040_585_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_
 Mean_Temp_Driest_Qtr_2041_2070_126_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_4170_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -729,7 +729,7 @@ Mean_Temp_Driest_Qtr_2041_2070_126_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_
 Mean_Temp_Driest_Qtr_2041_2070_585_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_4170_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -741,7 +741,7 @@ Mean_Temp_Driest_Qtr_2041_2070_585_SE_map <- ggplot(data = Mean_Temp_Driest_Qtr_
 Prec_of_Wettest_Month_2011_2040_126_SE_map <- ggplot(data = Prec_of_Wettest_Month_1140_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -751,7 +751,7 @@ Prec_of_Wettest_Month_2011_2040_126_SE_map <- ggplot(data = Prec_of_Wettest_Mont
 Prec_of_Wettest_Month_2011_2040_585_SE_map <- ggplot(data = Prec_of_Wettest_Month_1140_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -761,7 +761,7 @@ Prec_of_Wettest_Month_2011_2040_585_SE_map <- ggplot(data = Prec_of_Wettest_Mont
 Prec_of_Wettest_Month_2041_2070_126_SE_map <- ggplot(data = Prec_of_Wettest_Month_4170_126_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -771,7 +771,7 @@ Prec_of_Wettest_Month_2041_2070_126_SE_map <- ggplot(data = Prec_of_Wettest_Mont
 Prec_of_Wettest_Month_2041_2070_585_SE_map <- ggplot(data = Prec_of_Wettest_Month_4170_585_SouthEast_df, aes(x=Longitude, y=Latitude)) +
   geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -785,7 +785,7 @@ MRIESM2_1140_126_Avg_SE_preds <- ggplot(data = MRIESM2_1140_126_Avg_SouthEast_df
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -796,7 +796,7 @@ MRIESM2_1140_585_Avg_SE_preds <- ggplot(data = MRIESM2_1140_585_Avg_SouthEast_df
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -807,7 +807,7 @@ MRIESM2_4170_126_Avg_SE_preds <- ggplot(data = MRIESM2_4170_126_Avg_SouthEast_df
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
@@ -818,7 +818,7 @@ MRIESM2_4170_585_Avg_SE_preds <- ggplot(data = MRIESM2_4170_585_Avg_SouthEast_df
   geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
-  coord_sf(xlim = c(138.00, 155.00), ylim = c(-29.00, -9.00), expand = T, crs = "WGS84") +
+  coord_sf(xlim = c(133.0, 155.00), ylim = c(-45.00, -30.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
   theme_bw() +
   theme(legend.title = element_blank(),
