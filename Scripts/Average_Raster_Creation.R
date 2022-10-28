@@ -1,5 +1,3 @@
-
-
 # 2011-2040 ssp126
 MRIESM2_1140_126_10k_var6_ras <- raster("~/umbertofasci/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
 MRIESM2_1140_126_1k_var1_ras <- raster("~/umbertofasci/B_Dendrobatidis_Models/MRIESM2_1140/ssp126/MRIESM2_1140_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
