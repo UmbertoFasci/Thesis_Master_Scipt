@@ -21,9 +21,9 @@ According to the Kruskal-Wallis test, each suitability level is significantly di
 
 ### Climate Data Source
 
-Dirk Nikolaus Karger; Olaf Conrad; Jürgen Böhner; Tobias Kawohl; Holger Kreft; Rodrigo Wilber Soria-Auza; Niklaus E. Zimmermann;
-    H. Peter Linder; Michael Kessler (2021). Climatologies at high resolution
-    for the earth’s land surface areas.  EnviDat.
-    doi: 10.16904/envidat.228.
+Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann,
+    N.E, Linder, H.P., Kessler, M. (2018): Data from: Climatologies at high resolution
+    for the earth’s land surface areas. EnviDat.
+    https://doi.org/10.16904/envidat.228.v2.1
 
 
