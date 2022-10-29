@@ -17,5 +17,12 @@
 * Furthermore, the recorded temperature range at which *B. dendrobatidis* expresses optimal growth is between (17-25) degrees celsius. Which also happens to reflect the suitability range of *B. dendrobatidis* when looking at the plot on the right.
 
 ### What do the level stats say?
-According to the Kruskal-Wallis test, each suitability level is significantly different when plotted against Annual Mean Temperature in the 2011-2040 year range average at RCP 2.6 with $p < 2.2 \times 10^{-16}$ 
+According to the Kruskal-Wallis test, each suitability level is significantly different when plotted against Annual Mean Temperature in the 2011-2040 year range average at RCP 2.6 with $p < 2.2 \times 10^{-16}$.
+
+### Climate Data Source
+
+Karger D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W.,
+    Zimmermann, N.E, Linder, H.P., Kessler, M. (2018): Data from: Climatologies at high
+    resolution for the earth’s land surface areas. EnviDat.
+    https://doi.org/10.16904/envidat.228.v2.1
 
