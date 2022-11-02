@@ -4,7 +4,7 @@
 
 * The highest suitability level for *Batrachochytrium dendrobatidis* is found to occur towards the lower end of this environmental variable.
 
-* Looking at the figure on the left, the mapped environmental data for Annual Mean Temperature between the 2011-2040 time frame under the ssp126 projection.
+* Looking at the figure on the left, the mapped environmental data for Annual Mean Temperature between the 2011-2040 time frame under the ssp126 projection expresses mean temperatures at the lower end towards the South of the extent. This is further contained near the coast line of the South East extent of the data.
 
 ### What does this suggest?
 
