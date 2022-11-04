@@ -52,3 +52,14 @@ MRIESM2_4170_585_maxSuit_map <- ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Lo
 # Compile all env vars from each year range and projection type for comparison.
 
 # First Select columns individually and create an instance of their record in order to compile them together in future code.
+
+# Annual Mean Temperature
+
+An_Mn_Tmp_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>% select(Annual_Mean_Temp_2011_2040_126)
+An_Mn_Tmp_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>% select(Annual_Mean_Temp_2011_2040_585)
+An_Mn_Tmp_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>% select(Annual_Mean_Temp_2041_2070_126)
+An_Mn_Tmp_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>% select(Annual_Mean_Temp_2041_2070_585)
+
+# Combine
+
+An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_140_126_mxst, An_Mn_Tmp_1140_585_mxst, An_Mn_Tmp_4170_126_mxst, An_Mn_Tmp_4170_585_mxst))
