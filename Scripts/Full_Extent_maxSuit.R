@@ -48,3 +48,7 @@ MRIESM2_4170_585_maxSuit_map <- ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Lo
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
+
+# Compile all env vars from each year range and projection type for comparison.
+
+# First Select columns individually and create an instance of their record in order to compile them together in future code.
