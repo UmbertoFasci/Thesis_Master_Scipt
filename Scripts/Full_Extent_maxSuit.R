@@ -78,7 +78,7 @@ An_Mn_Tmp_full_mxst_boxplot <- An_Mn_Tmp_full_mxst %>%
   ggboxplot(x = "Variable",
             y = "Value",
             xlab = "Projection and Year Range",
-            ylab = "Annual Mean Temperature \n Highest Suitability",
+            ylab = "Annual Mean Temperature \n Highest Bd Suitability",
             fill = "Variable",
             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
 stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
@@ -122,7 +122,7 @@ Mn_Dnl_Rng_full_mxst_boxplot <- Mn_Dnl_Rng_full_mxst %>%
   ggboxplot(x = "Variable",
             y = "Value",
             xlab = "Projection and Year Range",
-            ylab = "Annual Mean Temperature \n Highest Suitability",
+            ylab = "Mean Diurnal Range \n Highest Bd Suitability",
             fill = "Variable",
             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
 stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
