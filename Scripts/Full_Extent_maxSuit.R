@@ -97,3 +97,45 @@ stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
 stat_compare_means(label.y = 50)
 
 
+# Mean Diurnal Range
+
+Mn_Dnl_Rng_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>% select(Mean_Diurnal_Range_2011_2040_126)
+Mn_Dnl_Rng_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>% select(Mean_Diurnal_Range_2011_2040_585)
+Mn_Dnl_Rng_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>% select(Mean_Diurnal_Range_2041_2070_126)
+Mn_Dnl_Rng_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>% select(Mean_Diurnal_Range_2041_2070_585)
+
+# Combine
+
+Mn_Dnl_Rng_full_mxst <- bind_cols(list(Mn_Dnl_Rng_1140_126_mxst, Mn_Dnl_Rng_1140_585_mxst, Mn_Dnl_Rng_4170_126_mxst, Mn_Dnl_Rng_4170_585_mxst))
+
+# Configure
+
+colnames(Mn_Dnl_Rng_full_mxst) <- c('(2011-2040) ssp126',
+                                   '(2011-2040) ssp585',
+                                   '(2041-2070) ssp126',
+                                   '(2041-2070) ssp585')
+
+Mn_Dnl_Rng_full_mxst <- Mn_Dnl_Rng_full_mxst %>%
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+
+Mn_Dnl_Rng_full_mxst_boxplot <- Mn_Dnl_Rng_full_mxst %>%
+  ggboxplot(x = "Variable",
+            y = "Value",
+            xlab = "Projection and Year Range",
+            ylab = "Annual Mean Temperature \n Highest Suitability",
+            fill = "Variable",
+            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
+                                        '(2011-2040) ssp585'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp126'),
+                                      c('(2041-2070) ssp126',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp126'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp585'))
+                  label = "p.signif", hide.ns = FALSE) +
+stat_compare_means(label.y = 50)
