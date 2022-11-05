@@ -63,3 +63,7 @@ An_Mn_Tmp_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>% select(Annual_Mean_Temp_
 # Combine
 
 An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_1140_126_mxst, An_Mn_Tmp_1140_585_mxst, An_Mn_Tmp_4170_126_mxst, An_Mn_Tmp_4170_585_mxst))
+
+# Configure
+
+colnames(An_Mn_Tmp_full_mxst) <- c('(2011-2040) ssp126', '(2011-2040) ssp585')
