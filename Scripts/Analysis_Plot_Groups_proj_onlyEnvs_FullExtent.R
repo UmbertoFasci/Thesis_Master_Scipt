@@ -51,6 +51,14 @@ Prec_of_Wettest_Month_2041_2070_585 <- raster("/Users/umbertofasci/Projections_F
 
 # Convert variable rasters to points (Over 10 million points each
 
+# Current
+
+Annual_Mean_Temoerature_Curr.p <- rasterToPoints(Annual_Mean_Temoerature_Curr)
+Mean_Diurnal_Range_Curr.p <- rasterToPoints(Mean_Diurnal_Range_Curr)
+Isothermality_Curr.p <- rasterToPoints(Isothermality_Curr)
+Mean_Temp_Driest_Qtr_Curr.p <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr)
+Prec_of_Wettest_Month_Curr.p <- rasterToPoints(Prec_of_Wettest_Month_Curr)
+
 # 2011-2040 ssp126
 
 Annual_Mean_Temp_2011_2040_126.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_126)
@@ -85,6 +93,14 @@ Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_20
 
 # Transform variable raster points into usable dataframes.
 
+# Current
+
+Annual_Mean_Temoerature_Curr_df <- rasterToPoints(Annual_Mean_Temoerature_Curr.p)
+Mean_Diurnal_Range_Curr_df <- rasterToPoints(Mean_Diurnal_Range_Curr.p)
+Isothermality_Curr_df <- rasterToPoints(Isothermality_Curr.p)
+Mean_Temp_Driest_Qtr_Curr_df <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr.p)
+Prec_of_Wettest_Month_Curr_df <- rasterToPoints(Prec_of_Wettest_Month_Curr.p)
+
 # 2011-2040 ssp126
 
 Annual_Mean_Temp_2011_2040_126_df <- data.frame(Annual_Mean_Temp_2011_2040_126.p)
@@ -118,6 +134,14 @@ Mean_Temp_Driest_Qtr_2041_2070_585_df <- data.frame(Mean_Temp_Driest_Qtr_2041_20
 Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_2070_585.p)
 
 # Update Columns names of each
+
+# Current
+
+colnames(Annual_Mean_Temoerature_Curr_df) <- c("Longitude", "latitude", "Annual_Mean_Temoerature_Current")
+colnames(Mean_Diurnal_Range_Curr_df) <- c("Longitude", "latitude", "Mean_Diurnal_Range_Current")
+colnames(Isothermality_Curr_df) <- c("Longitude", "latitude", "Isothermality_Current")
+colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "latitude", "Mean_Temp_Driest_Qtr_Current")
+colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "latitude", "Prec_of_Wettest_Month_Current")
 
 # 2011-2040 ssp126
 
