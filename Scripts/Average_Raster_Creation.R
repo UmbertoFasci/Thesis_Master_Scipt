@@ -42,18 +42,21 @@ MRIESM2_4170_585_Avg <- (MRIESM2_4170_585_10k_var6_ras + MRIESM2_4170_585_1k_var
 # Prepare averaged rasters for ggplot2
 
 # Raster to points
+Current_Avg.p <- rasterToPoints(Current_Avg)
 MRIESM2_1140_126_Avg.p <- rasterToPoints(MRIESM2_1140_126_Avg)
 MRIESM2_1140_585_Avg.p <- rasterToPoints(MRIESM2_1140_585_Avg)
 MRIESM2_4170_126_Avg.p <- rasterToPoints(MRIESM2_4170_126_Avg)
 MRIESM2_4170_585_Avg.p <- rasterToPoints(MRIESM2_4170_585_Avg)
 
 # Points to dataframe
+Current_Avg_df <- data.frame((Current_Avg.p))
 MRIESM2_1140_126_Avg_df <- data.frame(MRIESM2_1140_126_Avg.p)
 MRIESM2_1140_585_Avg_df <- data.frame(MRIESM2_1140_585_Avg.p)
 MRIESM2_4170_126_Avg_df <- data.frame(MRIESM2_4170_126_Avg.p)
 MRIESM2_4170_585_Avg_df <- data.frame(MRIESM2_4170_585_Avg.p)
 
 # Update column names
+colnames(Current_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
 colnames(MRIESM2_1140_126_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
 colnames(MRIESM2_1140_585_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
 colnames(MRIESM2_4170_126_Avg_df) <- c("Longitude", "Latitude", "Predicted_Bd_Suitability")
