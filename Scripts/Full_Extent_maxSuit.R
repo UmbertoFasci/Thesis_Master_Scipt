@@ -152,7 +152,7 @@ stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp585')),
                   label = "p.signif", hide.ns = FALSE) +
-stat_compare_means(label.y = 35)
+stat_compare_means(label.y = 30)
 
 
 # Isothermality
