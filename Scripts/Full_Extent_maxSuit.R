@@ -65,7 +65,8 @@ MRIESM2_4170_585_maxSuit_map <- ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Lo
 # First Select columns individually and create an instance of their record in order to compile them together in future code.
 
 # Annual Mean Temperature
-
+An_Mn_Tmp_Curr_mxst <- Current_maxSuit %>%
+  select(Annual_Mean_Temperature_Current)
 An_Mn_Tmp_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
   select(Annual_Mean_Temp_2011_2040_126)
 An_Mn_Tmp_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
@@ -77,7 +78,8 @@ An_Mn_Tmp_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
 
 # Combine
 
-An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_1140_126_mxst,
+An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_Curr_mxst,
+                                      An_Mn_Tmp_1140_126_mxst,
                                       An_Mn_Tmp_1140_585_mxst,
                                       An_Mn_Tmp_4170_126_mxst,
                                       An_Mn_Tmp_4170_585_mxst))
