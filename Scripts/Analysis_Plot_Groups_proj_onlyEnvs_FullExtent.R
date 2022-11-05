@@ -11,7 +11,7 @@ library(ggpubr)
 # Prepare Variables for stat plots
 
 # Current
-Annual_Mean_Temoerature_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_01_aus.asc")
+Annual_Mean_Temperature_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_01_aus.asc")
 Mean_Diurnal_Range_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_02_aus.asc")
 Isothermality_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_03_aus.asc")
 Mean_Temp_Driest_Qtr_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_09_aus.asc")
@@ -53,7 +53,7 @@ Prec_of_Wettest_Month_2041_2070_585 <- raster("/Users/umbertofasci/Projections_F
 
 # Current
 
-Annual_Mean_Temoerature_Curr.p <- rasterToPoints(Annual_Mean_Temoerature_Curr)
+Annual_Mean_Temperature_Curr.p <- rasterToPoints(Annual_Mean_Temperature_Curr)
 Mean_Diurnal_Range_Curr.p <- rasterToPoints(Mean_Diurnal_Range_Curr)
 Isothermality_Curr.p <- rasterToPoints(Isothermality_Curr)
 Mean_Temp_Driest_Qtr_Curr.p <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr)
@@ -95,7 +95,7 @@ Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_20
 
 # Current
 
-Annual_Mean_Temoerature_Curr_df <- rasterToPoints(Annual_Mean_Temoerature_Curr.p)
+Annual_Mean_Temperature_Curr_df <- rasterToPoints(Annual_Mean_Temperature_Curr.p)
 Mean_Diurnal_Range_Curr_df <- rasterToPoints(Mean_Diurnal_Range_Curr.p)
 Isothermality_Curr_df <- rasterToPoints(Isothermality_Curr.p)
 Mean_Temp_Driest_Qtr_Curr_df <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr.p)
@@ -137,7 +137,7 @@ Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_
 
 # Current
 
-colnames(Annual_Mean_Temoerature_Curr_df) <- c("Longitude", "latitude", "Annual_Mean_Temoerature_Current")
+colnames(Annual_Mean_Temperature_Curr_df) <- c("Longitude", "latitude", "Annual_Mean_Temperature_Current")
 colnames(Mean_Diurnal_Range_Curr_df) <- c("Longitude", "latitude", "Mean_Diurnal_Range_Current")
 colnames(Isothermality_Curr_df) <- c("Longitude", "latitude", "Isothermality_Current")
 colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "latitude", "Mean_Temp_Driest_Qtr_Current")
@@ -177,6 +177,15 @@ colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "
 
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
+# Current
+
+Current_Stats <- Current_Avg_df
+Current_Stats$Annual_Mean_Temperature_Current <- Annual_Mean_Temperature_Curr_df$Annual_Mean_Temperature_Current
+Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$Mean_Diurnal_Range_Current
+Current_Stats$Isothermality_Current <- Isothermality_Curr_df$Isothermality_Current
+Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$Mean_Temp_Driest_Qtr_Current
+Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
+
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
 MRIESM2_1140_126_Stats$Annual_Mean_Temp_2011_2040_126 <- Annual_Mean_Temp_2011_2040_126_df$Annual_Mean_Temp_2011_2040_126
@@ -214,6 +223,7 @@ MRIESM2_4170_585_Stats$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of_Wettest_Mo
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
+Current_Stats <- Current_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Levels = ntile(Predicted_Bd_Suitability, 4))
@@ -230,6 +240,15 @@ bin_comparisons <- list( c("1", "2"),
 # Boxplots
 
 # Annual Mean Temp Full Extent
+
+Annual_Mean_Temp_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                               y = "Annual_Mean_Temperature_Current",
+                                                                               xlab = "Predicted Bd Distribution",
+                                                                               ylab = "Annual Mean Temp. (Current)",
+                                                                               fill = "Suitability_Levels",
+                                                                               palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 55)
 
 Annual_Mean_Temp_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                y = "Annual_Mean_Temp_2011_2040_126",
@@ -269,6 +288,15 @@ Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x
 
 # Mean Diurnal Range
 
+Mean_Diurnal_Range_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                 y = "Mean_Diurnal_Range_Current",
+                                                                                 xlab = "Predicted Bd Distribution",
+                                                                                 ylab = "Mean Diurnal Range (Current)",
+                                                                                 fill = "Suitability_Levels",
+                                                                                 palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 35)
+
 Mean_Diurnal_Range_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                  y = "Mean_Diurnal_Range_2011_2040_126",
                                                                                  xlab = "Predicted Bd Distribution",
@@ -306,6 +334,16 @@ Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot
   stat_compare_means(label.y = 35)
 
 # Isothermality
+
+
+Isothermality_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_Current",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (Current)",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
 
 Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Isothermality_2011_2040_126",
@@ -345,6 +383,15 @@ Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = 
 
 # Mean Temperature of The Driest Quarter
 
+Mean_Temp_Driest_Qtr_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                   y = "Mean_Temp_Driest_Qtr_Current",
+                                                                                   xlab = "Predicted Bd Distribution",
+                                                                                   ylab = "Mean Temp. Driest Qtr. (Current)",
+                                                                                   fill = "Suitability_Levels",
+                                                                                   palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 55)
+
 Mean_Temp_Driest_Qtr_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                    y = "Mean_Temp_Driest_Qtr_2011_2040_126",
                                                                                    xlab = "Predicted Bd Distribution",
@@ -382,6 +429,15 @@ Mean_Temp_Driest_Qtr_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxpl
   stat_compare_means(label.y = 55)
 
 # Precipitation of The Wettest Month
+
+Prec_of_Wettest_Month_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                                    y = "Prec_of_Wettest_Month_Current",
+                                                                                    xlab = "Predicted Bd Distribution",
+                                                                                    ylab = "Prec. of Wettest Month (Current)",
+                                                                                    fill = "Suitability_Levels",
+                                                                                    palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 550)
 
 Prec_of_Wettest_Month_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                                     y = "Prec_of_Wettest_Month_2011_2040_126",
@@ -421,7 +477,17 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
 
 # Histograms
 
-# Annual Mean Temp Full Extent
+# Bd Predictions
+
+Current_Histogram <- Current_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
+                                                   add = "mean",
+                                                   rug = TRUE,
+                                                   color = "Suitability_Levels",
+                                                   fill = "Suitability_Levels",
+                                                   xlab = "Predicted Bd Suitability",
+                                                   ylab = "Count",
+                                                   pallete = c("#2e00fa", "#a000bc", "#ca0086", "#e40058"),
+                                                   bins = 20)
 
 MRIESM2_2011_2040_126_Histogram <- MRIESM2_1140_126_Stats %>% gghistogram(x = "Predicted_Bd_Suitability",
                                                                                    add = "mean",
