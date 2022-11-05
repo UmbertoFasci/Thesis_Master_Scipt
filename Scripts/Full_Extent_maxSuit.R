@@ -1,5 +1,5 @@
 library(tidyverse)
-
+library(ggpubr)
 # Filter out the max suitability levels return only rows that have suitability_level == 4.
 
 MRIESM2_1140_126_maxSuit <- MRIESM2_1140_126_Stats %>% filter(Suitability_Levels == 4)
