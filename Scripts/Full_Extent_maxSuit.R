@@ -254,3 +254,54 @@ stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
                                         '(2041-2070) ssp585'))
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 50)
+
+
+# Precipitation of the Wettest Month
+
+Prc_Wst_Mnth_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
+  select(Prec_of_Wettest_Month_2011_2040_126)
+Prc_Wst_Mnth_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
+  select(Prec_of_Wettest_Month_2011_2040_585)
+Prc_Wst_Mnth_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>%
+  select(Prec_of_Wettest_Month_2041_2070_126)
+Prc_Wst_Mnth_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
+  select(Prec_of_Wettest_Month_2041_2070_585)
+
+# Combine
+
+Prc_Wst_Mnth_full_mxst <- bind_cols(list(Prc_Wst_Mnth_1140_126_mxst,
+                                       Prc_Wst_Mnth_1140_585_mxst,
+                                       Prc_Wst_Mnth_4170_126_mxst,
+                                       Prc_Wst_Mnth_4170_585_mxst))
+
+# Configure
+
+colnames(Prc_Wst_Mnth_full_mxst) <- c('(2011-2040) ssp126',
+                                   '(2011-2040) ssp585',
+                                   '(2041-2070) ssp126',
+                                   '(2041-2070) ssp585')
+
+Prc_Wst_Mnth_full_mxst <- Prc_Wst_Mnth_full_mxst %>%
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+
+Prc_Wst_Mnth_full_mxst_boxplot <- Prc_Wst_Mnth_full_mxst %>%
+  ggboxplot(x = "Variable",
+            y = "Value",
+            xlab = "Projection and Year Range",
+            ylab = "Prec. of the Wettest Month \n Highest Bd Suitability",
+            fill = "Variable",
+            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
+                                        '(2011-2040) ssp585'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp126'),
+                                      c('(2041-2070) ssp126',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp126'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp585'))
+                  label = "p.signif", hide.ns = FALSE) +
+stat_compare_means(label.y = 50)
