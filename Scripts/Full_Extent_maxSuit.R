@@ -86,7 +86,8 @@ An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_Curr_mxst,
 
 # Configure
 
-colnames(An_Mn_Tmp_full_mxst) <- c('(2011-2040) ssp126',
+colnames(An_Mn_Tmp_full_mxst) <- c('Current',
+                                   '(2011-2040) ssp126',
                                    '(2011-2040) ssp585',
                                    '(2041-2070) ssp126',
                                    '(2041-2070) ssp585')
@@ -119,6 +120,8 @@ stat_compare_means(label.y = 50)
 
 # Mean Diurnal Range
 
+Mn_Dnl_Rng_Curr_mxst <- Current_maxSuit %>%
+  select(Mean_Diurnal_Range_Current)
 Mn_Dnl_Rng_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
   select(Mean_Diurnal_Range_2011_2040_126)
 Mn_Dnl_Rng_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
@@ -130,17 +133,19 @@ Mn_Dnl_Rng_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
 
 # Combine
 
-Mn_Dnl_Rng_full_mxst <- bind_cols(list(Mn_Dnl_Rng_1140_126_mxst,
+Mn_Dnl_Rng_full_mxst <- bind_cols(list(Mn_Dnl_Rng_Curr_mxst,
+                                       Mn_Dnl_Rng_1140_126_mxst,
                                        Mn_Dnl_Rng_1140_585_mxst,
                                        Mn_Dnl_Rng_4170_126_mxst,
                                        Mn_Dnl_Rng_4170_585_mxst))
 
 # Configure
 
-colnames(Mn_Dnl_Rng_full_mxst) <- c('(2011-2040) ssp126',
-                                   '(2011-2040) ssp585',
-                                   '(2041-2070) ssp126',
-                                   '(2041-2070) ssp585')
+colnames(Mn_Dnl_Rng_full_mxst) <- c('Current',
+                                    '(2011-2040) ssp126',
+                                    '(2011-2040) ssp585',
+                                    '(2041-2070) ssp126',
+                                    '(2041-2070) ssp585')
 
 Mn_Dnl_Rng_full_mxst <- Mn_Dnl_Rng_full_mxst %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value")
@@ -170,6 +175,8 @@ stat_compare_means(label.y = 35)
 
 # Isothermality
 
+Iso_Curr_mxst <- Current_maxSuit %>%
+  select(Isothermality_Current)
 Iso_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
   select(Isothermality_2011_2040_126)
 Iso_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
@@ -181,17 +188,19 @@ Iso_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
 
 # Combine
 
-Iso_full_mxst <- bind_cols(list(Iso_1140_126_mxst,
-                                       Iso_1140_585_mxst,
-                                       Iso_4170_126_mxst,
-                                       Iso_4170_585_mxst))
+Iso_full_mxst <- bind_cols(list(Iso_Curr_mxst,
+                                Iso_1140_126_mxst,
+                                Iso_1140_585_mxst,
+                                Iso_4170_126_mxst,
+                                Iso_4170_585_mxst))
 
 # Configure
 
-colnames(Iso_full_mxst) <- c('(2011-2040) ssp126',
-                                   '(2011-2040) ssp585',
-                                   '(2041-2070) ssp126',
-                                   '(2041-2070) ssp585')
+colnames(Iso_full_mxst) <- c('Current',
+                             '(2011-2040) ssp126',
+                             '(2011-2040) ssp585',
+                             '(2041-2070) ssp126',
+                             '(2041-2070) ssp585')
 
 Iso_full_mxst <- Iso_full_mxst %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value")
@@ -220,6 +229,8 @@ stat_compare_means(label.y = 1.5)
 
 # Mean Temperature of the Driest Quarter
 
+Mn_Tmp_Dst_Qtr_Curr_mxst <- Current_maxSuit %>%
+  select(Mean_Temp_Driest_Qtr_Current)
 Mn_Tmp_Dst_Qtr_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
   select(Mean_Temp_Driest_Qtr_2011_2040_126)
 Mn_Tmp_Dst_Qtr_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
@@ -231,17 +242,19 @@ Mn_Tmp_Dst_Qtr_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
 
 # Combine
 
-Mn_Tmp_Dst_Qtr_full_mxst <- bind_cols(list(Mn_Tmp_Dst_Qtr_1140_126_mxst,
-                                       Mn_Tmp_Dst_Qtr_1140_585_mxst,
-                                       Mn_Tmp_Dst_Qtr_4170_126_mxst,
-                                       Mn_Tmp_Dst_Qtr_4170_585_mxst))
+Mn_Tmp_Dst_Qtr_full_mxst <- bind_cols(list(Mn_Tmp_Dst_Qtr_Curr_mxst,
+                                           Mn_Tmp_Dst_Qtr_1140_126_mxst,
+                                           Mn_Tmp_Dst_Qtr_1140_585_mxst,
+                                           Mn_Tmp_Dst_Qtr_4170_126_mxst,
+                                           Mn_Tmp_Dst_Qtr_4170_585_mxst))
 
 # Configure
 
-colnames(Mn_Tmp_Dst_Qtr_full_mxst) <- c('(2011-2040) ssp126',
-                                   '(2011-2040) ssp585',
-                                   '(2041-2070) ssp126',
-                                   '(2041-2070) ssp585')
+colnames(Mn_Tmp_Dst_Qtr_full_mxst) <- c('Current',
+                                        '(2011-2040) ssp126',
+                                        '(2011-2040) ssp585',
+                                        '(2041-2070) ssp126',
+                                        '(2041-2070) ssp585')
 
 Mn_Tmp_Dst_Qtr_full_mxst <- Mn_Tmp_Dst_Qtr_full_mxst %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value")
@@ -271,6 +284,8 @@ stat_compare_means(label.y = 50)
 
 # Precipitation of the Wettest Month
 
+Prc_Wst_Mnth_Curr_mxst <- Current_maxSuit %>%
+  select(Prec_of_Wettest_Month_Current)
 Prc_Wst_Mnth_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
   select(Prec_of_Wettest_Month_2011_2040_126)
 Prc_Wst_Mnth_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
@@ -282,17 +297,19 @@ Prc_Wst_Mnth_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
 
 # Combine
 
-Prc_Wst_Mnth_full_mxst <- bind_cols(list(Prc_Wst_Mnth_1140_126_mxst,
-                                       Prc_Wst_Mnth_1140_585_mxst,
-                                       Prc_Wst_Mnth_4170_126_mxst,
-                                       Prc_Wst_Mnth_4170_585_mxst))
+Prc_Wst_Mnth_full_mxst <- bind_cols(list(Prc_Wst_Mnth_Curr_mxst,
+                                         Prc_Wst_Mnth_1140_126_mxst,
+                                         Prc_Wst_Mnth_1140_585_mxst,
+                                         Prc_Wst_Mnth_4170_126_mxst,
+                                         Prc_Wst_Mnth_4170_585_mxst))
 
 # Configure
 
-colnames(Prc_Wst_Mnth_full_mxst) <- c('(2011-2040) ssp126',
-                                   '(2011-2040) ssp585',
-                                   '(2041-2070) ssp126',
-                                   '(2041-2070) ssp585')
+colnames(Prc_Wst_Mnth_full_mxst) <- c('Current',
+                                      '(2011-2040) ssp126',
+                                      '(2011-2040) ssp585',
+                                      '(2041-2070) ssp126',
+                                      '(2041-2070) ssp585')
 
 Prc_Wst_Mnth_full_mxst <- Prc_Wst_Mnth_full_mxst %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value")
@@ -318,3 +335,4 @@ stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
                                         '(2041-2070) ssp585')),
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 550)
+
