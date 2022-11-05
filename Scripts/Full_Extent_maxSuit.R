@@ -66,4 +66,34 @@ An_Mn_Tmp_full_mxst <- bind_cols(list(An_Mn_Tmp_1140_126_mxst, An_Mn_Tmp_1140_58
 
 # Configure
 
-colnames(An_Mn_Tmp_full_mxst) <- c('(2011-2040) ssp126', '(2011-2040) ssp585')
+colnames(An_Mn_Tmp_full_mxst) <- c('(2011-2040) ssp126',
+                                   '(2011-2040) ssp585',
+                                   '(2041-2070) ssp126',
+                                   '(2041-2070) ssp585')
+
+An_Mn_Tmp_full_mxst <- An_Mn_Tmp_full_mxst %>%
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+
+An_Mn_Tmp_full_mxst_boxplot <- An_Mn_Tmp_full_mxst %>%
+  ggboxplot(x = "Variable",
+            y = "Value",
+            xlab = "Projection and Year Range",
+            ylab = "Annual Mean Temperature \n Highest Suitability",
+            fill = "Variable",
+            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
+                                        '(2011-2040) ssp585'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp126'),
+                                      c('(2041-2070) ssp126',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp126'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp585'))
+                  label = "p.signif", hide.ns = FALSE) +
+stat_compare_means(label.y = 50)
+
+
