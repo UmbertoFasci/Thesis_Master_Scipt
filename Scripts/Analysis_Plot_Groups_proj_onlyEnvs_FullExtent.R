@@ -14,7 +14,7 @@ library(ggpubr)
 Annual_Mean_Temoerature_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_01_aus.asc")
 Mean_Diurnal_Range_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_02_aus.asc")
 Isothermality_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_03_aus.asc")
-Mean_Temp_Driest_Qtr_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_09_aus.ascq")
+Mean_Temp_Driest_Qtr_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_09_aus.asc")
 Prec_of_Wettest_Month_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_13_aus.asc")
 
 # 2011-2040 ssp126
