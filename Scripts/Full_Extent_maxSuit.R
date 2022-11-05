@@ -157,37 +157,87 @@ stat_compare_means(label.y = 50)
 
 # Isothermality
 
-Mn_Dnl_Rng_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
-  select(Mean_Diurnal_Range_2011_2040_126)
-Mn_Dnl_Rng_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
-  select(Mean_Diurnal_Range_2011_2040_585)
-Mn_Dnl_Rng_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>%
-  select(Mean_Diurnal_Range_2041_2070_126)
-Mn_Dnl_Rng_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
-  select(Mean_Diurnal_Range_2041_2070_585)
+Iso_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
+  select(Isothermality_2011_2040_126)
+Iso_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
+  select(Isothermality_2011_2040_585)
+Iso_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>%
+  select(Isothermality_2041_2070_126)
+Iso_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
+  select(Isothermality_2041_2070_585)
 
 # Combine
 
-Mn_Dnl_Rng_full_mxst <- bind_cols(list(Mn_Dnl_Rng_1140_126_mxst,
-                                       Mn_Dnl_Rng_1140_585_mxst,
-                                       Mn_Dnl_Rng_4170_126_mxst,
-                                       Mn_Dnl_Rng_4170_585_mxst))
+Iso_full_mxst <- bind_cols(list(Iso_1140_126_mxst,
+                                       Iso_1140_585_mxst,
+                                       Iso_4170_126_mxst,
+                                       Iso_4170_585_mxst))
 
 # Configure
 
-colnames(Mn_Dnl_Rng_full_mxst) <- c('(2011-2040) ssp126',
+colnames(Iso_full_mxst) <- c('(2011-2040) ssp126',
                                    '(2011-2040) ssp585',
                                    '(2041-2070) ssp126',
                                    '(2041-2070) ssp585')
 
-Mn_Dnl_Rng_full_mxst <- Mn_Dnl_Rng_full_mxst %>%
+Iso_full_mxst <- Iso_full_mxst %>%
   pivot_longer(everything(), names_to = "Variable", values_to = "Value")
 
-Mn_Dnl_Rng_full_mxst_boxplot <- Mn_Dnl_Rng_full_mxst %>%
+Iso_full_mxst_boxplot <- Iso_full_mxst %>%
   ggboxplot(x = "Variable",
             y = "Value",
             xlab = "Projection and Year Range",
-            ylab = "Mean Diurnal Range \n Highest Bd Suitability",
+            ylab = "Isothermality \n Highest Bd Suitability",
+            fill = "Variable",
+            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
+                                        '(2011-2040) ssp585'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp126'),
+                                      c('(2041-2070) ssp126',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp126'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp585'))
+                  label = "p.signif", hide.ns = FALSE) +
+stat_compare_means(label.y = 50)
+
+# Mean Temperature of the Driest Quarter
+
+Mn_Tmp_Dst_Qtr_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
+  select(Mean_Temp_Driest_Qtr_2011_2040_126)
+Mn_Tmp_Dst_Qtr_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
+  select(Mean_Temp_Driest_Qtr_2011_2040_585)
+Mn_Tmp_Dst_Qtr_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>%
+  select(Mean_Temp_Driest_Qtr_2041_2070_126)
+Mn_Tmp_Dst_Qtr_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
+  select(Mean_Temp_Driest_Qtr_2041_2070_585)
+
+# Combine
+
+Mn_Tmp_Dst_Qtr_full_mxst <- bind_cols(list(Mn_Tmp_Dst_Qtr_1140_126_mxst,
+                                       Mn_Tmp_Dst_Qtr_1140_585_mxst,
+                                       Mn_Tmp_Dst_Qtr_4170_126_mxst,
+                                       Mn_Tmp_Dst_Qtr_4170_585_mxst))
+
+# Configure
+
+colnames(Mn_Tmp_Dst_Qtr_full_mxst) <- c('(2011-2040) ssp126',
+                                   '(2011-2040) ssp585',
+                                   '(2041-2070) ssp126',
+                                   '(2041-2070) ssp585')
+
+Mn_Tmp_Dst_Qtr_full_mxst <- Mn_Tmp_Dst_Qtr_full_mxst %>%
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+
+Mn_Tmp_Dst_Qtr_full_mxst_boxplot <- Mn_Tmp_Dst_Qtr_full_mxst %>%
+  ggboxplot(x = "Variable",
+            y = "Value",
+            xlab = "Projection and Year Range",
+            ylab = "Mean Temp. of the Driest Qtr \n Highest Bd Suitability",
             fill = "Variable",
             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
 stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
