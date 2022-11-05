@@ -2,6 +2,7 @@ library(tidyverse)
 library(ggpubr)
 # Filter out the max suitability levels return only rows that have suitability_level == 4.
 
+Current_maxSuit <- Current_Stats %>% filter(Suitability_Levels == 4)
 MRIESM2_1140_126_maxSuit <- MRIESM2_1140_126_Stats %>% filter(Suitability_Levels == 4)
 MRIESM2_1140_585_maxSuit <- MRIESM2_1140_585_Stats %>% filter(Suitability_Levels == 4)
 MRIESM2_4170_126_maxSuit <- MRIESM2_4170_126_Stats %>% filter(Suitability_Levels == 4)
@@ -152,7 +153,7 @@ stat_compare_means(comparisons = list(c('(2011-2040) ssp126',
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp585')),
                   label = "p.signif", hide.ns = FALSE) +
-stat_compare_means(label.y = 30)
+stat_compare_means(label.y = 35)
 
 
 # Isothermality
