@@ -187,10 +187,10 @@ colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "
 # Current
 
 Current_Stats <- Current_Avg_df
-Current_Stats$Annual_Mean_Temperature_Current <- Annual_Mean_Temperature_Curr_df$Annual_Mean_Temperature_Current
-Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$Mean_Diurnal_Range_Current
-Current_Stats$Isothermality_Current <- Isothermality_Curr_df$Isothermality_Current
-Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$Mean_Temp_Driest_Qtr_Current
+Current_Stats$Annual_Mean_Temperature_Current <- Annual_Mean_Temperature_Curr_df$scaled_anmn
+Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$scaled_mndl
+Current_Stats$Isothermality_Current <- Isothermality_Curr_df$scaled_iso
+Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$scaled_mntmp
 Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
 
 # 2011-2040 ssp126
