@@ -71,7 +71,7 @@ MRIESM2_4170_126_maxSuit <- MRIESM2_4170_126_maxSuit %>% mutate(binary = 1)
 MRIESM2_4170_585_maxSuit <- MRIESM2_4170_585_maxSuit %>% mutate(binary = 1)
 
 Current_maxSuit_binary_map <- ggplot(data = Current_maxSuit, aes(x=Longitude, y=Latitude)) +
-  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.5), show.legend = FALSE) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.5, linetype = "-"), show.legend = FALSE) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
