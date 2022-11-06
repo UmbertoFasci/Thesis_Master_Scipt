@@ -60,6 +60,66 @@ MRIESM2_4170_585_maxSuit_map <- ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Lo
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5))
 
+# Plot binary plots
+
+# Create Binary data (add columns full of 1)
+
+Current_maxSuit <- Current_maxSuit %>% mutate(binary = 1)
+MRIESM2_1140_126_maxSuit <- MRIESM2_1140_126_maxSuit %>% mutate(binary = 1)
+MRIESM2_1140_585_maxSuit <- MRIESM2_1140_585_maxSuit %>% mutate(binary = 1)
+MRIESM2_4170_126_maxSuit <- MRIESM2_4170_126_maxSuit %>% mutate(binary = 1)
+MRIESM2_4170_585_maxSuit <- MRIESM2_4170_585_maxSuit %>% mutate(binary = 1)
+
+Current_maxSuit_binary_map <- ggplot(data = Current_maxSuit, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.8)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
+MRIESM2_1140_126_maxSuit_binary_map <- ggplot(data = MRIESM2_1140_126_maxSuit, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.8)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
+MRIESM2_1140_585_maxSuit_binary_map <- ggplot(data = MRIESM2_1140_585_maxSuit, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.8)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
+MRIESM2_4170_126_maxSuit_binary_map <- ggplot(data = MRIESM2_4170_126_maxSuit, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.8)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
+MRIESM2_4170_585_maxSuit_binary_map <- ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `binary`, colour = "red", alpha = 0.8)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
 # Compile all env vars from each year range and projection type for comparison.
 
 # First Select columns individually and create an instance of their record in order to compile them together in future code.
