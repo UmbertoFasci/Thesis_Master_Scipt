@@ -249,7 +249,7 @@ bin_comparisons <- list( c("1", "2"),
 # Annual Mean Temp Full Extent
 
 Annual_Mean_Temp_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                               y = "scaled_anmn",
+                                                                               y = "Annual_Mean_Temperature_Current",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (Current)",
                                                                                fill = "Suitability_Levels",
@@ -296,7 +296,7 @@ Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x
 # Mean Diurnal Range
 
 Mean_Diurnal_Range_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                                 y = "scaled_mndl",
+                                                                                 y = "Mean_Diurnal_Range_Current",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (Current)",
                                                                                  fill = "Suitability_Levels",
@@ -344,7 +344,7 @@ Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot
 
 
 Isothermality_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                            y = "scaled_iso",
+                                                                            y = "Isothermality_Current",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (Current)",
                                                                             fill = "Suitability_Levels",
@@ -391,7 +391,7 @@ Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = 
 # Mean Temperature of The Driest Quarter
 
 Mean_Temp_Driest_Qtr_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                                   y = "scaled_mntmp",
+                                                                                   y = "Mean_Temp_Driest_Qtr_Current",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (Current)",
                                                                                    fill = "Suitability_Levels",
