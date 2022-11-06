@@ -95,11 +95,11 @@ Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_20
 
 # Current
 
-Annual_Mean_Temperature_Curr_df <- rasterToPoints(Annual_Mean_Temperature_Curr.p)
-Mean_Diurnal_Range_Curr_df <- rasterToPoints(Mean_Diurnal_Range_Curr.p)
-Isothermality_Curr_df <- rasterToPoints(Isothermality_Curr.p)
-Mean_Temp_Driest_Qtr_Curr_df <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr.p)
-Prec_of_Wettest_Month_Curr_df <- rasterToPoints(Prec_of_Wettest_Month_Curr.p)
+Annual_Mean_Temperature_Curr_df <- data.frame(Annual_Mean_Temperature_Curr.p)
+Mean_Diurnal_Range_Curr_df <- data.frame(Mean_Diurnal_Range_Curr.p)
+Isothermality_Curr_df <- data.frame(Isothermality_Curr.p)
+Mean_Temp_Driest_Qtr_Curr_df <- data.frame(Mean_Temp_Driest_Qtr_Curr.p)
+Prec_of_Wettest_Month_Curr_df <- data.frame(Prec_of_Wettest_Month_Curr.p)
 
 # 2011-2040 ssp126
 
