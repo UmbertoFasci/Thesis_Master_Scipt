@@ -143,6 +143,13 @@ colnames(Isothermality_Curr_df) <- c("Longitude", "latitude", "Isothermality_Cur
 colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "latitude", "Mean_Temp_Driest_Qtr_Current")
 colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "latitude", "Prec_of_Wettest_Month_Current")
 
+# Resample to align scale
+mutate(Annual_Mean_Temperature_Curr_df, scaled_anmn = Annual_Mean_Temperature_Current / 10)
+mutate(Mean_Diurnal_Range_Curr_df, scaled_mndl = Mean_Diurnal_Range_Current / 10)
+mutate(Isothermality_Curr_df, scaled_iso = Isothermality_Current / 1000)
+mutate(Mean_Temp_Driest_Qtr_Curr_df, scaled_mntmp = Mean_Temp_Driest_Qtr_Current / 10)
+# no mutation needed for precipitation of the wettest month... sample scales are aligned.
+
 # 2011-2040 ssp126
 
 colnames(Annual_Mean_Temp_2011_2040_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_126")
@@ -242,7 +249,7 @@ bin_comparisons <- list( c("1", "2"),
 # Annual Mean Temp Full Extent
 
 Annual_Mean_Temp_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                               y = "Annual_Mean_Temperature_Current",
+                                                                               y = "scaled_anmn",
                                                                                xlab = "Predicted Bd Distribution",
                                                                                ylab = "Annual Mean Temp. (Current)",
                                                                                fill = "Suitability_Levels",
@@ -289,7 +296,7 @@ Annual_Mean_Temp_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x
 # Mean Diurnal Range
 
 Mean_Diurnal_Range_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                                 y = "Mean_Diurnal_Range_Current",
+                                                                                 y = "scaled_mndl",
                                                                                  xlab = "Predicted Bd Distribution",
                                                                                  ylab = "Mean Diurnal Range (Current)",
                                                                                  fill = "Suitability_Levels",
@@ -337,7 +344,7 @@ Mean_Diurnal_Range_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot
 
 
 Isothermality_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                            y = "Isothermality_Current",
+                                                                            y = "scaled_iso",
                                                                             xlab = "Predicted Bd Distribution",
                                                                             ylab = "Isothermality (Current)",
                                                                             fill = "Suitability_Levels",
@@ -384,7 +391,7 @@ Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = 
 # Mean Temperature of The Driest Quarter
 
 Mean_Temp_Driest_Qtr_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
-                                                                                   y = "Mean_Temp_Driest_Qtr_Current",
+                                                                                   y = "scaled_mntmp",
                                                                                    xlab = "Predicted Bd Distribution",
                                                                                    ylab = "Mean Temp. Driest Qtr. (Current)",
                                                                                    fill = "Suitability_Levels",
