@@ -101,7 +101,7 @@ An_Mn_Tmp_full_mxst_boxplot <- An_Mn_Tmp_full_mxst %>%
             xlab = "Projection and Year Range",
             ylab = "Annual Mean Temperature \n Highest Bd Suitability",
             fill = "Variable",
-            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+            palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
                                       c('(2011-2040) ssp126',
@@ -164,7 +164,7 @@ Mn_Dnl_Rng_full_mxst_boxplot <- Mn_Dnl_Rng_full_mxst %>%
             xlab = "Projection and Year Range",
             ylab = "Mean Diurnal Range \n Highest Bd Suitability",
             fill = "Variable",
-            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+            palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
                                       c('(2011-2040) ssp126',
@@ -227,7 +227,7 @@ Iso_full_mxst_boxplot <- Iso_full_mxst %>%
             xlab = "Projection and Year Range",
             ylab = "Isothermality \n Highest Bd Suitability",
             fill = "Variable",
-            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+            palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
                                       c('(2011-2040) ssp126',
@@ -289,7 +289,7 @@ Mn_Tmp_Dst_Qtr_full_mxst_boxplot <- Mn_Tmp_Dst_Qtr_full_mxst %>%
             xlab = "Projection and Year Range",
             ylab = "Mean Temp. of the Driest Qtr \n Highest Bd Suitability",
             fill = "Variable",
-            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+            palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
                                       c('(2011-2040) ssp126',
@@ -352,7 +352,7 @@ Prc_Wst_Mnth_full_mxst_boxplot <- Prc_Wst_Mnth_full_mxst %>%
             xlab = "Projection and Year Range",
             ylab = "Prec. of the Wettest Month \n Highest Bd Suitability",
             fill = "Variable",
-            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+            ppalette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
                                       c('(2011-2040) ssp126',
