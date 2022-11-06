@@ -146,7 +146,7 @@ colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "latitude", "Prec_of_W
 # Resample to align scale
 Annual_Mean_Temperature_Curr_df <- mutate(Annual_Mean_Temperature_Curr_df, scaled_anmn = trunc(Annual_Mean_Temperature_Current / 10))
 Mean_Diurnal_Range_Curr_df <- mutate(Mean_Diurnal_Range_Curr_df, scaled_mndl = trunc(Mean_Diurnal_Range_Current / 10))
-Isothermality_Curr_df <- mutate(Isothermality_Curr_df, scaled_iso = trunc(Isothermality_Current / 1000))
+Isothermality_Curr_df <- mutate(Isothermality_Curr_df, scaled_iso = Isothermality_Current / 1000)
 Mean_Temp_Driest_Qtr_Curr_df <- mutate(Mean_Temp_Driest_Qtr_Curr_df, scaled_mntmp = trunc(Mean_Temp_Driest_Qtr_Current / 10))
 # no mutation needed for precipitation of the wettest month... sample scales are aligned.
 
