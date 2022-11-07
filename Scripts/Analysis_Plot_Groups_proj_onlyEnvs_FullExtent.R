@@ -542,7 +542,7 @@ MRIESM2_2041_2070_585_Histogram <- MRIESM2_4170_585_Stats %>% gghistogram(x = "P
 # Annual Mean Temp
 
 Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
+  geom_tile(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -552,7 +552,7 @@ Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_1
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Annual_Mean_Temp_2011_2040_585_map <- ggplot(data = Annual_Mean_Temp_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
+  geom_tile(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -562,7 +562,7 @@ Annual_Mean_Temp_2011_2040_585_map <- ggplot(data = Annual_Mean_Temp_2011_2040_5
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Annual_Mean_Temp_2041_2070_126_map <- ggplot(data = Annual_Mean_Temp_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
+  geom_tile(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -572,7 +572,7 @@ Annual_Mean_Temp_2041_2070_126_map <- ggplot(data = Annual_Mean_Temp_2041_2070_1
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
+  geom_tile(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -584,7 +584,7 @@ Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_5
 # Mean Diurnal Range
 
 Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
+  geom_tile(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -594,7 +594,7 @@ Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_20
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Diurnal_Range_2011_2040_585_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
+  geom_tile(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -604,7 +604,7 @@ Mean_Diurnal_Range_2011_2040_585_map <- ggplot(data = Mean_Diurnal_Range_2011_20
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Diurnal_Range_2041_2070_126_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
+  geom_tile(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -614,7 +614,7 @@ Mean_Diurnal_Range_2041_2070_126_map <- ggplot(data = Mean_Diurnal_Range_2041_20
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
+  geom_tile(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -626,7 +626,7 @@ Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_20
 # Isothermality
 
 Isothermality_2011_2040_126_map <- ggplot(data = Isothermality_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Isothermality_2011_2040_126`)) +
+  geom_tile(aes(fill = `Isothermality_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -636,7 +636,7 @@ Isothermality_2011_2040_126_map <- ggplot(data = Isothermality_2011_2040_126_df,
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Isothermality_2011_2040_585_map <- ggplot(data = Isothermality_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Isothermality_2011_2040_585`)) +
+  geom_tile(aes(fill = `Isothermality_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -646,7 +646,7 @@ Isothermality_2011_2040_585_map <- ggplot(data = Isothermality_2011_2040_585_df,
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Isothermality_2041_2070_126_map <- ggplot(data = Isothermality_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Isothermality_2041_2070_126`)) +
+  geom_tile(aes(fill = `Isothermality_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -656,7 +656,7 @@ Isothermality_2041_2070_126_map <- ggplot(data = Isothermality_2041_2070_126_df,
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Isothermality_2041_2070_585`)) +
+  geom_tile(aes(fill = `Isothermality_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -668,7 +668,7 @@ Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df,
 # Mean Temperature of The Driest Quarter
 
 Mean_Temp_Driest_Qtr_2011_2040_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
+  geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -678,7 +678,7 @@ Mean_Temp_Driest_Qtr_2011_2040_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_201
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Temp_Driest_Qtr_2011_2040_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
+  geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -688,7 +688,7 @@ Mean_Temp_Driest_Qtr_2011_2040_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_201
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Temp_Driest_Qtr_2041_2070_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
+  geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -698,7 +698,7 @@ Mean_Temp_Driest_Qtr_2041_2070_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_204
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
+  geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -710,7 +710,7 @@ Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_204
 # Precipitation of The Wettest Month
 
 Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
+  geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -720,7 +720,7 @@ Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
+  geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -730,7 +730,7 @@ Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Prec_of_Wettest_Month_2041_2070_126_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
+  geom_tile(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -740,7 +740,7 @@ Prec_of_Wettest_Month_2041_2070_126_map <- ggplot(data = Prec_of_Wettest_Month_2
         panel.border = element_rect(colour = "black", size = 0.5))
 
 Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
+  geom_tile(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
   annotation_scale(location = "bl", width_hint = 0.5) +
@@ -753,7 +753,7 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
 # Average Bd Suitability Prediction
 
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
+  geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -764,7 +764,7 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
+  geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -775,7 +775,7 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
+  geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
@@ -786,7 +786,7 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5))
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
-  geom_raster(aes(fill = `Predicted_Bd_Suitability`)) +
+  geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
   coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
