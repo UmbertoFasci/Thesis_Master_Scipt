@@ -593,6 +593,16 @@ Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_5
 
 # Mean Diurnal Range
 
+Mean_Diurnal_Range_Current_map <- ggplot(data = Mean_Diurnal_Range_Curr_df, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `Mean_Diurnal_Range_Current`)) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
 Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
   labs(x = "Longitude", y = "Latitude") +
