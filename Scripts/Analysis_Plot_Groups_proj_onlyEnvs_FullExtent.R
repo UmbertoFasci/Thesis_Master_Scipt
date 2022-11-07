@@ -802,6 +802,17 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
 
 # Average Bd Suitability Prediction
 
+Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude)) +
+  geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
+  scale_fill_distiller(palette = "RdGy", direction = -1) +
+  labs(x = "Longitude", y = "Latitude") +
+  coord_sf(xlim = c(110.00, 160.00), ylim = c(-45.00, -10.00), expand = T, crs = "WGS84") +
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
+        panel.border = element_rect(colour = "black", size = 0.5))
+
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
