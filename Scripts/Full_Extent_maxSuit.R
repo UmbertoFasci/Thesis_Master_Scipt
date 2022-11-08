@@ -133,7 +133,7 @@ Current_Avg_preds_binary <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Lat
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) + 
-  geom_tile(data = Current_maxSuit, aes(fill = `binary`, alpha = 0.3))
+  geom_tile(aes(fill = `Suitability_Levels`, alpha = 0.3), data = subset(Current_Avg_df$`Suitability_Levels` == 4))
 
 MRIESM2_1140_126_Avg_preds_binary <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -145,7 +145,7 @@ MRIESM2_1140_126_Avg_preds_binary <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) +
-  geom_tile(data = MRIESM2_1140_126_maxSuit, aes(fill = `binary`, alpha = 0.3))
+  geom_tile(aes(fill = `Suitability_Levels`, alpha = 0.3), data = subset(Current_Avg_df$`Suitability_Levels` == 4))
 
 MRIESM2_1140_585_Avg_preds_binary <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -157,7 +157,7 @@ MRIESM2_1140_585_Avg_preds_binary <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) +
-  geom_tile(data = MRIESM2_1140_585_maxSuit, aes(fill = `binary`, alpha = 0.3))
+  geom_tile(aes(fill = `Suitability_Levels`, alpha = 0.3), data = subset(Current_Avg_df$`Suitability_Levels` == 4))
 
 MRIESM2_4170_126_Avg_preds_binary <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -169,7 +169,7 @@ MRIESM2_4170_126_Avg_preds_binary <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) +
-  geom_tile(data = MRIESM2_4170_126_maxSuit, aes(fill = `binary`, alpha = 0.3))
+  geom_tile(aes(fill = `Suitability_Levels`, alpha = 0.3), data = subset(Current_Avg_df$`Suitability_Levels` == 4))
 
 MRIESM2_4170_585_Avg_preds_binary <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -181,7 +181,7 @@ MRIESM2_4170_585_Avg_preds_binary <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) +
-  geom_tile(data = MRIESM2_4170_585_maxSuit, aes(fill = `binary`, alpha = 0.3))
+  geom_tile(aes(fill = `Suitability_Levels`, alpha = 0.3), data = subset(Current_Avg_df$`Suitability_Levels` == 4))
   
 # Compile all env vars from each year range and projection type for comparison.
 
