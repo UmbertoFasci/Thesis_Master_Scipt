@@ -133,7 +133,7 @@ Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude))
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) + 
-  geom_tile(data = `binary`)
+  geom_tile(data = Current_maxSuit, aes(fill = `binary`))
 
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -144,7 +144,8 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", size = 0.5)) +
+  geom_tile(data = MRIESM2_1140_126_maxSuit, aes(fill = `binary`))
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -155,7 +156,8 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", size = 0.5)) +
+  geom_tile(data = MRIESM2_1140_585_maxSuit, aes(fill = `binary`))
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -166,7 +168,8 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", size = 0.5)) +
+  geom_tile(data = MRIESM2_4170_126_maxSuit, aes(fill = `binary`))
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -177,8 +180,9 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
-
+        panel.border = element_rect(colour = "black", size = 0.5)) +
+  geom_tile(data = MRIESM2_4170_585_maxSuit, aes(fill = `binary`))
+  
 # Compile all env vars from each year range and projection type for comparison.
 
 # First Select columns individually and create an instance of their record in order to compile them together in future code.
