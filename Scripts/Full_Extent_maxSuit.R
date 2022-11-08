@@ -123,7 +123,7 @@ MRIESM2_4170_585_maxSuit_binary_map <- ggplot(data = MRIESM2_4170_585_maxSuit, a
 
 # Full Predictions with binary map
 
-Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude)) +
+Current_Avg_preds_binary <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
@@ -135,7 +135,7 @@ Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude))
         panel.border = element_rect(colour = "black", size = 0.5)) + 
   geom_tile(data = Current_maxSuit, aes(fill = `binary`))
 
-MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_1140_126_Avg_preds_binary <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
@@ -147,7 +147,7 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5)) +
   geom_tile(data = MRIESM2_1140_126_maxSuit, aes(fill = `binary`))
 
-MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_1140_585_Avg_preds_binary <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
@@ -159,7 +159,7 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5)) +
   geom_tile(data = MRIESM2_1140_585_maxSuit, aes(fill = `binary`))
 
-MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_4170_126_Avg_preds_binary <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
@@ -171,7 +171,7 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
         panel.border = element_rect(colour = "black", size = 0.5)) +
   geom_tile(data = MRIESM2_4170_126_maxSuit, aes(fill = `binary`))
 
-MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
+MRIESM2_4170_585_Avg_preds_binary <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
   scale_fill_distiller(palette = "RdGy", direction = -1) +
   labs(x = "Longitude", y = "Latitude") +
