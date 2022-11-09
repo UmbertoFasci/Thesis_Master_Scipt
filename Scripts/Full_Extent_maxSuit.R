@@ -185,7 +185,8 @@ MRIESM2_4170_585_Avg_preds_binary <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
         panel.border = element_rect(colour = "black", size = 0.5)) +
-  geom_tile(data = MRIESM2_4170_585_maxSuit, aes(x=Longitude, y=Latitude, fill = `Suitability_Levels`, colour = "white", alpha = 0.3))
+        ggplot(data = MRIESM2_4170_585_maxSuit, aes(x=Longitude, y=Latitude)) +
+        geom_tile(aes(fill = `Suitability_Levels`, colour = "white", alpha = 0.3))
   
 # Compile all env vars from each year range and projection type for comparison.
 
