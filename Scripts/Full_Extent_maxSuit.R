@@ -132,8 +132,9 @@ Current_Avg_preds_binary <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Lat
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5)) + 
-  geom_tile(data = Current_maxSuit, aes(x=Longitude, y=Latitude, fill = `Suitability_Levels`, colour = "white", alpha = 0.3))
+        panel.border = element_rect(colour = "black", size = 0.5)) +
+        ggplot(data = Current_maxSuit, aes(x=Longitude, y=Latitude)) +
+          geom_tile(aes(fill = `Suitability_Levels`, colour = "white", alpha = 0.3))
 
 MRIESM2_1140_126_Avg_preds_binary <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
