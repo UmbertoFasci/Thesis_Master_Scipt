@@ -757,7 +757,7 @@ Prec_of_Wettest_Month_Current_map <- ggplot(data = Prec_of_Wettest_Month_Curr_df
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
@@ -767,7 +767,7 @@ Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
@@ -811,7 +811,7 @@ Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude))
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -833,7 +833,7 @@ MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
