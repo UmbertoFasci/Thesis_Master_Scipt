@@ -549,7 +549,7 @@ Annual_Mean_Temp_Current_map <- ggplot(data = Annual_Mean_Temperature_Curr_df, a
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Annual_Mean_Temp_2011_2040_126`)) +
@@ -559,7 +559,7 @@ Annual_Mean_Temp_2011_2040_126_map <- ggplot(data = Annual_Mean_Temp_2011_2040_1
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Annual_Mean_Temp_2011_2040_585_map <- ggplot(data = Annual_Mean_Temp_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Annual_Mean_Temp_2011_2040_585`)) +
@@ -569,7 +569,7 @@ Annual_Mean_Temp_2011_2040_585_map <- ggplot(data = Annual_Mean_Temp_2011_2040_5
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Annual_Mean_Temp_2041_2070_126_map <- ggplot(data = Annual_Mean_Temp_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Annual_Mean_Temp_2041_2070_126`)) +
@@ -579,7 +579,7 @@ Annual_Mean_Temp_2041_2070_126_map <- ggplot(data = Annual_Mean_Temp_2041_2070_1
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Annual_Mean_Temp_2041_2070_585`)) +
@@ -589,7 +589,7 @@ Annual_Mean_Temp_2041_2070_585_map <- ggplot(data = Annual_Mean_Temp_2041_2070_5
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 # Mean Diurnal Range
 
@@ -601,7 +601,7 @@ Mean_Diurnal_Range_Current_map <- ggplot(data = Mean_Diurnal_Range_Curr_df, aes(
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Diurnal_Range_2011_2040_126`)) +
@@ -611,7 +611,7 @@ Mean_Diurnal_Range_2011_2040_126_map <- ggplot(data = Mean_Diurnal_Range_2011_20
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Diurnal_Range_2011_2040_585_map <- ggplot(data = Mean_Diurnal_Range_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Diurnal_Range_2011_2040_585`)) +
@@ -621,7 +621,7 @@ Mean_Diurnal_Range_2011_2040_585_map <- ggplot(data = Mean_Diurnal_Range_2011_20
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Diurnal_Range_2041_2070_126_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Diurnal_Range_2041_2070_126`)) +
@@ -631,7 +631,7 @@ Mean_Diurnal_Range_2041_2070_126_map <- ggplot(data = Mean_Diurnal_Range_2041_20
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Diurnal_Range_2041_2070_585`)) +
@@ -641,7 +641,7 @@ Mean_Diurnal_Range_2041_2070_585_map <- ggplot(data = Mean_Diurnal_Range_2041_20
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 # Isothermality
 
@@ -653,7 +653,7 @@ Isothermality_Current_map <- ggplot(data = Isothermality_Curr_df, aes(x=Longitud
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Isothermality_2011_2040_126_map <- ggplot(data = Isothermality_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Isothermality_2011_2040_126`)) +
@@ -663,7 +663,7 @@ Isothermality_2011_2040_126_map <- ggplot(data = Isothermality_2011_2040_126_df,
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Isothermality_2011_2040_585_map <- ggplot(data = Isothermality_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Isothermality_2011_2040_585`)) +
@@ -673,7 +673,7 @@ Isothermality_2011_2040_585_map <- ggplot(data = Isothermality_2011_2040_585_df,
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Isothermality_2041_2070_126_map <- ggplot(data = Isothermality_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Isothermality_2041_2070_126`)) +
@@ -683,7 +683,7 @@ Isothermality_2041_2070_126_map <- ggplot(data = Isothermality_2041_2070_126_df,
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Isothermality_2041_2070_585`)) +
@@ -693,7 +693,7 @@ Isothermality_2041_2070_585_map <- ggplot(data = Isothermality_2041_2070_585_df,
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 # Mean Temperature of The Driest Quarter
 
@@ -705,7 +705,7 @@ Mean_Temp_Driest_Qtr_Current_map <- ggplot(data = Mean_Temp_Driest_Qtr_Curr_df, 
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Temp_Driest_Qtr_2011_2040_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_126`)) +
@@ -715,7 +715,7 @@ Mean_Temp_Driest_Qtr_2011_2040_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_201
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Temp_Driest_Qtr_2011_2040_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2011_2040_585`)) +
@@ -725,7 +725,7 @@ Mean_Temp_Driest_Qtr_2011_2040_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_201
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Temp_Driest_Qtr_2041_2070_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_126`)) +
@@ -735,7 +735,7 @@ Mean_Temp_Driest_Qtr_2041_2070_126_map <- ggplot(data = Mean_Temp_Driest_Qtr_204
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Mean_Temp_Driest_Qtr_2041_2070_585`)) +
@@ -745,7 +745,7 @@ Mean_Temp_Driest_Qtr_2041_2070_585_map <- ggplot(data = Mean_Temp_Driest_Qtr_204
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 # Precipitation of The Wettest Month
 
@@ -757,7 +757,7 @@ Prec_of_Wettest_Month_Current_map <- ggplot(data = Prec_of_Wettest_Month_Curr_df
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
 
 Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_126`)) +
@@ -767,7 +767,7 @@ Prec_of_Wettest_Month_2011_2040_126_map <- ggplot(data = Prec_of_Wettest_Month_2
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
 
 Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2011_2040_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2011_2040_585`)) +
@@ -777,7 +777,7 @@ Prec_of_Wettest_Month_2011_2040_585_map <- ggplot(data = Prec_of_Wettest_Month_2
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Prec_of_Wettest_Month_2041_2070_126_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_126_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2041_2070_126`)) +
@@ -787,7 +787,7 @@ Prec_of_Wettest_Month_2041_2070_126_map <- ggplot(data = Prec_of_Wettest_Month_2
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2041_2070_585_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Prec_of_Wettest_Month_2041_2070_585`)) +
@@ -797,7 +797,7 @@ Prec_of_Wettest_Month_2041_2070_585_map <- ggplot(data = Prec_of_Wettest_Month_2
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 
 # Average Bd Suitability Prediction
@@ -811,7 +811,7 @@ Current_Avg_preds <- ggplot(data = Current_Avg_df, aes(x=Longitude, y=Latitude))
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", lineiwdth = 0.5))
 
 MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -822,7 +822,7 @@ MRIESM2_1140_126_Avg_preds <- ggplot(data = MRIESM2_1140_126_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 MRIESM2_1140_585_Avg_preds <- ggplot(data = MRIESM2_1140_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -844,7 +844,7 @@ MRIESM2_4170_126_Avg_preds <- ggplot(data = MRIESM2_4170_126_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longitude, y=Latitude)) +
   geom_tile(aes(fill = `Predicted_Bd_Suitability`)) +
@@ -855,7 +855,7 @@ MRIESM2_4170_585_Avg_preds <- ggplot(data = MRIESM2_4170_585_Avg_df, aes(x=Longi
   theme_bw() +
   theme(legend.title = element_blank(),
         legend.key.size = unit(6, "mm"), legend.text = element_text(size = 6),
-        panel.border = element_rect(colour = "black", size = 0.5))
+        panel.border = element_rect(colour = "black", linewidth = 0.5))
 
 # Layout Groups using patchwork
 
