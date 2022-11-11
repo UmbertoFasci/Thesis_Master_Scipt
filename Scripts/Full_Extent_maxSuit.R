@@ -164,24 +164,16 @@ An_Mn_Tmp_full_mxst_boxplot <- An_Mn_Tmp_full_mxst %>%
             palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
-                                      c('(2011-2040) ssp126',
-                                        '(2011-2040) ssp585'),
                                       c('Current',
                                         '(2011-2040) ssp585'),
-                                      c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp126'),
                                       c('Current',
                                         '(2041-2070) ssp126'),
-                                      c('(2041-2070) ssp126',
-                                        '(2041-2070) ssp585'),
                                       c('Current',
                                         '(2041-2070) ssp585'),
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp126'),
                                       c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp585'),
-                                      c('(2011-2040) ssp126',
-                                        '(2041-2070) ssp585')),
+                                        '(2041-2070) ssp585'))
                    label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 60)
 
@@ -227,24 +219,16 @@ Mn_Dnl_Rng_full_mxst_boxplot <- Mn_Dnl_Rng_full_mxst %>%
             palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
-                                      c('(2011-2040) ssp126',
-                                        '(2011-2040) ssp585'),
                                       c('Current',
                                         '(2011-2040) ssp585'),
-                                      c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp126'),
                                       c('Current',
                                         '(2041-2070) ssp126'),
-                                      c('(2041-2070) ssp126',
-                                        '(2041-2070) ssp585'),
                                       c('Current',
                                         '(2041-2070) ssp585'),
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp126'),
                                       c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp585'),
-                                      c('(2011-2040) ssp126',
-                                        '(2041-2070) ssp585')),
+                                        '(2041-2070) ssp585'))
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 35)
 
@@ -290,24 +274,16 @@ Iso_full_mxst_boxplot <- Iso_full_mxst %>%
             palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
-                                      c('(2011-2040) ssp126',
-                                        '(2011-2040) ssp585'),
                                       c('Current',
                                         '(2011-2040) ssp585'),
-                                      c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp126'),
                                       c('Current',
                                         '(2041-2070) ssp126'),
-                                      c('(2041-2070) ssp126',
-                                        '(2041-2070) ssp585'),
                                       c('Current',
                                         '(2041-2070) ssp585'),
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp126'),
                                       c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp585'),
-                                      c('(2011-2040) ssp126',
-                                        '(2041-2070) ssp585')),
+                                        '(2041-2070) ssp585'))
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 1.5)
 
@@ -352,24 +328,16 @@ Mn_Tmp_Dst_Qtr_full_mxst_boxplot <- Mn_Tmp_Dst_Qtr_full_mxst %>%
             palette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
-                                      c('(2011-2040) ssp126',
-                                        '(2011-2040) ssp585'),
                                       c('Current',
                                         '(2011-2040) ssp585'),
-                                      c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp126'),
                                       c('Current',
                                         '(2041-2070) ssp126'),
-                                      c('(2041-2070) ssp126',
-                                        '(2041-2070) ssp585'),
                                       c('Current',
                                         '(2041-2070) ssp585'),
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp126'),
                                       c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp585'),
-                                      c('(2011-2040) ssp126',
-                                        '(2041-2070) ssp585')),
+                                        '(2041-2070) ssp585'))
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 50)
 
@@ -415,24 +383,16 @@ Prc_Wst_Mnth_full_mxst_boxplot <- Prc_Wst_Mnth_full_mxst %>%
             ppalette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
 stat_compare_means(comparisons = list(c('Current',
                                         '(2011-2040) ssp126'),
-                                      c('(2011-2040) ssp126',
-                                        '(2011-2040) ssp585'),
                                       c('Current',
                                         '(2011-2040) ssp585'),
-                                      c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp126'),
                                       c('Current',
                                         '(2041-2070) ssp126'),
-                                      c('(2041-2070) ssp126',
-                                        '(2041-2070) ssp585'),
                                       c('Current',
                                         '(2041-2070) ssp585'),
                                       c('(2011-2040) ssp126',
                                         '(2041-2070) ssp126'),
                                       c('(2011-2040) ssp585',
-                                        '(2041-2070) ssp585'),
-                                      c('(2011-2040) ssp126',
-                                        '(2041-2070) ssp585')),
+                                        '(2041-2070) ssp585'))
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 550)
 
