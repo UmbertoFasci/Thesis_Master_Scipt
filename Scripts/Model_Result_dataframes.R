@@ -1,19 +1,19 @@
 # Current
 
-Current_1k_vargroup1_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup1/maxentResults.csv")
-Current_10k_vargroup1_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup1/maxentResults.csv")
-Current_1k_vargroup2_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup2/maxentResults.csv")
-Current_10k_vargroup2_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup2/maxentResults.csv")
-Current_1k_vargroup3_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup3/maxentResults.csv")
-Current_10k_vargroup3_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup3/maxentResults.csv")
-Current_1k_vargroup4_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup4/maxentResults.csv")
-Current_10k_vargroup4_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup4/maxentResults.csv")
-Current_1k_vargroup5_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup5/maxentResults.csv")
-Current_10k_vargroup5_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup5/maxentResults.csv")
-Current_1k_vargroup6_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup6/maxentResults.csv")
-Current_10k_vargroup6_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup6/maxentResults.csv")
-Current_1k_vargroup7_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_1k_vargroup7/maxentResults.csv")
-Current_10k_vargroup7_results <- read_csv("~/B_Dendrobatidis_Models/Current/Current_10k_vargroup7/maxentResults.csv")
+Current_1k_vargroup1_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup1/maxentResults.csv")
+Current_10k_vargroup1_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup1/maxentResults.csv")
+Current_1k_vargroup2_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup2/maxentResults.csv")
+Current_10k_vargroup2_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup2/maxentResults.csv")
+Current_1k_vargroup3_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup3/maxentResults.csv")
+Current_10k_vargroup3_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup3/maxentResults.csv")
+Current_1k_vargroup4_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup4/maxentResults.csv")
+Current_10k_vargroup4_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup4/maxentResults.csv")
+Current_1k_vargroup5_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup5/maxentResults.csv")
+Current_10k_vargroup5_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup5/maxentResults.csv")
+Current_1k_vargroup6_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup6/maxentResults.csv")
+Current_10k_vargroup6_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup6/maxentResults.csv")
+Current_1k_vargroup7_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_1k_vargroup7/maxentResults.csv")
+Current_10k_vargroup7_results <- read_csv("~/Thesis_Master/Thesis_Master_Data/B_Dendrobatidis_Models/Current/Current_10k_vargroup7/maxentResults.csv")
 
 # MRIESM2_20112040_ssp126
 
