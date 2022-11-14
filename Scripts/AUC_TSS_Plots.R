@@ -7,8 +7,8 @@ AUC_Results <- data.frame(AUC_Results)
 TSS_Results <- data.frame(TSS_Results)
 
 AUC_Plot <- ggplot(data = AUC_Results, aes(x = Variable.Group, y = Test.AUC)) +
-    geom_point(aes(color = `Variable.Group`, shape = `Background.Points`))
+    geom_point(aes(color = factor(Projection), shape = Background.Points))
 
 
 TSS_Plot <- ggplot(data = TSS_Results, aes(x = Variable.Group, y = TSS)) +
-    geom_point(aes(color = `Variable.Group`, shape = `Background.Points`))
+    geom_point(aes(color = factor(Projection), shape = Background.Points))
