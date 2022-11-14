@@ -55,17 +55,17 @@ Year Range,Projection,Background Points,Variable Group,Test AUC
 2041-2070,ssp 585,1k,5,0.9071
 2041-2070,ssp 585,1k,6,0.9328
 2041-2070,ssp 585,1k,7,0.8813
-Current,None,1k,1,0.8733
-Current,None,1k,2,0.8697
-Current,None,1k,3,0.8769
-Current,None,1k,4,0.867
-Current,None,1k,5,0.8765
-Current,None,1k,6,0.9109
-Current,None,1k,7,0.8634
-Current,None,10k,1,0.9682
-Current,None,10k,2,0.9635
-Current,None,10k,3,0.9648
-Current,None,10k,4,0.9578
-Current,None,10k,5,0.9508
-Current,None,10k,6,0.9399
-Current,None,10k,7,0.9001
+Current,Current,1k,1,0.8733
+Current,Current,1k,2,0.8697
+Current,Current,1k,3,0.8769
+Current,Current,1k,4,0.867
+Current,Current,1k,5,0.8765
+Current,Current,1k,6,0.9109
+Current,Current,1k,7,0.8634
+Current,Current,10k,1,0.9682
+Current,Current,10k,2,0.9635
+Current,Current,10k,3,0.9648
+Current,Current,10k,4,0.9578
+Current,Current,10k,5,0.9508
+Current,Current,10k,6,0.9399
+Current,Current,10k,7,0.9001
