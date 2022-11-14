@@ -22,3 +22,5 @@ TSS_Plot <- ggplot(data = TSS_Results, aes(x = as.character(Variable.Group), y =
     geom_hline(yintercept = 0.4, linetype = 'dashed', color = 'red') +
     xlab("Variable Group") +
     ylab("TSS")
+
+AUC_TSS_Plot <- ggarrange(AUC_Plot, TSS_Plot, ncol = 1, nrow = 2, common.legend = TRUE, legend = "bottom")
