@@ -1,5 +1,5 @@
 library(tidyverse)
-library(ggarrange)
+library(ggpubr)
 
 
 AUC_Results <- read.csv("~/Thesis_Master_Final/Thesis_Master_Script/Scripts/AUC_Results.csv")
