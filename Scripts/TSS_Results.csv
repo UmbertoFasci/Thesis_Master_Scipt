@@ -55,17 +55,17 @@ Year Range,Projection,Background Points,Variable Group,TSS
 2041-2070,ssp 585,1k,5,0.2912
 2041-2070,ssp 585,1k,6,0.3973
 2041-2070,ssp 585,1k,7,0.2388
-Current,None,1k,1,0.48
-Current,None,1k,2,0.3594
-Current,None,1k,3,0.3754
-Current,None,1k,4,0.3526
-Current,None,1k,5,0.5322
-Current,None,1k,6,0.3855
-Current,None,1k,7,0.1906
-Current,None,10k,1,0.1465
-Current,None,10k,2,0.1193
-Current,None,10k,3,0.1767
-Current,None,10k,4,0.1558
-Current,None,10k,5,0.2128
-Current,None,10k,6,0.2469
-Current,None,10k,7,0.1355
+Current,Current,1k,1,0.48
+Current,Current,1k,2,0.3594
+Current,Current,1k,3,0.3754
+Current,Current,1k,4,0.3526
+Current,Current,1k,5,0.5322
+Current,Current,1k,6,0.3855
+Current,Current,1k,7,0.1906
+Current,Current,10k,1,0.1465
+Current,Current,10k,2,0.1193
+Current,Current,10k,3,0.1767
+Current,Current,10k,4,0.1558
+Current,Current,10k,5,0.2128
+Current,Current,10k,6,0.2469
+Current,Current,10k,7,0.1355
