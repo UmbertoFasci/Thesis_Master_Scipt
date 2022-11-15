@@ -16,7 +16,7 @@ MRIESM2_1140_585_1k_var1_ras <- raster("/Users/umbertofasci/Thesis_Master_Final/
 MRIESM2_1140_585_1k_var5_ras <- raster("/Users/umbertofasci/Thesis_Master_Final/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_1140/ssp585/MRIESM2_1140_ssp585_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
 
 # 2041-2070 ssp126
-MRIESM2_4170_126_1k_var1_ras <- raster("/Users/umbertofasci/Thesis_Master_Final/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp126/MRIESM2_4170_ssp126_1k_vargroup1/Batrachochytrium_dendrobatidis.asc")
+MRIESM2_4170_126_1k_var5_ras <- raster("/Users/umbertofasci/Thesis_Master_Final/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp126/MRIESM2_4170_ssp126_1k_vargroup5/Batrachochytrium_dendrobatidis.asc")
 
 # 2041-2070 ssp858
 MRIESM2_4170_585_10k_var6_ras <- raster("/Users/umbertofasci/Thesis_Master_Final/Thesis_Master_Data/B_Dendrobatidis_Models/MRIESM2_4170/ssp585/MRIESM2_4170_ssp585_10k_vargroup6/Batrachochytrium_dendrobatidis.asc")
