@@ -11,16 +11,16 @@ TSS_Results <- data.frame(TSS_Results)
 colnames(AUC_Results) <- c("Year Range", "Projection", "Background Points", "Variable Group", "Test AUC")
 colnames(TSS_Results) <- c("Year Range", "Projection", "Background Points", "Variable Group", "TSS")
 
-AUC_Plot <- ggplot(data = AUC_Results, aes(x = as.character(Variable.Group), y = Test.AUC)) +
-    geom_point(aes(color = Year.Range, shape = Background.Points)) +
+AUC_Plot <- ggplot(data = AUC_Results, aes(x = as.character(`Variable Group`), y = `Test AUC`)) +
+    geom_point(aes(color = `Year Range`, shape = `Background Points`)) +
     facet_wrap(~Projection) +
     geom_hline(yintercept = 0.8, linetype = 'dashed', color = 'red') +
     xlab("Variable Group") +
     ylab("Test AUC")
 
 
-TSS_Plot <- ggplot(data = TSS_Results, aes(x = as.character(Variable.Group), y = TSS)) +
-    geom_point(aes(color = Year.Range, shape = Background.Points)) +
+TSS_Plot <- ggplot(data = TSS_Results, aes(x = as.character(`Variable Group`), y = `TSS`)) +
+    geom_point(aes(color = `Year Range`, shape = `Background Points`)) +
     facet_wrap(~Projection) +
     geom_hline(yintercept = 0.4, linetype = 'dashed', color = 'red') +
     xlab("Variable Group") +
