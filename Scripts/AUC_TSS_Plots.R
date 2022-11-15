@@ -9,7 +9,7 @@ AUC_Results <- data.frame(AUC_Results)
 TSS_Results <- data.frame(TSS_Results)
 
 AUC_Plot <- ggplot(data = AUC_Results, aes(x = as.character(Variable.Group), y = Test.AUC)) +
-    geom_point(aes(color = Year.Range, shape = Background.Points, size = 0.5)) +
+    geom_point(aes(color = Year.Range, shape = Background.Points)) +
     facet_wrap(~Projection) +
     geom_hline(yintercept = 0.8, linetype = 'dashed', color = 'red') +
     xlab("Variable Group") +
@@ -17,7 +17,7 @@ AUC_Plot <- ggplot(data = AUC_Results, aes(x = as.character(Variable.Group), y =
 
 
 TSS_Plot <- ggplot(data = TSS_Results, aes(x = as.character(Variable.Group), y = TSS)) +
-    geom_point(aes(color = Year.Range, shape = Background.Points, size = 0.5)) +
+    geom_point(aes(color = Year.Range, shape = Background.Points)) +
     facet_wrap(~Projection) +
     geom_hline(yintercept = 0.4, linetype = 'dashed', color = 'red') +
     xlab("Variable Group") +
