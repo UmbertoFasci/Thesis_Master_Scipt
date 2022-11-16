@@ -203,9 +203,18 @@ colnames(Human_Influence_2041_2070_585_df) <- c("Longitude", "Latitude", "Human_
 
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
+# Current
+
+Current_Stats <- Current_Avg_df
+Current_Stats$Annual_Mean_Temperature_Current <- Annual_Mean_Temperature_Curr_df$scaled_anmn
+Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$scaled_mndl
+Current_Stats$Isothermality_Current <- Isothermality_Curr_df$scaled_iso
+Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$scaled_mntmp
+Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
+Current_Stats$
+
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
-MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% distinct()
 MRIESM2_1140_126_Stats$`Annual_Mean_Temp_2011_2040_126` <- Annual_Mean_Temp_2011_2040_126_df$`Annual_Mean_Temp_2011_2040_126`
 MRIESM2_1140_126_Stats$`Mean_Diurnal_Range_2011_2040_126` <- Mean_Diurnal_Range_2011_2040_126_df$`Mean_Diurnal_Range_2011_2040_126`
 MRIESM2_1140_126_Stats$`Isothermality_2011_2040_126` <- Isothermality_2011_2040_126_df$`Isothermality_2011_2040_126`
@@ -213,12 +222,8 @@ MRIESM2_1140_126_Stats$`Mean_Temp_Driest_Qtr_2011_2040_126` <- Mean_Temp_Driest_
 MRIESM2_1140_126_Stats$`Prec_of_Wettest_Month_2011_2040_126` <- Prec_of_Wettest_Month_2011_2040_126_df$`Prec_of_Wettest_Month_2011_2040_126`
 MRIESM2_1140_126_Stats$`Human_Influence_2011_2040_126_df` <- Human_Influence_2011_2040_126_df$`Human_Influence_2011_2040_126`
 
-# Rename
-rename(MRIESM2_1140_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
-
 # 2011-2040 ssp585
 MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Avg_df
-MRIESM2_1140_585_Stats <- MRIESM2_1140_126_Stats %>% distinct()
 MRIESM2_1140_585_Stats$`Annual_Mean_Temp_2011_2040_585` <- Annual_Mean_Temp_2011_2040_585_df$`Annual_Mean_Temp_2011_2040_585`
 MRIESM2_1140_585_Stats$`Mean_Diurnal_Range_2011_2040_585` <- Mean_Diurnal_Range_2011_2040_585_df$`Mean_Diurnal_Range_2011_2040_585`
 MRIESM2_1140_585_Stats$`Isothermality_2011_2040_585` <- Isothermality_2011_2040_585_df$`Isothermality_2011_2040_585`
@@ -226,12 +231,8 @@ MRIESM2_1140_585_Stats$`Mean_Temp_Driest_Qtr_2011_2040_585` <- Mean_Temp_Driest_
 MRIESM2_1140_585_Stats$`Prec_of_Wettest_Month_2011_2040_585` <- Prec_of_Wettest_Month_2011_2040_585_df$`Prec_of_Wettest_Month_2011_2040_585`
 MRIESM2_1140_585_Stats$`Human_Influence_2011_2040_585_df` <- Human_Influence_2011_2040_585_df$`Human_Influence_2011_2040_585`
 
-# Rename
-rename(MRIESM2_1140_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
-
 # 2041-2070 ssp126
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Avg_df
-MRIESM2_4170_126_Stats <- MRIESM2_1140_126_Stats %>% distinct()
 MRIESM2_4170_126_Stats$`Annual_Mean_Temp_2041_2070_126` <- Annual_Mean_Temp_2041_2070_126_df$`Annual_Mean_Temp_2041_2070_126`
 MRIESM2_4170_126_Stats$`Mean_Diurnal_Range_2041_2070_126` <- Mean_Diurnal_Range_2041_2070_126_df$`Mean_Diurnal_Range_2041_2070_126`
 MRIESM2_4170_126_Stats$`Isothermality_2041_2070_126` <- Isothermality_2041_2070_126_df$`Isothermality_2041_2070_126`
@@ -239,21 +240,14 @@ MRIESM2_4170_126_Stats$`Mean_Temp_Driest_Qtr_2041_2070_126` <- Mean_Temp_Driest_
 MRIESM2_4170_126_Stats$`Prec_of_Wettest_Month_2041_2070_126` <- Prec_of_Wettest_Month_2041_2070_126_df$`Prec_of_Wettest_Month_2041_2070_126`
 MRIESM2_4170_126_Stats$`Human_Influence_2041_2070_126_df` <- Human_Influence_2041_2070_126_df$`Human_Influence_2041_2070_126`
 
-# Rename
-rename(MRIESM2_4170_126_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
-
 # 2041-2070 ssp585
 MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Avg_df
-MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% distinct()
 MRIESM2_4170_585_Stats$`Annual_Mean_Temp_2041_2070_585` <- Annual_Mean_Temp_2041_2070_585_df$`Annual_Mean_Temp_2041_2070_585`
 MRIESM2_4170_585_Stats$`Mean_Diurnal_Range_2041_2070_585` <- Mean_Diurnal_Range_2041_2070_585_df$`Mean_Diurnal_Range_2041_2070_585`
 MRIESM2_4170_585_Stats$`Isothermality_2041_2070_585` <- Isothermality_2041_2070_585_df$`Isothermality_2041_2070_585`
 MRIESM2_4170_585_Stats$`Mean_Temp_Driest_Qtr_2041_2070_585` <- Mean_Temp_Driest_Qtr_2041_2070_585_df$`Mean_Temp_Driest_Qtr_2041_2070_585`
 MRIESM2_4170_585_Stats$`Prec_of_Wettest_Month_2041_2070_585` <- Prec_of_Wettest_Month_2041_2070_585_df$`Prec_of_Wettest_Month_2041_2070_585`
 MRIESM2_4170_585_Stats$`Human_Influence_2041_2070_585_df` <- Human_Influence_2041_2070_585_df$`Human_Influence_2041_2070_585`
-
-# Rename
-rename(MRIESM2_4170_585_Stats, 'Predicted_Bd_Suitability' = 'Predicted Bd Suitability')
 
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
