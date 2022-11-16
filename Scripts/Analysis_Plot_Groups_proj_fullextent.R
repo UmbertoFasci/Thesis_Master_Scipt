@@ -111,6 +111,8 @@ Mean_Diurnal_Range_Curr_df <- data.frame(Mean_Diurnal_Range_Curr.p)
 Isothermality_Curr_df <- data.frame(Isothermality_Curr.p)
 Mean_Temp_Driest_Qtr_Curr_df <- data.frame(Mean_Temp_Driest_Qtr_Curr.p)
 Prec_of_Wettest_Month_Curr_df <- data.frame(Prec_of_Wettest_Month_Curr.p)
+Human_Influence_Curr_df <- data.frame(Human_Influence_Curr.p)
+
 
 # 2011-2040 ssp126
 
@@ -119,6 +121,7 @@ Mean_Diurnal_Range_2011_2040_126_df <- data.frame(Mean_Diurnal_Range_2011_2040_1
 Isothermality_2011_2040_126_df <- data.frame(Isothermality_2011_2040_126.p)
 Mean_Temp_Driest_Qtr_2011_2040_126_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_126.p)
 Prec_of_Wettest_Month_2011_2040_126_df <- data.frame(Prec_of_Wettest_Month_2011_2040_126.p)
+Human_Influence_2011_2040_126_df <- data.frame(Human_Influence_2011_2040_126.p)
 
 # 2011-2040 ssp585
 
@@ -127,6 +130,7 @@ Mean_Diurnal_Range_2011_2040_585_df <- data.frame(Mean_Diurnal_Range_2011_2040_5
 Isothermality_2011_2040_585_df <- data.frame(Isothermality_2011_2040_585.p)
 Mean_Temp_Driest_Qtr_2011_2040_585_df <- data.frame(Mean_Temp_Driest_Qtr_2011_2040_585.p)
 Prec_of_Wettest_Month_2011_2040_585_df <- data.frame(Prec_of_Wettest_Month_2011_2040_585.p)
+Human_Influence_2011_2040_585_df <-  data.frame(Human_Influence_2011_2040_585.p)
 
 # 2041-2070 ssp126
 
@@ -135,6 +139,7 @@ Mean_Diurnal_Range_2041_2070_126_df <- data.frame(Mean_Diurnal_Range_2041_2070_1
 Isothermality_2041_2070_126_df <- data.frame(Isothermality_2041_2070_126.p)
 Mean_Temp_Driest_Qtr_2041_2070_126_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_126.p)
 Prec_of_Wettest_Month_2041_2070_126_df <- data.frame(Prec_of_Wettest_Month_2041_2070_126.p)
+Human_Influence_2041_2070_126_df <- data.frame(Human_Influence_2041_2070_126.p)
 
 # 2041-2070 ssp585
 
@@ -143,6 +148,7 @@ Mean_Diurnal_Range_2041_2070_585_df <- data.frame(Mean_Diurnal_Range_2041_2070_5
 Isothermality_2041_2070_585_df <- data.frame(Isothermality_2041_2070_585.p)
 Mean_Temp_Driest_Qtr_2041_2070_585_df <- data.frame(Mean_Temp_Driest_Qtr_2041_2070_585.p)
 Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_2070_585.p)
+Human_Influence_2041_2070_585_df <- data.frame(Human_Influence_2041_2070_585.p)
 
 # Update Columns names of each
 
