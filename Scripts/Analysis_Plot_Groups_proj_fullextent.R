@@ -215,7 +215,7 @@ Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$scaled_mn
 Current_Stats$Isothermality_Current <- Isothermality_Curr_df$scaled_iso
 Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$scaled_mntmp
 Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
-Current_Stats$
+Current_Stats$Human_Influence_Current <- Human_Influence_Curr_df$Human_Influence_Current
 
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
