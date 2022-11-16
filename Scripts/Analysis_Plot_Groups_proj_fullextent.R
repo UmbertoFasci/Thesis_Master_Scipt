@@ -10,6 +10,14 @@ library(ggpubr)
 
 # Prepare Variables for stat plots
 
+# Current
+Annual_Mean_Temperature_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_01_aus.asc")
+Mean_Diurnal_Range_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_02_aus.asc")
+Isothermality_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_03_aus.asc")
+Mean_Temp_Driest_Qtr_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_09_aus.asc")
+Prec_of_Wettest_Month_Curr <- raster("/Users/umbertofasci/AUS_FINAL2/chelsa_bio10_13_aus.asc")
+Human_Influence_Curr <- raster("/Users/umbertofasci/AUS_Final2/human_influence2.asc")
+
 # 2011-2040 ssp126
 
 Annual_Mean_Temp_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_01_aus.asc")
