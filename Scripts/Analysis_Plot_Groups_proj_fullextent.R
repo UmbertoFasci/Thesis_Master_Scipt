@@ -103,6 +103,15 @@ Human_Influence_2041_2070_585.p <- rasterToPoints(Human_Influence_2041_2070_585)
 
 # Transform variable raster points into usable dataframes.
 
+# Current
+
+Annual_Mean_Temperature_Curr_df <- data.frame(Annual_Mean_Temperature_Curr.p)
+Mean_Diurnal_Range_Curr_df <- data.frame(Mean_Diurnal_Range_Curr.p)
+Isothermality_Curr_df <- data.frame(Isothermality_Curr.p)
+Mean_Temp_Driest_Qtr_Curr_df <- data.frame(Mean_Temp_Driest_Qtr_Curr.p)
+Prec_of_Wettest_Month_Curr_df <- data.frame(Prec_of_Wettest_Month_Curr.p)
+Human_Influence_Curr_df <- data.frame(Human_Influence_Curr.p)
+
 # 2011-2040 ssp126
 
 Annual_Mean_Temp_2011_2040_126_df <- data.frame(Annual_Mean_Temp_2011_2040_126.p)
