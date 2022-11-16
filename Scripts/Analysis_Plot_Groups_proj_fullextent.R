@@ -176,6 +176,7 @@ colnames(Mean_Diurnal_Range_2011_2040_126_df) <- c("Longitude", "Latitude", "Mea
 colnames(Isothermality_2011_2040_126_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_126")
 colnames(Mean_Temp_Driest_Qtr_2011_2040_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_126")
 colnames(Prec_of_Wettest_Month_2011_2040_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_126")
+colnames(Human_Influence_2011_2040_126_df) <- c("Longitude", "Latitude", "Human_Influence_2011_2040_126")
 
 # 2011-2040 ssp585
 
@@ -184,6 +185,7 @@ colnames(Mean_Diurnal_Range_2011_2040_585_df) <- c("Longitude", "Latitude", "Mea
 colnames(Isothermality_2011_2040_585_df) <- c("Longitude", "Latitude", "Isothermality_2011_2040_585")
 colnames(Mean_Temp_Driest_Qtr_2011_2040_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2011_2040_585")
 colnames(Prec_of_Wettest_Month_2011_2040_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2011_2040_585")
+colnames(Human_Influence_2011_2040_585_df) <- c("Longitude", "Latitude", "Human_Influence_2011_2040_585")
 
 # 2041-2070 ssp126
 
@@ -192,6 +194,7 @@ colnames(Mean_Diurnal_Range_2041_2070_126_df) <- c("Longitude", "Latitude", "Mea
 colnames(Isothermality_2041_2070_126_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_126")
 colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_126")
 colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
+colnames(Human_Influence_2041_2070_126_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_126")
 
 # 2041-2070 ssp585
 
@@ -200,6 +203,7 @@ colnames(Mean_Diurnal_Range_2041_2070_585_df) <- c("Longitude", "Latitude", "Mea
 colnames(Isothermality_2041_2070_585_df) <- c("Longitude", "Latitude", "Isothermality_2041_2070_585")
 colnames(Mean_Temp_Driest_Qtr_2041_2070_585_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_2041_2070_585")
 colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_585")
+colnames(Human_Influence_2041_2070_585_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_585")
 
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
@@ -211,6 +215,7 @@ Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$scaled_mn
 Current_Stats$Isothermality_Current <- Isothermality_Curr_df$scaled_iso
 Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$scaled_mntmp
 Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
+Current_Stats$
 
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
