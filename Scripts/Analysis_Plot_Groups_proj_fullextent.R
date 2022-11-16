@@ -64,6 +64,7 @@ Mean_Diurnal_Range_Curr.p <- rasterToPoints(Mean_Diurnal_Range_Curr)
 Isothermality_Curr.p <- rasterToPoints(Isothermality_Curr)
 Mean_Temp_Driest_Qtr_Curr.p <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr)
 Prec_of_Wettest_Month_Curr.p <- rasterToPoints(Prec_of_Wettest_Month_Curr)
+Human_Influence_Curr.p <- rasterToPoints(Human_Influence_Curr)
 
 # 2011-2040 ssp126
 
@@ -72,6 +73,7 @@ Mean_Diurnal_Range_2011_2040_126.p <- rasterToPoints(Mean_Diurnal_Range_2011_204
 Isothermality_2011_2040_126.p <- rasterToPoints(Isothermality_2011_2040_126)
 Mean_Temp_Driest_Qtr_2011_2040_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_126)
 Prec_of_Wettest_Month_2011_2040_126.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_126)
+Human_Influence_2011_2040_126.p <- rasterToPoints(Human_Influence_2011_2040_126)
 
 # 2011-2040 ssp585
 
@@ -80,6 +82,7 @@ Mean_Diurnal_Range_2011_2040_585.p <- rasterToPoints(Mean_Diurnal_Range_2011_204
 Isothermality_2011_2040_585.p <- rasterToPoints(Isothermality_2011_2040_585)
 Mean_Temp_Driest_Qtr_2011_2040_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2011_2040_585)
 Prec_of_Wettest_Month_2011_2040_585.p <- rasterToPoints(Prec_of_Wettest_Month_2011_2040_585)
+Human_Influence_2011_2040_585.p <- rasterToPoints(Human_Influence_2011_2040_585)
 
 # 2041-2070 ssp126
 
@@ -88,6 +91,7 @@ Mean_Diurnal_Range_2041_2070_126.p <- rasterToPoints(Mean_Diurnal_Range_2041_207
 Isothermality_2041_2070_126.p <- rasterToPoints(Isothermality_2041_2070_126)
 Mean_Temp_Driest_Qtr_2041_2070_126.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_126)
 Prec_of_Wettest_Month_2041_2070_126.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_126)
+Human_Influence_2041_2070_126.p <- rasterToPoints(Human_Influence_2041_2070_126)
 
 # 2041-2070 ssp585
 
@@ -96,6 +100,7 @@ Mean_Diurnal_Range_2041_2070_585.p <- rasterToPoints(Mean_Diurnal_Range_2041_207
 Isothermality_2041_2070_585.p <- rasterToPoints(Isothermality_2041_2070_585)
 Mean_Temp_Driest_Qtr_2041_2070_585.p <- rasterToPoints(Mean_Temp_Driest_Qtr_2041_2070_585)
 Prec_of_Wettest_Month_2041_2070_585.p <- rasterToPoints(Prec_of_Wettest_Month_2041_2070_585)
+Human_Influence_2041_2070_585.p <- rasterToPoints(Human_Influence_2041_2070_585)
 
 # Transform variable raster points into usable dataframes.
 
