@@ -201,14 +201,6 @@ colnames(Mean_Temp_Driest_Qtr_2041_2070_585_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2041_2070_585_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_585")
 colnames(Human_Influence_2041_2070_585_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_585")
 
-# Remove Duplicates
-Annual_Mean_Temp_2041_2070_585_df <- Annual_Mean_Temp_2041_2070_585_df %>% distinct() 
-Mean_Diurnal_Range_2041_2070_585_df <- Mean_Diurnal_Range_2041_2070_585_df %>% distinct()
-Isothermality_2041_2070_585_df <- Isothermality_2041_2070_585_df %>% distinct()
-Mean_Temp_Driest_Qtr_2041_2070_585_df <- Mean_Temp_Driest_Qtr_2041_2070_585_df %>% distinct()
-Prec_of_Wettest_Month_2041_2070_585_df <- Prec_of_Wettest_Month_2041_2070_585_df %>% distinct()
-Human_Influence_2041_2070_585_df <- Human_Influence_2041_2070_585_df %>% distinct()
-
 # Add these new columns to the predicted distribution Avgs for Bd in the same time range and projection.
 
 # 2011-2040 ssp126
