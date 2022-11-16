@@ -159,6 +159,11 @@ colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "Latitude", "Mean_Temp_
 colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_Current")
 colnames(Human_Influence_Curr_df) <- c("Longitude", "Latitude", "Human_Influence_Current")
 
+# Resample to align scale
+Annual_Mean_Temperature_Curr_df <- mutate(Annual_Mean_Temperature_Curr_df, scaled_anmn = trunc(Annual_Mean_Temperature_Current / 10))
+Mean_Diurnal_Range_Curr_df <- mutate(Mean_Diurnal_Range_Curr_df, scaled_mndl = trunc(Mean_Diurnal_Range_Current / 10))
+Isothermality_Curr_df <- mutate(Isothermality_Curr_df, scaled_iso = Isothermality_Current / 1000)
+Mean_Temp_Driest_Qtr_Curr_df <- mutate(Mean_Temp_Driest_Qtr_Curr_df, scaled_mntmp = trunc(Mean_Temp_Driest_Qtr_Current / 10))
 
 # 2011-2040 ssp126
 
