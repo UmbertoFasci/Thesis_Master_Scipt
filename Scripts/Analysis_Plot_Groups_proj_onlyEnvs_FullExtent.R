@@ -137,11 +137,11 @@ Prec_of_Wettest_Month_2041_2070_585_df <- data.frame(Prec_of_Wettest_Month_2041_
 
 # Current
 
-colnames(Annual_Mean_Temperature_Curr_df) <- c("Longitude", "latitude", "Annual_Mean_Temperature_Current")
-colnames(Mean_Diurnal_Range_Curr_df) <- c("Longitude", "latitude", "Mean_Diurnal_Range_Current")
-colnames(Isothermality_Curr_df) <- c("Longitude", "latitude", "Isothermality_Current")
-colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "latitude", "Mean_Temp_Driest_Qtr_Current")
-colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "latitude", "Prec_of_Wettest_Month_Current")
+colnames(Annual_Mean_Temperature_Curr_df) <- c("Longitude", "Latitude", "Annual_Mean_Temperature_Current")
+colnames(Mean_Diurnal_Range_Curr_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_Current")
+colnames(Isothermality_Curr_df) <- c("Longitude", "Latitude", "Isothermality_Current")
+colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_Current")
+colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_Current")
 
 # Resample to align scale
 Annual_Mean_Temperature_Curr_df <- mutate(Annual_Mean_Temperature_Curr_df, scaled_anmn = trunc(Annual_Mean_Temperature_Current / 10))
