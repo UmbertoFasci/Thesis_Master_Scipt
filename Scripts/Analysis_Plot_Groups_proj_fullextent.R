@@ -56,6 +56,15 @@ Human_Influence_2041_2070_585 <- raster("/Users/umbertofasci/Projections_Final/M
 
 # Convert variable rasters to points (Over 10 million points each)
 
+# Current
+
+Annual_Mean_Temperature_Curr.p <- rasterToPoints(Annual_Mean_Temperature_Curr)
+Mean_Diurnal_Range_Curr.p <- rasterToPoints(Mean_Diurnal_Range_Curr)
+Isothermality_Curr.p <- rasterToPoints(Isothermality_Curr)
+Mean_Temp_Driest_Qtr_Curr.p <- rasterToPoints(Mean_Temp_Driest_Qtr_Curr)
+Prec_of_Wettest_Month_Curr.p <- rasterToPoints(Prec_of_Wettest_Month_Curr)
+Human_Influence_Curr.p <- rasterToPoints(Human_Influence_Curr)
+
 # 2011-2040 ssp126
 
 Annual_Mean_Temp_2011_2040_126.p <- rasterToPoints(Annual_Mean_Temp_2011_2040_126)
