@@ -192,14 +192,6 @@ colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
 colnames(Human_Influence_2041_2070_126_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_126")
 
-# Remove Duplicates
-Annual_Mean_Temp_2041_2070_126_df <- Annual_Mean_Temp_2041_2070_126_df %>% distinct() 
-Mean_Diurnal_Range_2041_2070_126_df <- Mean_Diurnal_Range_2041_2070_126_df %>% distinct()
-Isothermality_2041_2070_126_df <- Isothermality_2041_2070_126_df %>% distinct()
-Mean_Temp_Driest_Qtr_2041_2070_126_df <- Mean_Temp_Driest_Qtr_2041_2070_126_df %>% distinct()
-Prec_of_Wettest_Month_2041_2070_126_df <- Prec_of_Wettest_Month_2041_2070_126_df %>% distinct()
-Human_Influence_2041_2070_126_df <- Human_Influence_2041_2070_126_df %>% distinct()
-
 # 2041-2070 ssp585
 
 colnames(Annual_Mean_Temp_2041_2070_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_585")
