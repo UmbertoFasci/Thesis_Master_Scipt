@@ -43,6 +43,7 @@ Mean_Diurnal_Range_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Fina
 Isothermality_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_03_aus.asc")
 Mean_Temp_Driest_Qtr_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_09_aus.asc")
 Prec_of_Wettest_Month_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/chelsa_bio10_13_aus.asc")
+Human_Influence_2041_2070_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20412070/human_influence2.asc")
 
 # 2041-2070 ssp585
 
