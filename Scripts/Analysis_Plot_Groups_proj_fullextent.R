@@ -150,6 +150,16 @@ Human_Influence_2041_2070_585_df <- data.frame(Human_Influence_2041_2070_585.p)
 
 # Update Columns names of each
 
+# Current
+
+colnames(Annual_Mean_Temperature_Curr_df) <- c("Longitude", "Latitude", "Annual_Mean_Temperature_Current")
+colnames(Mean_Diurnal_Range_Curr_df) <- c("Longitude", "Latitude", "Mean_Diurnal_Range_Current")
+colnames(Isothermality_Curr_df) <- c("Longitude", "Latitude", "Isothermality_Current")
+colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "Latitude", "Mean_Temp_Driest_Qtr_Current")
+colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_Current")
+colnames(Human_Influence_Curr_df) <- c("Longitude", "Latitude", "Human_Influence_Current")
+
+
 # 2011-2040 ssp126
 
 colnames(Annual_Mean_Temp_2011_2040_126_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2011_2040_126")
