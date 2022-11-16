@@ -25,6 +25,7 @@ Mean_Diurnal_Range_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Fina
 Isothermality_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_03_aus.asc")
 Mean_Temp_Driest_Qtr_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_09_aus.asc")
 Prec_of_Wettest_Month_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/chelsa_bio10_13_aus.asc")
+Human_Influence_2011_2040_126 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp126_20112040/human_influence2.asc")
 
 # 2011-2040 ssp585
 
@@ -33,6 +34,7 @@ Mean_Diurnal_Range_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Fina
 Isothermality_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_03_aus.asc")
 Mean_Temp_Driest_Qtr_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_09_aus.asc")
 Prec_of_Wettest_Month_2011_2040_585 <- raster("/Users/umbertofasci/Projections_Final/MRI_ESM2/ssp585_20112040/chelsa_bio10_13_aus.asc")
+
 
 # 2041-2070 ssp126
 
