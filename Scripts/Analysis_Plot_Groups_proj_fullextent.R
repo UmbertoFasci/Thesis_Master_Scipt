@@ -507,6 +507,53 @@ Prec_of_Wettest_Month_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxp
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
   stat_compare_means(label.y = 550)
 
+# Human Influence
+
+Human_Influence_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Human_Influence_Current",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (Current)",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
+
+Isothermality_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2011_2040_126",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (2011-2040) ssp126",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
+
+Isothermality_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2011_2040_585",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (2011-2040) ssp585",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
+
+Isothermality_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2041_2070_126",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (2041-2070) ssp126",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
+
+Isothermality_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
+                                                                            y = "Isothermality_2041_2070_585",
+                                                                            xlab = "Predicted Bd Distribution",
+                                                                            ylab = "Isothermality (2041-2070) ssp585",
+                                                                            fill = "Suitability_Levels",
+                                                                            palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
+  stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
+  stat_compare_means(label.y = 1.5)
+
 # Histograms
 
 # Bd Predictions
