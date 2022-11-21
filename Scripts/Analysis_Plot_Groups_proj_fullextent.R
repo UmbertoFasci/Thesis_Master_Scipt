@@ -161,6 +161,12 @@ colnames(Mean_Temp_Driest_Qtr_Curr_df) <- c("Longitude", "Latitude", "Mean_Temp_
 colnames(Prec_of_Wettest_Month_Curr_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_Current")
 colnames(Human_Influence_Curr_df) <- c("Longitude", "Latitude", "Human_Influence_Current")
 
+# Fix Human Data
+Human_Influence_Curr_df <- Human_Influence_Curr_df %>%
+  mutate(Human_Influence_Current = replace(Human_Influence_Current,
+                                           Human_Influence_Current < 0,
+                                           0))
+
 # Resample to align scale
 Annual_Mean_Temperature_Curr_df <- mutate(Annual_Mean_Temperature_Curr_df, scaled_anmn = trunc(Annual_Mean_Temperature_Current / 10))
 Mean_Diurnal_Range_Curr_df <- mutate(Mean_Diurnal_Range_Curr_df, scaled_mndl = trunc(Mean_Diurnal_Range_Current / 10))
