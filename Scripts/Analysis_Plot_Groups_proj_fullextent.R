@@ -214,6 +214,12 @@ colnames(Mean_Temp_Driest_Qtr_2041_2070_126_df) <- c("Longitude", "Latitude", "M
 colnames(Prec_of_Wettest_Month_2041_2070_126_df) <- c("Longitude", "Latitude", "Prec_of_Wettest_Month_2041_2070_126")
 colnames(Human_Influence_2041_2070_126_df) <- c("Longitude", "Latitude", "Human_Influence_2041_2070_126")
 
+# Fix Human Data
+Human_Influence_2041_2070_126_df <- Human_Influence_2041_2070_126_df %>%
+  mutate(Human_Influence_2041_2070_126 = replace(Human_Influence_2041_2070_126,
+                                                 Human_Influence_2041_2070_126 < 0,
+                                                 0))
+
 # 2041-2070 ssp585
 
 colnames(Annual_Mean_Temp_2041_2070_585_df) <- c("Longitude", "Latitude", "Annual_Mean_Temp_2041_2070_585")
