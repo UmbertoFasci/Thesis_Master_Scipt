@@ -245,7 +245,7 @@ Current_Stats$Mean_Diurnal_Range_Current <- Mean_Diurnal_Range_Curr_df$scaled_mn
 Current_Stats$Isothermality_Current <- Isothermality_Curr_df$scaled_iso
 Current_Stats$Mean_Temp_Driest_Qtr_Current <- Mean_Temp_Driest_Qtr_Curr_df$scaled_mntmp
 Current_Stats$Prec_of_Wettest_Month_Current <- Prec_of_Wettest_Month_Curr_df$Prec_of_Wettest_Month_Current
-Current_Stats$Human_Influence_Current <- Human_Influence_Curr_df$Human_Influence_Current
+Current_Stats <- left_join(Current_Stats, Human_Influence_Curr_df, by = c("Longitude", "Latitude"))
 
 # 2011-2040 ssp126
 MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Avg_df
@@ -254,7 +254,7 @@ MRIESM2_1140_126_Stats$Mean_Diurnal_Range_2011_2040_126 <- Mean_Diurnal_Range_20
 MRIESM2_1140_126_Stats$Isothermality_2011_2040_126 <- Isothermality_2011_2040_126_df$Isothermality_2011_2040_126
 MRIESM2_1140_126_Stats$Mean_Temp_Driest_Qtr_2011_2040_126 <- Mean_Temp_Driest_Qtr_2011_2040_126_df$Mean_Temp_Driest_Qtr_2011_2040_126
 MRIESM2_1140_126_Stats$Prec_of_Wettest_Month_2011_2040_126 <- Prec_of_Wettest_Month_2011_2040_126_df$Prec_of_Wettest_Month_2011_2040_126
-MRIESM2_1140_126_Stats$Human_Influence_2011_2040_126 <- Human_Influence_2011_2040_126_df$Human_Influence_2011_2040_126
+MRIESM2_1140_126_Stats <- left_join(MRIESM2_1140_126_Stats, Human_Influence_2011_2040_126_df, by = c("Longitude", "Latitude"))
 
 # 2011-2040 ssp585
 MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Avg_df
@@ -263,7 +263,7 @@ MRIESM2_1140_585_Stats$Mean_Diurnal_Range_2011_2040_585 <- Mean_Diurnal_Range_20
 MRIESM2_1140_585_Stats$Isothermality_2011_2040_585 <- Isothermality_2011_2040_585_df$Isothermality_2011_2040_585
 MRIESM2_1140_585_Stats$Mean_Temp_Driest_Qtr_2011_2040_585 <- Mean_Temp_Driest_Qtr_2011_2040_585_df$Mean_Temp_Driest_Qtr_2011_2040_585
 MRIESM2_1140_585_Stats$Prec_of_Wettest_Month_2011_2040_585 <- Prec_of_Wettest_Month_2011_2040_585_df$Prec_of_Wettest_Month_2011_2040_585
-MRIESM2_1140_585_Stats$Human_Influence_2011_2040_126 <- Human_Influence_2011_2040_585_df$Human_Influence_2011_2040_585
+MRIESM2_1140_585_Stats <- left_join(MRIESM2_1140_585_Stats, Human_Influence_2011_2040_585_df, by = c("Longitude", "Latitude"))
 
 # 2041-2070 ssp126
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Avg_df
@@ -272,7 +272,7 @@ MRIESM2_4170_126_Stats$Mean_Diurnal_Range_2041_2070_126 <- Mean_Diurnal_Range_20
 MRIESM2_4170_126_Stats$Isothermality_2041_2070_126 <- Isothermality_2041_2070_126_df$Isothermality_2041_2070_126
 MRIESM2_4170_126_Stats$Mean_Temp_Driest_Qtr_2041_2070_126 <- Mean_Temp_Driest_Qtr_2041_2070_126_df$Mean_Temp_Driest_Qtr_2041_2070_126
 MRIESM2_4170_126_Stats$Prec_of_Wettest_Month_2041_2070_126 <- Prec_of_Wettest_Month_2041_2070_126_df$Prec_of_Wettest_Month_2041_2070_126
-MRIESM2_4170_126_Stats$Human_Influence_2041_2070_126 <- Human_Influence_2041_2070_126_df$Human_Influence_2041_2070_126
+MRIESM2_4170_126_Stats <- left_join(MRIESM2_4170_126_Stats, Human_Influence_2041_2070_126_df, by = c("Longitude", "Latitude"))
 
 # 2041-2070 ssp585
 MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Avg_df
@@ -281,7 +281,7 @@ MRIESM2_4170_585_Stats$Mean_Diurnal_Range_2041_2070_585 <- Mean_Diurnal_Range_20
 MRIESM2_4170_585_Stats$Isothermality_2041_2070_585 <- Isothermality_2041_2070_585_df$Isothermality_2041_2070_585
 MRIESM2_4170_585_Stats$Mean_Temp_Driest_Qtr_2041_2070_585 <- Mean_Temp_Driest_Qtr_2041_2070_585_df$Mean_Temp_Driest_Qtr_2041_2070_585
 MRIESM2_4170_585_Stats$Prec_of_Wettest_Month_2041_2070_585 <- Prec_of_Wettest_Month_2041_2070_585_df$Prec_of_Wettest_Month_2041_2070_585
-MRIESM2_4170_585_Stats$Human_Influence_2041_2070_585 <- Human_Influence_2041_2070_585_df$Human_Influence_2041_2070_585
+MRIESM2_4170_585_Stats <- left_join(MRIESM2_4170_585_Stats, Human_Influence_2041_2070_585_df, by = c("Longitude", "Latitude"))
 
 # Create Suitability Levels of Predicted_Bd_Suitability (4)
 
