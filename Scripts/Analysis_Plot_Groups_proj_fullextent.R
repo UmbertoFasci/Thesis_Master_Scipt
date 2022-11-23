@@ -546,7 +546,7 @@ Human_Influence_Current_Boxplot <- Current_Stats %>% ggboxplot(x = "Suitability_
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 1.5)
+  stat_compare_means(label.y = 55)
 
 Human_Influence_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Human_Influence_2011_2040_126",
@@ -555,7 +555,7 @@ Human_Influence_2011_2040_126_Boxplot <- MRIESM2_1140_126_Stats %>% ggboxplot(x 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 1.5)
+  stat_compare_means(label.y = 55)
 
 Human_Influence_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Human_Influence_2011_2040_585",
@@ -564,7 +564,7 @@ Human_Influence_2011_2040_585_Boxplot <- MRIESM2_1140_585_Stats %>% ggboxplot(x 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 1.5)
+  stat_compare_means(label.y = 55)
 
 Human_Influence_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Human_Influence_2041_2070_126",
@@ -573,7 +573,7 @@ Human_Influence_2041_2070_126_Boxplot <- MRIESM2_4170_126_Stats %>% ggboxplot(x 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 1.5)
+  stat_compare_means(label.y = 55)
 
 Human_Influence_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x = "Suitability_Levels",
                                                                             y = "Human_Influence_2041_2070_585",
@@ -582,7 +582,7 @@ Human_Influence_2041_2070_585_Boxplot <- MRIESM2_4170_585_Stats %>% ggboxplot(x 
                                                                             fill = "Suitability_Levels",
                                                                             palette = c("#2e00fa", "#a000bc", "#ca0086", "#e40058")) +
   stat_compare_means(comparisons = bin_comparisons, label = "p.signif") +
-  stat_compare_means(label.y = 1.5)
+  stat_compare_means(label.y = 55)
 
 # Histograms
 
