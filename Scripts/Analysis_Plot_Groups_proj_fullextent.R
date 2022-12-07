@@ -294,12 +294,13 @@ MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Levels =
 # Create Suitability Levels with Percentile Rankings
 
 Current_Stats <- Current_Stats %>% mutate(Suitaility_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
-MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
-MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
-MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
-MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
+MRIESM2_1140_126_Stats <- MRIESM2_1140_126_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability, n = 4))
+MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability, n = 4))
+MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability, n = 4))
+MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability, n = 4))
 
 # Create percent bins (4 groups)
+
 
 
 # Bin Comparisons for Kruskal-Wallis Test
