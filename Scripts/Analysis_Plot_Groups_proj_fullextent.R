@@ -299,6 +299,8 @@ MRIESM2_1140_585_Stats <- MRIESM2_1140_585_Stats %>% mutate(Suitability_Percenti
 MRIESM2_4170_126_Stats <- MRIESM2_4170_126_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
 MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Percentile_Rank = percent_rank(Predicted_Bd_Suitability))
 
+# Create percent bins (4 groups)
+
 # Bin Comparisons for Kruskal-Wallis Test
 bin_comparisons <- list( c("1", "2"),
                          c("2", "3"),
