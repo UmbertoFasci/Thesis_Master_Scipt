@@ -398,3 +398,55 @@ stat_compare_means(label.y = 550)
 
 
 # Human Influence
+
+Human_Inf_Curr_mxst <- Current_maxSuit %>%
+  select(Human_Influence_Current)
+Human_Inf_1140_126_mxst <- MRIESM2_1140_126_maxSuit %>%
+  select(Human_Influence_2011_2040_126)
+Human_Inf_1140_585_mxst <- MRIESM2_1140_585_maxSuit %>%
+  select(Human_Influence_2011_2040_585)
+Human_Inf_4170_126_mxst <- MRIESM2_4170_126_maxSuit %>%
+  select(Human_Influence_2041_2070_126)
+Human_Inf_4170_585_mxst <- MRIESM2_4170_585_maxSuit %>%
+  select(Human_Influence_2041_2070_585)
+
+# Combine
+
+Human_Inf_full_mxst <- bind_cols(list(Human_Inf_Curr_mxst,
+                                         Human_Inf_1140_126_mxst,
+                                         Human_Inf_1140_585_mxst,
+                                         Human_Inf_4170_126_mxst,
+                                         Human_Inf_4170_585_mxst))
+
+# Configure
+
+colnames(Human_Inf_full_mxst) <- c('Current',
+                                      '(2011-2040) ssp126',
+                                      '(2011-2040) ssp585',
+                                      '(2041-2070) ssp126',
+                                      '(2041-2070) ssp585')
+
+Human_Inf_full_mxst <- Human_Inf_full_mxst %>%
+  pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+
+Human_Inf_full_mxst_boxplot <- Human_Inf_full_mxst %>%
+  ggboxplot(x = "Variable",
+            y = "Value",
+            xlab = "Projection and Year Range",
+            ylab = "Human Influence \n Highest Bd Suitability",
+            fill = "Variable",
+            ppalette = c("#003f5c", "#58508d", "#bc5090", "#ff6361", "#ffa600")) +
+stat_compare_means(comparisons = list(c('Current',
+                                        '(2011-2040) ssp126'),
+                                      c('Current',
+                                        '(2011-2040) ssp585'),
+                                      c('Current',
+                                        '(2041-2070) ssp126'),
+                                      c('Current',
+                                        '(2041-2070) ssp585'),
+                                      c('(2011-2040) ssp126',
+                                        '(2041-2070) ssp126'),
+                                      c('(2011-2040) ssp585',
+                                        '(2041-2070) ssp585')),
+                  label = "p.signif", hide.ns = FALSE) +
+stat_compare_means(label.y = 550)
