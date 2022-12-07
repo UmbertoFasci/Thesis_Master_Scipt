@@ -396,3 +396,5 @@ stat_compare_means(comparisons = list(c('Current',
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 550)
 
+
+# Human Influence
