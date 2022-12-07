@@ -449,4 +449,4 @@ stat_compare_means(comparisons = list(c('Current',
                                       c('(2011-2040) ssp585',
                                         '(2041-2070) ssp585')),
                   label = "p.signif", hide.ns = FALSE) +
-stat_compare_means(label.y = 550)
+stat_compare_means(label.y = 155)
