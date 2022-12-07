@@ -301,6 +301,8 @@ MRIESM2_4170_585_Stats <- MRIESM2_4170_585_Stats %>% mutate(Suitability_Percenti
 
 # Create percent bins (4 groups)
 
+# PErcent bins will be made here
+
 # Bin Comparisons for Kruskal-Wallis Test
 bin_comparisons <- list( c("1", "2"),
                          c("2", "3"),
