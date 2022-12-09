@@ -450,3 +450,5 @@ stat_compare_means(comparisons = list(c('Current',
                                         '(2041-2070) ssp585')),
                   label = "p.signif", hide.ns = FALSE) +
 stat_compare_means(label.y = 155)
+
+# Save photos
